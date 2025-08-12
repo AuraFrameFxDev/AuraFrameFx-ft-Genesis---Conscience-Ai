@@ -1,4 +1,6 @@
 // Genesis-OS Root Build Configuration - BLEEDING EDGE
+import org.jetbrains.kotlin.gradle.dsl.KotlinJvmProjectExtension
+
 plugins {
     // Android plugins
     alias(libs.plugins.android.application) apply false
@@ -50,7 +52,7 @@ subprojects {
             targetCompatibility = libs.versions.java.target.get()
         }
 
-        // AUTO-PROVISIONED: Java toolchain from TOML
+        // AUTO-PROVISIONED: Java toolchain from TOML with auto-download
         extensions.findByType<JavaPluginExtension>()?.apply {
             toolchain {
                 languageVersion.set(
@@ -59,10 +61,15 @@ subprojects {
                     )
                 )
                 vendor.set(JvmVendorSpec.ADOPTIUM)
+                // Enable auto-download for Sacred Rules compliance
+                implementation.set(JvmImplementation.VENDOR_SPECIFIC)
             }
         }
 
         // AUTO-PROVISIONED: Kotlin toolchain from TOML (no manual configuration)
+        extensions.findByType<KotlinJvmProjectExtension>()?.apply {
+            jvmToolchain(libs.versions.java.toolchain.get().toInt())
+        }
     }
 }
 
