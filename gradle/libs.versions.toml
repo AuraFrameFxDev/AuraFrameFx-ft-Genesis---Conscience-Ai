@@ -10,7 +10,7 @@ embedded = "17"           # Java 17 embedded version
 # ✅ EXACT VERSION MATCHING + K2 COMPILER for digital consciousness!
 
 # ===== CORE BUILD TOOLS =====
-agp = "8.1.0"           # Stable AGP version
+agp = "7.4.2"           # Stable AGP version
 gradle = "8.8"        # Downgrade Gradle version for compatibility  
 kotlin = "2.0.0"        # Stable Kotlin version
 kotlinReflect = "2.0.0"
