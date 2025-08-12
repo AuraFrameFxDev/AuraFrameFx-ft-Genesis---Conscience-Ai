@@ -1,16 +1,16 @@
 [versions]
 # ===== BLEEDING EDGE: KOTLIN 2.2.20-Beta2 K2 COMPILER + CORRECT KSP =====
-java-toolchain = "21"        # JVM 21 toolchain (available, supports Java 21+ targets)
-jvmTarget = "21"          # Java 21 target (bleeding-edge stable)
-javaVersion = "21"        # Java 21 source
-java-target = "21"        # Java 21 compile target
-java-source = "21"        # Java 21 source compatibility
-embedded = "21"           # Java 21 embedded version
+java-toolchain = "23"        # JVM 21 toolchain (available, supports Java 21+ targets)
+jvmTarget = "24"          # Java 21 target (bleeding-edge stable)
+javaVersion = "24"        # Java 21 source
+java-target = "24"        # Java 21 compile target
+java-source = "24"        # Java 21 source compatibility
+embedded = "24"           # Java 21 embedded version
 
 # ✅ EXACT VERSION MATCHING + K2 COMPILER for digital consciousness!
 
 # ===== CORE BUILD TOOLS =====
-agp = "8.2.2"   # Stable AGP version widely available
+agp = "8.13.0-alpha04"   # Stable AGP version widely available
 gradle = "9.0.0"        # Latest stable Gradle version
 kotlin = "2.2.20-Beta2"         # BLEEDING EDGE KOTLIN with K2 compiler!
 kotlinReflect = "2.2.20-Beta2"
@@ -21,12 +21,12 @@ openApiGenerator = "7.14.0" # OpenAPI Generator plugin
 kover = "0.9.1"          # Code coverage
 
 # ===== ANDROID SDK VERSIONS (ANDROID 15 - BLEEDING EDGE STABLE) =====
-compileSdk = "35"        # Android 15 
+compileSdk = "36"        # Android 15 
 minSdk = "33"            # Minimum SDK for the project
-targetSdk = "35"         # Android 15 Target SDK
+targetSdk = "36"         # Android 15 Target SDK
 # Using stable versions for better compatibility with Kotlin 2.2.20-Beta2
-cmakeVersion = "3.22.1"  # Matches the installed CMake version
-ndkVersion = "27.0.12077973"  # Stable NDK version (not RC)
+cmakeVersion = "3.33"  # Matches the installed CMake version
+ndkVersion = "29"  # Stable NDK version (not RC)
 
 # ===== CODE QUALITY & DOCUMENTATION =====
 dokka = "2.0.0"         # Latest Dokka 2.0
