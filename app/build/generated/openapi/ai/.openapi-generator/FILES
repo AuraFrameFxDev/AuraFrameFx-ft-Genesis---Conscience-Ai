@@ -1,3 +1,4 @@
+.openapi-generator-ignore
 README.md
 build.gradle
 docs/AIAgentsApi.md
@@ -39,3 +40,14 @@ src/main/kotlin/dev/aurakai/auraframefx/api/ai/models/GenerateImageDescriptionRe
 src/main/kotlin/dev/aurakai/auraframefx/api/ai/models/GenerateImageDescriptionResponse.kt
 src/main/kotlin/dev/aurakai/auraframefx/api/ai/models/GenerateTextRequest.kt
 src/main/kotlin/dev/aurakai/auraframefx/api/ai/models/GenerateTextResponse.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/ai/apis/AIAgentsApiTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/ai/apis/AIContentApiTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/ai/models/AgentMessageTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/ai/models/AgentProcessRequestTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/ai/models/AgentStatusTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/ai/models/AgentTypeTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/ai/models/ErrorResponseTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/ai/models/GenerateImageDescriptionRequestTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/ai/models/GenerateImageDescriptionResponseTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/ai/models/GenerateTextRequestTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/ai/models/GenerateTextResponseTest.kt

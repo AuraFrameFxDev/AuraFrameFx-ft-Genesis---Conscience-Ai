@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:2:1-74:12
-INJECTED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:2:1-74:12
-INJECTED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:2:1-74:12
-INJECTED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:2:1-74:12
+ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:2:1-74:12
+INJECTED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:2:1-74:12
+INJECTED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:2:1-74:12
+INJECTED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:2:1-74:12
 MERGED from [com.squareup.leakcanary:leakcanary-android:3.0-alpha-8] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\7d7fa6eb98a3348c8afd3265452dcf35\transformed\leakcanary-android-3.0-alpha-8\AndroidManifest.xml:17:1-22:12
 MERGED from [com.highcapable.yukihookapi:api:1.3.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\8f4c5a99dfbcfbd95844519530213111\transformed\api-1.3.0\AndroidManifest.xml:2:1-7:12
 MERGED from [io.coil-kt:coil-compose:2.7.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\9c3f3a955761b968b8414ca352eec63e\transformed\coil-compose-2.7.0\AndroidManifest.xml:2:1-7:12
@@ -154,15 +154,15 @@ MERGED from [org.lsposed.lsplant:lsplant:6.4] C:\Users\Wehtt\.gradle\caches\9.0.
 MERGED from [com.google.dagger:dagger-lint-aar:2.57] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\4afcda4587d453a4b13850c20723b1cf\transformed\dagger-lint-aar-2.57\AndroidManifest.xml:16:1-19:12
 MERGED from [org.lsposed.hiddenapibypass:hiddenapibypass:6.1] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\7b09e3fcd9991e9f856d4b6795e6a160\transformed\hiddenapibypass-6.1\AndroidManifest.xml:2:1-7:12
 	package
-		INJECTED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:4:5-67
+ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:4:5-67
 MERGED from [com.google.firebase:firebase-crashlytics:20.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\09c68fc4f6fd7bde4e3565f067b07d03\transformed\firebase-crashlytics-20.0.0\AndroidManifest.xml:7:5-67
 MERGED from [com.google.firebase:firebase-crashlytics:20.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\09c68fc4f6fd7bde4e3565f067b07d03\transformed\firebase-crashlytics-20.0.0\AndroidManifest.xml:7:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:23.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\9646dd0ecfe621f71ec3108cdbe5327c\transformed\play-services-measurement-api-23.0.0\AndroidManifest.xml:22:5-67
@@ -180,18 +180,18 @@ MERGED from [com.squareup.okhttp3:okhttp-android:5.1.0] C:\Users\Wehtt\.gradle\c
 MERGED from [com.google.android.datatransport:transport-backend-cct:3.3.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\451c3f4dd327771e9b55a4761204016c\transformed\transport-backend-cct-3.3.0\AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.datatransport:transport-backend-cct:3.3.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\451c3f4dd327771e9b55a4761204016c\transformed\transport-backend-cct-3.3.0\AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:4:22-64
+		ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:4:22-64
 uses-permission#android.permission.VIBRATE
-ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:5:5-66
+ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:5:5-66
 	android:name
-		ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:5:22-63
+		ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:5:22-63
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
-ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:6:5-81
+ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:6:5-81
 	android:name
-		ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:6:22-78
+		ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:6:22-78
 application
-ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:8:5-72:19
-INJECTED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:8:5-72:19
+ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:8:5-72:19
+INJECTED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:8:5-72:19
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\a166c349169fa3a3a5ab3af0d057cb00\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\a166c349169fa3a3a5ab3af0d057cb00\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\949b38a74526c3b815229e7690cf1063\transformed\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
@@ -273,123 +273,123 @@ MERGED from [com.google.android.datatransport:transport-backend-cct:3.3.0] C:\Us
 MERGED from [com.google.android.datatransport:transport-runtime:3.3.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\49d65d8f883bb7805b36236ff4f93fe4\transformed\transport-runtime-3.3.0\AndroidManifest.xml:23:5-37:19
 MERGED from [com.google.android.datatransport:transport-runtime:3.3.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\49d65d8f883bb7805b36236ff4f93fe4\transformed\transport-runtime-3.3.0\AndroidManifest.xml:23:5-37:19
 	android:extractNativeLibs
-		INJECTED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.16.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\b985a53813b492c823b3777cc34dee45\transformed\core-1.16.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:13:9-35
+		ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:13:9-35
 	android:label
-		ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:11:9-51
+		ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:11:9-51
 	android:roundIcon
-		ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:12:9-54
+		ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:12:9-54
 	android:icon
-		ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:10:9-43
+		ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:10:9-43
 	android:theme
-		ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:14:9-49
+		ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:14:9-49
 	android:enableOnBackInvokedCallback
-		ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:15:9-51
+		ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:15:9-51
 	android:name
-		ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:9:9-45
+		ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:9:9-45
 meta-data#xposedmodule
-ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:17:9-19:36
+ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:17:9-19:36
 	android:value
-		ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:19:13-33
+		ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:19:13-33
 	android:name
-		ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:18:13-40
+		ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:18:13-40
 meta-data#xposeddescription
-ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:20:9-22:58
+ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:20:9-22:58
 	android:value
-		ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:22:13-55
+		ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:22:13-55
 	android:name
-		ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:21:13-45
+		ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:21:13-45
 meta-data#xposedminversion
-ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:23:9-25:34
+ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:23:9-25:34
 	android:value
-		ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:25:13-31
+		ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:25:13-31
 	android:name
-		ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:24:13-44
+		ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:24:13-44
 meta-data#xposedscope
-ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:26:9-28:54
+ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:26:9-28:54
 	android:resource
-		ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:28:13-51
+		ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:28:13-51
 	android:name
-		ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:27:13-39
+		ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:27:13-39
 meta-data#yukihookapi_module
-ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:31:9-33:36
+ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:31:9-33:36
 	android:value
-		ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:33:13-33
+		ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:33:13-33
 	android:name
-		ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:32:13-46
+		ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:32:13-46
 meta-data#yukihookapi_module_name
-ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:34:9-36:55
+ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:34:9-36:55
 	android:value
-		ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:36:13-52
+		ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:36:13-52
 	android:name
-		ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:35:13-51
+		ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:35:13-51
 meta-data#yukihookapi_module_version
-ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:37:9-39:37
+ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:37:9-39:37
 	android:value
-		ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:39:13-34
+		ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:39:13-34
 	android:name
-		ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:38:13-54
+		ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:38:13-54
 activity#dev.aurakai.auraframefx.MainActivity
-ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:41:9-48:20
+ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:41:9-48:20
 	android:exported
-		ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:43:13-36
+		ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:43:13-36
 	android:name
-		ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:42:13-41
+		ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:42:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:44:13-47:29
+ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:44:13-47:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:45:17-69
+ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:45:17-69
 	android:name
-		ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:45:25-66
+		ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:45:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:46:17-77
+ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:46:17-77
 	android:name
-		ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:46:27-74
+		ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:46:27-74
 service#dev.aurakai.auraframefx.VertexSyncService
-ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:50:9-52:40
+ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:50:9-52:40
 	android:exported
-		ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:52:13-37
+		ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:52:13-37
 	android:name
-		ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:51:13-46
+		ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:51:13-46
 service#dev.aurakai.auraframefx.security.IntegrityMonitorService
-ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:53:9-55:40
+ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:53:9-55:40
 	android:exported
-		ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:55:13-37
+		ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:55:13-37
 	android:name
-		ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:54:13-61
+		ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:54:13-61
 receiver#dev.aurakai.auraframefx.receivers.BootCompletedReceiver
-ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:57:9-64:20
+ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:57:9-64:20
 	android:enabled
-		ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:59:13-35
+		ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:59:13-35
 	android:exported
-		ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:60:13-36
+		ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:60:13-36
 	android:name
-		ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:58:13-60
+		ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:58:13-60
 intent-filter#action:name:android.intent.action.BOOT_COMPLETED
-ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:61:13-63:29
+ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:61:13-63:29
 action#android.intent.action.BOOT_COMPLETED
-ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:62:17-79
+ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:62:17-79
 	android:name
-		ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:62:25-76
+		ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:62:25-76
 receiver#dev.aurakai.auraframefx.security.IntegrityViolationReceiver
-ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:65:9-71:20
+ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:65:9-71:20
 	android:exported
-		ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:67:13-36
+		ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:67:13-36
 	android:name
-		ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:66:13-64
+		ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:66:13-64
 intent-filter#action:name:dev.aurakai.auraframefx.ACTION_INTEGRITY_VIOLATION
-ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:68:13-70:29
+ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:68:13-70:29
 action#dev.aurakai.auraframefx.ACTION_INTEGRITY_VIOLATION
-ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:69:17-93
+ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:69:17-93
 	android:name
-		ADDED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:69:25-90
+		ADDED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:69:25-90
 uses-sdk
-INJECTED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml
 MERGED from [com.squareup.leakcanary:leakcanary-android:3.0-alpha-8] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\7d7fa6eb98a3348c8afd3265452dcf35\transformed\leakcanary-android-3.0-alpha-8\AndroidManifest.xml:20:5-44
 MERGED from [com.squareup.leakcanary:leakcanary-android:3.0-alpha-8] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\7d7fa6eb98a3348c8afd3265452dcf35\transformed\leakcanary-android-3.0-alpha-8\AndroidManifest.xml:20:5-44
 MERGED from [com.highcapable.yukihookapi:api:1.3.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\8f4c5a99dfbcfbd95844519530213111\transformed\api-1.3.0\AndroidManifest.xml:5:5-44
@@ -689,9 +689,9 @@ MERGED from [com.google.dagger:dagger-lint-aar:2.57] C:\Users\Wehtt\.gradle\cach
 MERGED from [org.lsposed.hiddenapibypass:hiddenapibypass:6.1] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\7b09e3fcd9991e9f856d4b6795e6a160\transformed\hiddenapibypass-6.1\AndroidManifest.xml:5:5-73
 MERGED from [org.lsposed.hiddenapibypass:hiddenapibypass:6.1] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\7b09e3fcd9991e9f856d4b6795e6a160\transformed\hiddenapibypass-6.1\AndroidManifest.xml:5:5-73
 	android:targetSdkVersion
-		INJECTED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml
 activity#androidx.compose.ui.tooling.PreviewActivity
 ADDED from [androidx.compose.ui:ui-tooling-android:1.8.3] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\a84708df4a2c0bd57adfb6973db44810\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
 	android:exported

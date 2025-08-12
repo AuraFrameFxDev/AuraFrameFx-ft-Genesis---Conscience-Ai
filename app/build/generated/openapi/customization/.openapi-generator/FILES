@@ -1,3 +1,4 @@
+.openapi-generator-ignore
 README.md
 build.gradle
 docs/ErrorResponse.md
@@ -25,3 +26,7 @@ src/main/kotlin/dev/aurakai/auraframefx/api/customization/infrastructure/UUIDAda
 src/main/kotlin/dev/aurakai/auraframefx/api/customization/models/ErrorResponse.kt
 src/main/kotlin/dev/aurakai/auraframefx/api/customization/models/Theme.kt
 src/main/kotlin/dev/aurakai/auraframefx/api/customization/models/ThemeApplyRequest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/customization/apis/ThemesApiTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/customization/models/ErrorResponseTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/customization/models/ThemeApplyRequestTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/customization/models/ThemeTest.kt

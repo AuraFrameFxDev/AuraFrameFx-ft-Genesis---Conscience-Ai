@@ -1,3 +1,4 @@
+.openapi-generator-ignore
 README.md
 build.gradle
 docs/ComponentTestRequest.md
@@ -29,3 +30,9 @@ src/main/kotlin/dev/aurakai/auraframefx/api/sandbox/models/ComponentTestResult.k
 src/main/kotlin/dev/aurakai/auraframefx/api/sandbox/models/ErrorResponse.kt
 src/main/kotlin/dev/aurakai/auraframefx/api/sandbox/models/SandboxComponent.kt
 src/main/kotlin/dev/aurakai/auraframefx/api/sandbox/models/SandboxEnvironment.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/sandbox/apis/SandboxApiTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/sandbox/models/ComponentTestRequestTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/sandbox/models/ComponentTestResultTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/sandbox/models/ErrorResponseTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/sandbox/models/SandboxComponentTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/sandbox/models/SandboxEnvironmentTest.kt
