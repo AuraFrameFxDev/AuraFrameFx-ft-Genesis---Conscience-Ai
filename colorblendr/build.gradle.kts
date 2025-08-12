@@ -54,7 +54,6 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
-    buildToolsVersion = "36"
 }
 
 // Kotlin Toolchain - Java 24 (consistent with compileOptions)

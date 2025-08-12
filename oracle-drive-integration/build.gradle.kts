@@ -97,6 +97,4 @@ dependencies {
     // System interaction and documentation (using local JAR files)
     implementation(files("${project.rootDir}/Libs/api-82.jar"))
     implementation(files("${project.rootDir}/Libs/api-82-sources.jar"))
-    // Dokka for documentation
-    plugins.apply("org.jetbrains.dokka")
 }

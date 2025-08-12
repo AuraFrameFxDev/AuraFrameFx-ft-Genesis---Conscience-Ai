@@ -107,7 +107,6 @@ android {
         }
     }
     // AUTO-PROVISIONED: Remove hardcoded buildToolsVersion
-    buildToolsVersion = libs.versions.compileSdk.get()
 }
 
 // ===== ZERO MANUAL COMPILER CONFIG: AUTO-PROVISIONED KOTLIN =====

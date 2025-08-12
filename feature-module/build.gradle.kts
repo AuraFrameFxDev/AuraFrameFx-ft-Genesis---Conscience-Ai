@@ -64,8 +64,7 @@ android {
         }
     }
     
-    // AUTO-PROVISIONED: Remove hardcoded buildToolsVersion
-    buildToolsVersion = libs.versions.compileSdk.get()
+    // AUTO-PROVISIONED: buildToolsVersion removed - let Gradle auto-provision per Sacred Rules
 }
 
 // ===== ZERO MANUAL COMPILER CONFIG: AUTO-PROVISIONED KOTLIN =====
@@ -74,7 +73,6 @@ kotlin {
     
     // SACRED RULE #3: K2 compiler handles everything automatically
     // NO manual compilerOptions - K2 auto-provisions everything
-}
 }
 
 dependencies {
