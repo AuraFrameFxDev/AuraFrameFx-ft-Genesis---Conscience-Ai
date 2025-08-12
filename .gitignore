@@ -1,0 +1,35 @@
+# Java heap dumps
+*.hprof
+
+# Build directories
+**/build/
+**/bin/
+**/out/
+
+# Gradle files
+.gradle/
+**/gradle/
+**/*.gradle
+!gradle-wrapper.jar
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Local configuration files
+*.properties
+*.log
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Kotlin
+*.kts.rendered
