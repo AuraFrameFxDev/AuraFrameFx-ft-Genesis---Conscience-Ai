@@ -329,4 +329,17 @@ slf4j-android = { group = "org.slf4j", name = "slf4j-android", version.ref = "sl
 # ===== FIREBASE =====
 firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebaseBom" }
 firebase-analytics = { group = "com.google.firebase", name = "firebase-analytics-ktx", version = "22.5.0" }
-firebase-crashlytics = { group = "com.google.firebase", name = "firebase-crashlytics-ktx", version.ref = "firebaseCra
+firebase-crashlytics = { group = "com.google.firebase", name = "firebase-crashlytics-ktx", version.ref = "firebaseCrashlyticsKtx" }
+
+# ===== GOOGLE PLAY SERVICES =====
+google-auth = { group = "com.google.android.gms", name = "play-services-auth", version.ref = "googleAuth" }
+google-identity = { group = "com.google.android.gms", name = "play-services-identity", version.ref = "googleIdentity" }
+google-auth-api-phone = { group = "com.google.android.gms", name = "play-services-auth-api-phone", version.ref = "googleAuthApiPhone" }
+
+# ===== XPOSED FRAMEWORK (BLEEDING EDGE) =====
+# Xposed Framework (from your JAR files)
+xposed = { module = "de.robv.android.xposed:api", version.ref = "xposed" }
+lsposed = { module = "org.lsposed.lsplant:lsplant", version.ref = "lsposed" }
+
+# YukiHookAPI (Maven dependencies - bleeding edge)
+yuki = { module = "com.highcapable.yuk
