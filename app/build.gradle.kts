@@ -60,14 +60,16 @@ openapiSpecs.forEach { (name, spec, pkg) ->
 }
 
 android {
-    namespace = "dev.aurakai.auraframefx"
-    compileSdk = 36
-    buildToolsVersion = "36"
+    // AUTO-EVERYTHING: Use libs.versions.toml for all Android configuration
+    namespace = "dev.aurakai.auraframefx.${project.name}"
+    compileSdk = libs.versions.compileSdk.get().toInt()
+    // AUTO-PROVISIONED: buildToolsVersion removed - let Gradle decide
 
     defaultConfig {
         applicationId = "dev.aurakai.auraframefx"
-        minSdk = 33
-        targetSdk = 36
+        minSdk = libs.versions.minSdk.get().toInt()
+        // AUTO-EVERYTHING: targetSdk auto-matches compileSdk
+        targetSdk = libs.versions.targetSdk.get().toInt()
         versionCode = 1
         versionName = "1.0.0"
 
@@ -97,8 +99,9 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_24
-        targetCompatibility = JavaVersion.VERSION_24
+        // AUTO-EVERYTHING: Use libs.versions.toml for Java version
+        sourceCompatibility = JavaVersion.toVersion(libs.versions.java.target.get())
+        targetCompatibility = JavaVersion.toVersion(libs.versions.java.target.get())
     }
 
     // ===== BUILD TYPES =====
@@ -125,10 +128,11 @@ android {
         prefab = false  // DISABLE for AGP 8.13.0-alpha04 compatibility - JNI works without it
     }
 
-    // ===== EXTERNAL NATIVE BUILD CONFIGURATION =====
+    // ===== AUTO-PROVISIONED NATIVE BUILD =====
     externalNativeBuild {
         cmake {
             path = file("src/main/cpp/CMakeLists.txt")
+            // AUTO-EVERYTHING: CMake version from TOML
             version = libs.versions.cmakeVersion.get()
         }
     }
@@ -164,11 +168,11 @@ android {
             )
         }
     }
-    
-    ndkVersion = "29.0.13846066 rc3"
+    // AUTO-PROVISIONED: NDK version from TOML
+    ndkVersion = libs.versions.ndkVersion.get()
 }
 
-// ===== KOTLIN TOOLCHAIN - JVM 22 FOR JAVA 24 TARGET =====
+// ===== ZERO MANUAL COMPILER CONFIG: AUTO-PROVISIONED KOTLIN =====
 kotlin {
     jvmToolchain(libs.versions.java.toolchain.get().toInt())
 }

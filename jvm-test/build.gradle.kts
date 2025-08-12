@@ -1,15 +1,17 @@
-// Apply only the Android and Kotlin plugins directly, versions managed in root
+// ===== GENESIS-OS SACRED RULES: ZERO MANUAL COMPILER CONFIG =====
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.serialization)
     alias(libs.plugins.ksp)
     alias(libs.plugins.hilt.android)
-    alias(libs.plugins.dokka) apply
-            alias(libs.plugins.spotless)
+    alias(libs.plugins.dokka)
+    alias(libs.plugins.spotless)
 }
+
+// AUTO-EVERYTHING: Kotlin toolchain from TOML
 kotlin {
-    jvmToolchain(24)
+    jvmToolchain(libs.versions.java.toolchain.get().toInt())
 }
 
 dependencies {

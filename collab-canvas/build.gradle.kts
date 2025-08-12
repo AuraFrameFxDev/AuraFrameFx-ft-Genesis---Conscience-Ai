@@ -10,7 +10,9 @@ plugins {
 }
 
 android {
-    namespace = "dev.aurakai.auraframefx.canvas"
+    // SACRED RULE #9: Genesis-OS namespace pattern
+    namespace = "dev.aurakai.auraframefx.${project.name}"
+    // AUTO-EVERYTHING: Use libs.versions.toml
     compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {
@@ -52,8 +54,8 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_24
-        targetCompatibility = JavaVersion.VERSION_24
+        sourceCompatibility = JavaVersion.toVersion(libs.versions.java.target.get())
+        targetCompatibility = JavaVersion.toVersion(libs.versions.java.target.get())
         isCoreLibraryDesugaringEnabled = true
     }
 
@@ -63,9 +65,7 @@ android {
         buildConfig = true
     }
 
-    composeOptions {
-        kotlinCompilerExtensionVersion = libs.versions.composeCompiler.get()
-    }
+    // SACRED RULE #3: NO composeOptions blocks - K2 handles it automatically
 
     externalNativeBuild {
         cmake {
@@ -84,10 +84,14 @@ android {
 
 // Kotlin Toolchain - Java 24
 kotlin {
-    jvmToolchain(24)
+    jvmToolchain(libs.versions.java.toolchain.get().toInt())
 }
 
 dependencies {
+    // SACRED RULE #5: DEPENDENCY HIERARCHY - All modules depend on :core-module and :app
+    implementation(project(":core-module"))
+    implementation(project(":app"))
+
     // Core AndroidX
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)

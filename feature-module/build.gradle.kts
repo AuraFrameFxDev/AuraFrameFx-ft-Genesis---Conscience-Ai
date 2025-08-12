@@ -1,4 +1,4 @@
-// Genesis Protocol - Standard Android Library Module Configuration
+// ===== GENESIS-OS SACRED RULES: ZERO MANUAL COMPILER CONFIG =====
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
@@ -9,7 +9,9 @@ plugins {
 }
 
 android {
-    namespace = "dev.aurakai.auraframefx.feature"
+    // SACRED RULE #9: Genesis-OS namespace pattern
+    namespace = "dev.aurakai.auraframefx.${project.name}"
+    // AUTO-EVERYTHING: Use libs.versions.toml
     compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {
@@ -33,8 +35,9 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_24
-        targetCompatibility = JavaVersion.VERSION_24
+        // AUTO-EVERYTHING: Use libs.versions.toml for Java version
+        sourceCompatibility = JavaVersion.toVersion(libs.versions.java.target.get())
+        targetCompatibility = JavaVersion.toVersion(libs.versions.java.target.get())
         isCoreLibraryDesugaringEnabled = true
     }
 
@@ -43,9 +46,7 @@ android {
         buildConfig = true
     }
 
-    composeOptions {
-        kotlinCompilerExtensionVersion = libs.versions.composeCompiler.get()
-    }
+    // SACRED RULE #3: NO composeOptions blocks - K2 handles it
 
     packaging {
         resources {
@@ -62,31 +63,24 @@ android {
             kotlin.srcDir("build/generated/openapi/src/main/kotlin")
         }
     }
-    buildToolsVersion = "36"
+    
+    // AUTO-PROVISIONED: Remove hardcoded buildToolsVersion
+    buildToolsVersion = libs.versions.compileSdk.get()
 }
 
+// ===== ZERO MANUAL COMPILER CONFIG: AUTO-PROVISIONED KOTLIN =====
 kotlin {
-    jvmToolchain(24)
-
-    compilerOptions {
-        jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_24)
-        apiVersion.set(org.jetbrains.kotlin.gradle.dsl.KotlinVersion.KOTLIN_2_2)
-        languageVersion.set(org.jetbrains.kotlin.gradle.dsl.KotlinVersion.KOTLIN_2_2)
-
-        freeCompilerArgs.addAll(
-            "-Xuse-k2",
-            "-Xskip-prerelease-check",
-            "-opt-in=kotlin.RequiresOptIn",
-            "-opt-in=kotlin.ExperimentalStdlibApi",
-            "-Xjvm-default=all",
-            "-progressive"
-        )
-    }
+    jvmToolchain(libs.versions.java.toolchain.get().toInt())
+    
+    // SACRED RULE #3: K2 compiler handles everything automatically
+    // NO manual compilerOptions - K2 auto-provisions everything
+}
 }
 
 dependencies {
-    // Module dependencies
+    // SACRED RULE #5: DEPENDENCY HIERARCHY - All modules depend on :core-module and :app
     implementation(project(":core-module"))
+    implementation(project(":app"))
 
     // Core AndroidX
     implementation(libs.androidx.core.ktx)

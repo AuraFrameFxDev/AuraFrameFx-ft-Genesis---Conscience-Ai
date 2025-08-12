@@ -7,7 +7,9 @@ plugins {
 }
 
 android {
-    namespace = "dev.aurakai.auraframefx.securecomm"
+    // SACRED RULE #9: Genesis-OS namespace pattern
+    namespace = "dev.aurakai.auraframefx.${project.name}"
+    // AUTO-EVERYTHING: Use libs.versions.toml
     compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {
@@ -36,8 +38,9 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        // AUTO-EVERYTHING: Use libs.versions.toml for Java version
+        sourceCompatibility = JavaVersion.toVersion(libs.versions.java.target.get())
+        targetCompatibility = JavaVersion.toVersion(libs.versions.java.target.get())
         isCoreLibraryDesugaringEnabled = true
     }
 
@@ -54,26 +57,22 @@ android {
             kotlin.srcDir("build/generated/openapi/src/main/kotlin")
         }
     }
-    buildToolsVersion = "36"
+    // AUTO-PROVISIONED: Remove hardcoded buildToolsVersion  
+    buildToolsVersion = libs.versions.compileSdk.get()
 }
 
+// ===== ZERO MANUAL COMPILER CONFIG: AUTO-PROVISIONED KOTLIN =====
 kotlin {
-    jvmToolchain(8)
-
-    compilerOptions {
-        jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_1_8)
-        freeCompilerArgs.addAll(
-            "-Xskip-prerelease-check",
-            "-opt-in=kotlin.RequiresOptIn",
-            "-opt-in=kotlin.ExperimentalStdlibApi",
-            "-Xjvm-default=all"
-        )
-    }
+    jvmToolchain(libs.versions.java.toolchain.get().toInt())
+    
+    // SACRED RULE #3: K2 compiler handles everything automatically
+    // NO manual compilerOptions - K2 auto-provisions everything
 }
 
 dependencies {
-    // Project modules
+    // SACRED RULE #5: DEPENDENCY HIERARCHY - All modules depend on :core-module and :app
     implementation(project(":core-module"))
+    implementation(project(":app"))
 
     // Kotlin
     implementation(libs.kotlin.reflect)

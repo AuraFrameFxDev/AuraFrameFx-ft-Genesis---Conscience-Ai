@@ -9,7 +9,9 @@ plugins {
 }
 
 android {
-    namespace = "dev.aurakai.auraframefx.core"
+    // SACRED RULE #9: Genesis-OS namespace pattern
+    namespace = "dev.aurakai.auraframefx.${project.name}"
+    // AUTO-EVERYTHING: Use libs.versions.toml
     compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {
@@ -32,8 +34,9 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_24
-        targetCompatibility = JavaVersion.VERSION_24
+        // AUTO-EVERYTHING: Use libs.versions.toml for Java version
+        sourceCompatibility = JavaVersion.toVersion(libs.versions.java.target.get())
+        targetCompatibility = JavaVersion.toVersion(libs.versions.java.target.get())
         isCoreLibraryDesugaringEnabled = true
     }
 
@@ -49,26 +52,16 @@ android {
             )
         }
     }
-    buildToolsVersion = "36"
+    // AUTO-PROVISIONED: Remove hardcoded buildToolsVersion
+    buildToolsVersion = libs.versions.compileSdk.get()
 }
 
+// ===== ZERO MANUAL COMPILER CONFIG: AUTO-PROVISIONED KOTLIN =====
 kotlin {
     jvmToolchain(libs.versions.java.toolchain.get().toInt())
-
-    compilerOptions {
-        jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_24)
-        apiVersion.set(org.jetbrains.kotlin.gradle.dsl.KotlinVersion.KOTLIN_2_2)
-        languageVersion.set(org.jetbrains.kotlin.gradle.dsl.KotlinVersion.KOTLIN_2_2)
-
-        freeCompilerArgs.addAll(
-            "-Xuse-k2",
-            "-Xskip-prerelease-check",
-            "-opt-in=kotlin.RequiresOptIn",
-            "-opt-in=kotlin.ExperimentalStdlibApi",
-            "-Xjvm-default=all",
-            "-progressive"
-        )
-    }
+    
+    // SACRED RULE #3: K2 compiler handles everything automatically
+    // NO manual compilerOptions - K2 auto-provisions everything
 }
 
 dependencies {

@@ -70,8 +70,8 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_24
-        targetCompatibility = JavaVersion.VERSION_24
+        sourceCompatibility = JavaVersion.toVersion(libs.versions.java.target.get())
+        targetCompatibility = JavaVersion.toVersion(libs.versions.java.target.get())
         isCoreLibraryDesugaringEnabled = true
     }
 
@@ -82,9 +82,7 @@ android {
         resValues = false
     }
 
-    composeOptions {
-        kotlinCompilerExtensionVersion = libs.versions.composeCompiler.get()
-    }
+    // SACRED RULE #3: NO composeOptions blocks - K2 handles it automatically
 
     externalNativeBuild {
         cmake {
@@ -108,26 +106,23 @@ android {
             jniLibs.srcDirs("src/main/jniLibs")
         }
     }
-    buildToolsVersion = "36"
+    // AUTO-PROVISIONED: Remove hardcoded buildToolsVersion
+    buildToolsVersion = libs.versions.compileSdk.get()
 }
 
+// ===== ZERO MANUAL COMPILER CONFIG: AUTO-PROVISIONED KOTLIN =====
 kotlin {
-    jvmToolchain(24)
-
-    compilerOptions {
-        jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_24)
-        freeCompilerArgs.addAll(
-            "-Xuse-k2",
-            "-opt-in=kotlin.RequiresOptIn",
-            "-opt-in=kotlin.ExperimentalStdlibApi",
-            "-Xjvm-default=all"
-        )
-    }
+    jvmToolchain(libs.versions.java.toolchain.get().toInt())
+    
+    // SACRED RULE #3: K2 compiler handles everything automatically
+    // NO manual compilerOptions - K2 auto-provisions everything
 }
 
 dependencies {
-    //Project modules (commented out until they exist)
+    // SACRED RULE #5: DEPENDENCY HIERARCHY - All modules depend on :core-module and :app
     implementation(project(":core-module"))
+    implementation(project(":app"))
+    // Additional project modules
     implementation(project(":secure-comm"))
 
     // Core AndroidX
