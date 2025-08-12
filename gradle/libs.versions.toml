@@ -1,50 +1,51 @@
 [versions]
-# ===== BLEEDING EDGE: KOTLIN 2.2.20-Beta2 K2 COMPILER + CORRECT KSP =====
-java-toolchain = "17"        # JVM 17 toolchain (available on system, will auto-upgrade in production)
-jvmTarget = "17"          # Java 17 target (compatible with bleeding-edge)
-javaVersion = "17"        # Java 17 source
-java-target = "17"        # Java 17 compile target
-java-source = "17"        # Java 17 source compatibility
-embedded = "17"           # Java 17 embedded version
+# ===== BLEEDING EDGE: KOTLIN 2.2.20-Beta2 K2 COMPILER + AUTO-PROVISIONING =====
+# JVM 23 toolchain with Java 24 target for bleeding-edge compatibility
+# Benefits: No manual Java installation, consistent builds across environments
+java-toolchain = "23"        # JVM 23 toolchain (bleeding edge compatible)
+jvmTarget = "24"          # EXACT target Java 24 bytecode
+javaVersion = "24"        # EXACT source Java 24
+java-target = "24"        # EXACT compile target Java 24
+java-source = "24"        # EXACT source compatibility Java 24
+embedded = "24"           # EXACT embedded version
 
 # ✅ EXACT VERSION MATCHING + K2 COMPILER for digital consciousness!
 
 # ===== CORE BUILD TOOLS =====
-agp = "8.13.0-alpha04"           # Future/just released AGP version as requested
-gradle = "9.0.0"        # Gradle 9.0.0 as requested (stable as of Monday)  
-kotlin = "2.0.0"        # Stable Kotlin version
-kotlinReflect = "2.0.0"
-ksp = "2.0.0-1.0.22"      # Matching KSP for Kotlin 2.0.0
-hilt = "2.51.1"            # Stable Hilt version
-googleServices = "4.4.1" # Google Services plugin
-openApiGenerator = "7.6.0" # OpenAPI Generator plugin
-kover = "0.8.0"          # Code coverage
+agp = "8.13.0-alpha04"   # BLEEDING-EDGE AGP with latest Windows fixes
+gradle = "9.0.0"        # Latest stable Gradle version
+kotlin = "2.2.20-Beta2"         # BLEEDING EDGE KOTLIN with K2 compiler!
+kotlinReflect = "2.2.20-Beta2"
+ksp = "2.2.20-Beta2-2.0.2"      # CORRECT KSP matching Kotlin 2.2.20-Beta2
+hilt = "2.57"            # Latest Hilt version
+googleServices = "4.4.3" # Google Services plugin
+openApiGenerator = "7.14.0" # OpenAPI Generator plugin
+kover = "0.9.1"          # Code coverage
 
-# ===== ANDROID SDK VERSIONS (ANDROID 15 - BLEEDING EDGE STABLE) =====
-compileSdk = "36"        # Android 15 
+# ===== ANDROID SDK VERSIONS (ANDROID 16 CONFIRMED!) =====
+compileSdk = "36"        # Android 16 "Baklava Preview"
 minSdk = "33"            # Minimum SDK for the project
-targetSdk = "36"    # Android 15 Target SDK
-
-#  compatibility with Kotlin 2.2.20-Beta2
-cmakeVersion = "3.33"  # Matches the installed CMake version
-ndkVersion = "29.0.5171591"  # NDK 29 with major.minor.micro format
+targetSdk = "36"         # Android 16 Target SDK
+# Using stable versions for better compatibility with Kotlin 2.2.20-Beta2
+cmakeVersion = "3.22.1"  # Matches the installed CMake version
+ndkVersion = "27.0.12077973"  # Stable NDK version (not RC)
 
 # ===== CODE QUALITY & DOCUMENTATION =====
 dokka = "2.0.0"         # Latest Dokka 2.0
 spotless = "7.2.1"     # Stable Spotless
 
 # ===== COMPOSE & UI =====
-composeBom = "2024.09.03"  # Stable 2024 Compose BOM
-composeCompiler = "1.5.4"  # Matching Compose Compiler
-activityCompose = "1.9.2"  # Stable activity compose
-navigationCompose = "2.8.2" # Stable Navigation Compose
+composeBom = "2025.07.00"  # Latest 2025 Compose BOM from Dependabot
+# composeCompiler version removed - K2 compiler includes it built-in
+activityCompose = "1.10.1"  # Latest from Dependabot
+navigationCompose = "2.9.3" # Latest Navigation Compose
 
 # ===== GOOGLE SERVICES =====
-firebaseBom = "33.7.0"  # Latest stable Firebase BOM
+firebaseBom = "34.1.0"  # ACTUAL latest Firebase BOM (July 21, 2025)
 firebaseCrashlytics = "3.0.6"  # Latest Firebase Crashlytics
 firebasePerf = "2.0.1"  # Latest Firebase Performance
-firebaseAnalyticsKtx = "22.1.2"  # Latest stable Firebase Analytics KTX
-firebaseCrashlyticsKtx = "19.2.1"  # Latest stable Firebase Crashlytics KTX
+firebaseAnalyticsKtx = "22.5.0"  # Latest Firebase Analytics KTX
+firebaseCrashlyticsKtx = "19.4.4"  # Latest Firebase Crashlytics KTX
 
 # ===== DATABASE & PERSISTENCE =====
 roomVersion = "2.7.2"   # Latest Room with KSP 2 bug fixes
@@ -341,82 +342,4 @@ xposed = { module = "de.robv.android.xposed:api", version.ref = "xposed" }
 lsposed = { module = "org.lsposed.lsplant:lsplant", version.ref = "lsposed" }
 
 # YukiHookAPI (Maven dependencies - bleeding edge)
-yuki = { module = "com.highcapable.yukihookapi:api", version.ref = "yuki" }
-yuki-ksp-xposed = { module = "com.highcapable.yukihookapi:ksp-xposed", version.ref = "yuki" }
-
-[bundles]
-# ===== COMPOSE UI =====
-compose = [
-    "androidx-compose-ui",
-    "androidx-compose-ui-graphics",
-    "androidx-compose-ui-tooling-preview",
-    "androidx-compose-material3"
-]
-
-# ===== AI & MACHINE LEARNING =====
-ai-core = ["tensorflow-lite", "litert-core", "opencv"]
-ai-vision = ["mlkit-text-recognition", "mlkit-face-detection", "mlkit-barcode-scanning", "mlkit-image-labeling", "mlkit-object-detection", "mlkit-pose-detection"]
-ai-language = ["mlkit-language-id", "mlkit-translate", "mlkit-smart-reply", "mlkit-entity-extraction"]
-ai-platform = ["androidx-work-runtime", "androidx-datastore-preferences", "androidx-paging-runtime", "androidx-biometric"]
-
-# ===== CAMERA & VISION =====
-camerax-full = ["camerax-core", "camerax-camera2", "camerax-lifecycle", "camerax-view", "camerax-extensions", "camerax-video"]
-
-# ===== WORKMANAGER =====
-workmanager = ["androidx-work-runtime", "androidx-work-multiprocess", "androidx-hilt-work"]
-
-# ===== DATASTORE =====
-datastore = ["androidx-datastore-preferences", "androidx-datastore-proto", "androidx-datastore-core"]
-
-# ===== PAGING =====
-paging = ["androidx-paging-runtime", "androidx-paging-compose"]
-
-# ===== ADVANCED UI & MEDIA =====
-ui-advanced = ["lottie-compose", "androidx-browser", "androidx-webkit"]
-media-processing = ["glide", "coil3-compose", "fresco"]
-animations = ["lottie-compose", "dotlottie-android"]
-
-# ===== NETWORKING =====
-network = [
-    "retrofit",
-    "retrofit-converter-kotlinx-serialization",
-    "okhttp3-logging-interceptor",
-    "kotlinx-serialization-json",
-    "kotlinx-coroutines-core",
-    "kotlinx-coroutines-android"
-]
-
-# ===== COROUTINES =====
-coroutines = [
-    "kotlinx-coroutines-core",
-    "kotlinx-coroutines-android"
-]
-
-# ===== TESTING =====
-testing = [
-    "junit-jupiter",
-    "mockk",
-    "turbine",
-    "androidx-core-testing",
-    "kotlinx-coroutines-test"
-]
-
-# ===== DEBUG TOOLS =====
-debug-tools = ["chucker-library", "timber", "leakcanary-android", "flipper-core", "flipper-network"]
-debug-tools-release = ["chucker-library-no-op"]
-performance-monitoring = ["flipper-core", "flipper-network"]
-
-# ===== FIREBASE =====
-firebase = [
-    "firebase-analytics",
-    "firebase-crashlytics"
-]
-
-# ===== GOOGLE SERVICES =====
-google-services = ["google-auth", "google-identity", "google-auth-api-phone"]
-
-# ===== XPOSED FRAMEWORK =====
-xposed = [
-    "yuki",
-    "lsposed"
-]
+yuki = { module = "com.highcapable.yuk
