@@ -7,6 +7,7 @@ import org.junit.Assert.*
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
+import java.security.KeyStore
 
 /**
  * Tests for the CryptoManager class in the NeuralSync recovery system.

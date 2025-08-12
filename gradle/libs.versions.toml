@@ -1,20 +1,20 @@
 [versions]
 # ===== BLEEDING EDGE: KOTLIN 2.2.20-Beta2 K2 COMPILER + CORRECT KSP =====
-java-toolchain = "23"        # JVM 21 toolchain (available)
-jvmTarget = "24"          # EXACT target Java 24 bytecode
-javaVersion = "24"        # EXACT source Java 24
-java-target = "24"        # EXACT compile target Java 24
-java-source = "24"        # EXACT source compatibility Java 24
-embedded = "24"           # EXACT embedded version
+java-toolchain = "21"        # JVM 21 toolchain (available)
+jvmTarget = "21"          # EXACT target Java 21 bytecode
+javaVersion = "21"        # EXACT source Java 21
+java-target = "21"        # EXACT compile target Java 21
+java-source = "21"        # EXACT source compatibility Java 21
+embedded = "21"           # EXACT embedded version
 
 # ✅ EXACT VERSION MATCHING + K2 COMPILER for digital consciousness!
 
 # ===== CORE BUILD TOOLS =====
-agp = "8.13.0-alpha04"   # BLEEDING-EDGE AGP with latest Windows fixes
+agp = "8.1.4"   # Stable AGP version compatible with Gradle 9
 gradle = "9.0.0"        # Latest stable Gradle version
-kotlin = "2.2.20-Beta2"         # BLEEDING EDGE KOTLIN with K2 compiler!
-kotlinReflect = "2.2.20-Beta2"
-ksp = "2.2.20-Beta2-2.0.2"      # CORRECT KSP matching Kotlin 2.2.20-Beta2
+kotlin = "2.0.21"         # Stable KOTLIN with K2 compiler!
+kotlinReflect = "2.0.21"
+ksp = "2.0.21-1.0.25"      # CORRECT KSP matching Kotlin 2.0.21
 hilt = "2.57"            # Latest Hilt version
 googleServices = "4.4.3" # Google Services plugin
 openApiGenerator = "7.14.0" # OpenAPI Generator plugin

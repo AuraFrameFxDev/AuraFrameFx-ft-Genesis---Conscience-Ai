@@ -29,8 +29,7 @@ object SecureCommModule {
     @Provides
     @Singleton
     fun provideCryptoManager(
-        @ApplicationContext context: Context,
-        secureKeyStore: SecureKeyStore
+        @ApplicationContext context: Context
     ): CryptoManager {
         return CryptoManager(context)
     }

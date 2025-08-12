@@ -43,6 +43,22 @@ openapiSpecs.forEach { (name, spec, pkg) ->
         )
         packageName.set(pkg)
         
+        // Fix: Prevent generating unnecessary files
+        skipOverwrite.set(true)
+        generateApiTests.set(false)
+        generateModelTests.set(false)
+        generateApiDocumentation.set(false)
+        generateModelDocumentation.set(false)
+        
+        // Fix: Configure global properties to prevent gradle files
+        globalProperties.set(mapOf(
+            "supportingFiles" to "",
+            "modelTests" to "false",
+            "apiTests" to "false",
+            "modelDocs" to "false",
+            "apiDocs" to "false"
+        ))
+        
         val configFileObj = file("${rootDir}${File.separator}openapi-generator-config.json")
         if (configFileObj.exists()) {
             configFile.set(configFileObj.absolutePath)

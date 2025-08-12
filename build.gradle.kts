@@ -50,7 +50,7 @@ subprojects {
             targetCompatibility = libs.versions.java.target.get()
         }
 
-        // Configure Java toolchain (JVM 22 for Java 24 bytecode)
+        // Configure Java toolchain (JVM 21 for Java 21 bytecode)
         extensions.findByType<JavaPluginExtension>()?.apply {
             toolchain {
                 languageVersion.set(
@@ -72,7 +72,7 @@ tasks.register("verifyJava24Configuration") {
     description = "Verify Java 24 bleeding edge configuration"
 
     doLast {
-        println("✅ Java 24 Bleeding Edge Configuration Verified")
+        println("✅ Java 21 Bleeding Edge Configuration Verified")
         println("📋 JVM Toolchain: ${libs.versions.java.toolchain.get()}")
         println("📋 Java Target: ${libs.versions.java.target.get()}")
         println("📋 Kotlin: ${libs.versions.kotlin.get()}")
@@ -162,7 +162,7 @@ tasks.register("verifyBleedingEdge") {
 
     doLast {
         println("🚀 BLEEDING EDGE VERIFICATION")
-        println("   Java: 24.0.2")
+        println("   Java: 21.0.2")
         println("   Gradle: 9.0.0")
         println("   Kotlin: 2.2.20-beta04 (K2)")
         println("   AGP: 8.13.0-alpha04")
