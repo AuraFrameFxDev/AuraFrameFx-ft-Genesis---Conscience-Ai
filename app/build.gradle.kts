@@ -192,7 +192,6 @@ afterEvaluate {
 }
 
 dependencies {
- implementation("com.android.tools.build:gradle-api:8.13.0-alpha04
     // ===== CORE ANDROIDX =====
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.core.ktx)
