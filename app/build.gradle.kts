@@ -16,7 +16,7 @@ tasks.named("openApiGenerate") {
     enabled = false
 }
 
-// ===== OPENAPI CODE GENERATION (OUTSIDE ANDROID BLOCK) =====
+// ===== OPENAPI CODE GENERATION WITH CLEAN REGENERATION =====
 val openapiSpecs = listOf(
     Triple("ai", "ai-api.yml", "dev.aurakai.auraframefx.api.ai"),
     Triple("customization", "customization-api.yml", "dev.aurakai.auraframefx.api.customization"),
@@ -26,35 +26,99 @@ val openapiSpecs = listOf(
     Triple("system", "system-api.yml", "dev.aurakai.auraframefx.api.system")
 )
 
+// Task to clean all OpenAPI generated directories
+tasks.register("cleanOpenApiGenerated") {
+    group = "openapi"
+    description = "Clean all OpenAPI generated directories"
+    
+    doLast {
+        val generatedDir = layout.buildDirectory.dir("generated/openapi").get().asFile
+        if (generatedDir.exists()) {
+            println("Cleaning OpenAPI generated directory: ${generatedDir.absolutePath}")
+            generatedDir.deleteRecursively()
+        }
+    }
+}
+
+// Generate individual API client tasks with clean regeneration
 openapiSpecs.forEach { (name, spec, pkg) ->
-    tasks.register(
-        "generate${name.replaceFirstChar { it.uppercase() }}ApiClient",
-        GenerateTask::class
-    ) {
+    val taskName = "generate${name.replaceFirstChar { it.uppercase() }}ApiClient"
+    val cleanTaskName = "clean${name.replaceFirstChar { it.uppercase() }}ApiClient"
+    
+    // Individual clean task for each API
+    tasks.register(cleanTaskName) {
+        group = "openapi"
+        description = "Clean generated code for $name API"
+        
+        doLast {
+            val outputDir = layout.buildDirectory.dir("generated/openapi/$name").get().asFile
+            if (outputDir.exists()) {
+                println("Cleaning $name API generated directory: ${outputDir.absolutePath}")
+                outputDir.deleteRecursively()
+            }
+        }
+    }
+    
+    // Generation task
+    tasks.register(taskName, GenerateTask::class) {
+        group = "openapi"
+        description = "Generate API client for $name"
+        
+        // Always clean before generating
+        dependsOn(cleanTaskName)
+        
         generatorName.set("kotlin")
         library.set("jvm-retrofit2")
         
-        // FIX: Use proper file path handling for Windows spaces
-        val specFile = file("${rootDir}${File.separator}api-spec${File.separator}$spec")
-        inputSpec.set(specFile.toURI().toString())
+        // Use proper file path handling
+        val specFile = file("$rootDir/api-spec/$spec")
+        inputSpec.set(specFile.absolutePath)
         
-        outputDir.set(
-            layout.buildDirectory.dir("generated/openapi/$name").get().asFile.absolutePath
-        )
+        val outputDirFile = layout.buildDirectory.dir("generated/openapi/$name").get().asFile
+        outputDir.set(outputDirFile.absolutePath)
         packageName.set(pkg)
         
-        val configFileObj = file("${rootDir}${File.separator}openapi-generator-config.json")
+        val configFileObj = file("$rootDir/openapi-generator-config.json")
         if (configFileObj.exists()) {
             configFile.set(configFileObj.absolutePath)
         }
         
         validateSpec.set(false)
         
-        // Ensure file exists
+        // Ensure clean directory and file exists
         doFirst {
             if (!specFile.exists()) {
                 throw GradleException("OpenAPI spec file not found: ${specFile.absolutePath}")
             }
+            
+            // Ensure output directory is clean
+            if (outputDirFile.exists()) {
+                outputDirFile.deleteRecursively()
+            }
+            outputDirFile.mkdirs()
+            
+            println("Generating $name API client from ${specFile.name}")
+        }
+        
+        // Always consider this task out of date to force regeneration
+        outputs.upToDateWhen { false }
+    }
+}
+
+// Master task to generate all API clients
+tasks.register("generateAllApiClients") {
+    group = "openapi"
+    description = "Generate all API clients with clean regeneration"
+    
+    dependsOn("cleanOpenApiGenerated")
+    dependsOn(openapiSpecs.map { (name, _, _) -> 
+        "generate${name.replaceFirstChar { it.uppercase() }}ApiClient" 
+    })
+    
+    // Ensure clean runs before all generations
+    openapiSpecs.forEach { (name, _, _) ->
+        tasks.named("generate${name.replaceFirstChar { it.uppercase() }}ApiClient") {
+            mustRunAfter("cleanOpenApiGenerated")
         }
     }
 }
@@ -173,17 +237,32 @@ kotlin {
     jvmToolchain(libs.versions.java.toolchain.get().toInt())
 }
 
-// ===== BUILD TASK DEPENDENCIES =====
+// ===== BUILD TASK DEPENDENCIES WITH CLEAN GENERATION =====
 afterEvaluate {
+    // Clean and generate on every sync/build
     tasks.named("preBuild") {
-        dependsOn(
-            "generateAiApiClient",
-            "generateCustomizationApiClient",
-            "generateGenesisApiClient",
-            "generateOracleDriveApiClient",
-            "generateSandboxApiClient",
-            "generateSystemApiClient"
-        )
+        dependsOn("generateAllApiClients")
+    }
+    
+    // Ensure generation runs on every important build lifecycle event
+    tasks.matching { 
+        it.name.startsWith("assemble") || 
+        it.name.startsWith("compile") ||
+        it.name == "prepareKotlinBuildScriptModel" ||
+        it.name == "generateDebugSources" ||
+        it.name == "generateReleaseSources"
+    }.configureEach {
+        dependsOn("generateAllApiClients")
+    }
+    
+    // Hook into source generation tasks
+    tasks.withType<JavaCompile> {
+        dependsOn("generateAllApiClients")
+    }
+    
+    // Ensure clean runs before any compile tasks
+    tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
+        dependsOn("generateAllApiClients")
     }
 }
 

@@ -1,0 +1,27 @@
+{
+  "modelPackage": "dev.aurakai.auraframefx.api.model",
+  "apiPackage": "dev.aurakai.auraframefx.api.client",
+  "invokerPackage": "dev.aurakai.auraframefx.api",
+  "removeOperationIdPrefix": true,
+  "serializationLibrary": "kotlinx_serialization",
+  "dateLibrary": "kotlinx-datetime",
+  "collectionType": "list",
+  "generateModelDocumentation": false,
+  "generateApiDocumentation": false,
+  "generateApiTests": false,
+  "generateModelTests": false,
+  "useBeanValidation": false,
+  "useCoroutines": true,
+  "omitGradleVersion": true,
+  "omitGradleWrapper": true,
+  "additionalProperties": {
+    "enumPropertyNaming": "UPPERCASE",
+    "sortParamsByRequiredFlag": true,
+    "sortModelPropertiesByRequiredFlag": true,
+    "supportsES6": true,
+    "library": "jvm-retrofit2",
+    "useCoroutines": true,
+    "packageName": "dev.aurakai.auraframefx.api",
+    "removeOperationIdPrefix": true
+  }
+}

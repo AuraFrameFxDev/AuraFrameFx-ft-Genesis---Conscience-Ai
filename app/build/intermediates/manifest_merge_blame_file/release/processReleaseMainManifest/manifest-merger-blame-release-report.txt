@@ -1,0 +1,441 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="dev.aurakai.auraframefx"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="33"
+9        android:targetSdkVersion="36" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:4:5-67
+11-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.VIBRATE" />
+12-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:5:5-66
+12-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:5:22-63
+13    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+13-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:6:5-81
+13-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:6:22-78
+14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+14-->[com.google.android.gms:play-services-measurement-api:23.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\9646dd0ecfe621f71ec3108cdbe5327c\transformed\play-services-measurement-api-23.0.0\AndroidManifest.xml:23:5-79
+14-->[com.google.android.gms:play-services-measurement-api:23.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\9646dd0ecfe621f71ec3108cdbe5327c\transformed\play-services-measurement-api-23.0.0\AndroidManifest.xml:23:22-76
+15    <uses-permission android:name="android.permission.WAKE_LOCK" />
+15-->[com.google.android.gms:play-services-measurement-api:23.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\9646dd0ecfe621f71ec3108cdbe5327c\transformed\play-services-measurement-api-23.0.0\AndroidManifest.xml:24:5-68
+15-->[com.google.android.gms:play-services-measurement-api:23.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\9646dd0ecfe621f71ec3108cdbe5327c\transformed\play-services-measurement-api-23.0.0\AndroidManifest.xml:24:22-65
+16    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+16-->[com.google.android.gms:play-services-measurement-api:23.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\9646dd0ecfe621f71ec3108cdbe5327c\transformed\play-services-measurement-api-23.0.0\AndroidManifest.xml:25:5-79
+16-->[com.google.android.gms:play-services-measurement-api:23.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\9646dd0ecfe621f71ec3108cdbe5327c\transformed\play-services-measurement-api-23.0.0\AndroidManifest.xml:25:22-76
+17    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
+17-->[com.google.android.gms:play-services-measurement-api:23.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\9646dd0ecfe621f71ec3108cdbe5327c\transformed\play-services-measurement-api-23.0.0\AndroidManifest.xml:26:5-88
+17-->[com.google.android.gms:play-services-measurement-api:23.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\9646dd0ecfe621f71ec3108cdbe5327c\transformed\play-services-measurement-api-23.0.0\AndroidManifest.xml:26:22-85
+18    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
+18-->[com.google.android.gms:play-services-measurement-api:23.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\9646dd0ecfe621f71ec3108cdbe5327c\transformed\play-services-measurement-api-23.0.0\AndroidManifest.xml:27:5-82
+18-->[com.google.android.gms:play-services-measurement-api:23.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\9646dd0ecfe621f71ec3108cdbe5327c\transformed\play-services-measurement-api-23.0.0\AndroidManifest.xml:27:22-79
+19    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+19-->[com.google.android.gms:play-services-measurement:23.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\46703d5d57294b4b107e79d1075f96be\transformed\play-services-measurement-23.0.0\AndroidManifest.xml:26:5-110
+19-->[com.google.android.gms:play-services-measurement:23.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\46703d5d57294b4b107e79d1075f96be\transformed\play-services-measurement-23.0.0\AndroidManifest.xml:26:22-107
+20
+21    <permission
+21-->[androidx.core:core:1.16.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\b985a53813b492c823b3777cc34dee45\transformed\core-1.16.0\AndroidManifest.xml:22:5-24:47
+22        android:name="dev.aurakai.auraframefx.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+22-->[androidx.core:core:1.16.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\b985a53813b492c823b3777cc34dee45\transformed\core-1.16.0\AndroidManifest.xml:23:9-81
+23        android:protectionLevel="signature" />
+23-->[androidx.core:core:1.16.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\b985a53813b492c823b3777cc34dee45\transformed\core-1.16.0\AndroidManifest.xml:24:9-44
+24
+25    <uses-permission android:name="dev.aurakai.auraframefx.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+25-->[androidx.core:core:1.16.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\b985a53813b492c823b3777cc34dee45\transformed\core-1.16.0\AndroidManifest.xml:26:5-97
+25-->[androidx.core:core:1.16.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\b985a53813b492c823b3777cc34dee45\transformed\core-1.16.0\AndroidManifest.xml:26:22-94
+26
+27    <application
+27-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:8:5-72:19
+28        android:name="dev.aurakai.auraframefx.AuraFrameApplication"
+28-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:9:9-45
+29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+29-->[androidx.core:core:1.16.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\b985a53813b492c823b3777cc34dee45\transformed\core-1.16.0\AndroidManifest.xml:28:18-86
+30        android:enableOnBackInvokedCallback="true"
+30-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:15:9-51
+31        android:extractNativeLibs="true"
+32        android:icon="@mipmap/ic_launcher"
+32-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:10:9-43
+33        android:label="AuraFrameFX LSPosed Module"
+33-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:11:9-51
+34        android:roundIcon="@mipmap/ic_launcher_round"
+34-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:12:9-54
+35        android:supportsRtl="true"
+35-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:13:9-35
+36        android:theme="@style/Theme.AuraFrameFX" >
+36-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:14:9-49
+37
+38        <!-- Genesis-OS Xposed/LSPosed Module Configuration -->
+39        <meta-data
+39-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:17:9-19:36
+40            android:name="xposedmodule"
+40-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:18:13-40
+41            android:value="true" />
+41-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:19:13-33
+42        <meta-data
+42-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:20:9-22:58
+43            android:name="xposeddescription"
+43-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:21:13-45
+44            android:value="@string/xposed_description" />
+44-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:22:13-55
+45        <meta-data
+45-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:23:9-25:34
+46            android:name="xposedminversion"
+46-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:24:13-44
+47            android:value="82" />
+47-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:25:13-31
+48        <meta-data
+48-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:26:9-28:54
+49            android:name="xposedscope"
+49-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:27:13-39
+50            android:resource="@array/xposed_scope" />
+50-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:28:13-51
+51
+52        <!-- Yuki Hook API Configuration -->
+53        <meta-data
+53-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:31:9-33:36
+54            android:name="yukihookapi_module"
+54-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:32:13-46
+55            android:value="true" />
+55-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:33:13-33
+56        <meta-data
+56-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:34:9-36:55
+57            android:name="yukihookapi_module_name"
+57-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:35:13-51
+58            android:value="Genesis-OS AI Framework" />
+58-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:36:13-52
+59        <meta-data
+59-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:37:9-39:37
+60            android:name="yukihookapi_module_version"
+60-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:38:13-54
+61            android:value="1.0.0" />
+61-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:39:13-34
+62
+63        <activity
+63-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:41:9-48:20
+64            android:name="dev.aurakai.auraframefx.MainActivity"
+64-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:42:13-41
+65            android:exported="true" >
+65-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:43:13-36
+66            <intent-filter>
+66-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:44:13-47:29
+67                <action android:name="android.intent.action.MAIN" />
+67-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:45:17-69
+67-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:45:25-66
+68
+69                <category android:name="android.intent.category.LAUNCHER" />
+69-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:46:17-77
+69-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:46:27-74
+70            </intent-filter>
+71        </activity>
+72
+73        <service
+73-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:50:9-52:40
+74            android:name="dev.aurakai.auraframefx.VertexSyncService"
+74-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:51:13-46
+75            android:exported="false" />
+75-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:52:13-37
+76        <service
+76-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:53:9-55:40
+77            android:name="dev.aurakai.auraframefx.security.IntegrityMonitorService"
+77-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:54:13-61
+78            android:exported="false" />
+78-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:55:13-37
+79
+80        <receiver
+80-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:57:9-64:20
+81            android:name="dev.aurakai.auraframefx.receivers.BootCompletedReceiver"
+81-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:58:13-60
+82            android:enabled="true"
+82-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:59:13-35
+83            android:exported="true" >
+83-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:60:13-36
+84            <intent-filter>
+84-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:61:13-63:29
+85                <action android:name="android.intent.action.BOOT_COMPLETED" />
+85-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:62:17-79
+85-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:62:25-76
+86            </intent-filter>
+87        </receiver>
+88        <receiver
+88-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:65:9-71:20
+89            android:name="dev.aurakai.auraframefx.security.IntegrityViolationReceiver"
+89-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:66:13-64
+90            android:exported="true" >
+90-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:67:13-36
+91            <intent-filter>
+91-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:68:13-70:29
+92                <action android:name="dev.aurakai.auraframefx.ACTION_INTEGRITY_VIOLATION" />
+92-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:69:17-93
+92-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\app\src\main\AndroidManifest.xml:69:25-90
+93            </intent-filter>
+94        </receiver>
+95
+96        <service
+96-->[com.google.firebase:firebase-analytics-ktx:22.5.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\e270132e7e8b904326629f132290bd3e\transformed\firebase-analytics-ktx-22.5.0\AndroidManifest.xml:8:9-14:19
+97            android:name="com.google.firebase.components.ComponentDiscoveryService"
+97-->[com.google.firebase:firebase-analytics-ktx:22.5.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\e270132e7e8b904326629f132290bd3e\transformed\firebase-analytics-ktx-22.5.0\AndroidManifest.xml:9:13-84
+98            android:directBootAware="true"
+98-->[com.google.firebase:firebase-common:22.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\8a0218999e524b791c499166f4c39e95\transformed\firebase-common-22.0.0\AndroidManifest.xml:32:13-43
+99            android:exported="false" >
+99-->[com.google.firebase:firebase-analytics-ktx:22.5.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\e270132e7e8b904326629f132290bd3e\transformed\firebase-analytics-ktx-22.5.0\AndroidManifest.xml:10:13-37
+100            <meta-data
+100-->[com.google.firebase:firebase-analytics-ktx:22.5.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\e270132e7e8b904326629f132290bd3e\transformed\firebase-analytics-ktx-22.5.0\AndroidManifest.xml:11:13-13:85
+101                android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsLegacyRegistrar"
+101-->[com.google.firebase:firebase-analytics-ktx:22.5.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\e270132e7e8b904326629f132290bd3e\transformed\firebase-analytics-ktx-22.5.0\AndroidManifest.xml:12:17-129
+102                android:value="com.google.firebase.components.ComponentRegistrar" />
+102-->[com.google.firebase:firebase-analytics-ktx:22.5.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\e270132e7e8b904326629f132290bd3e\transformed\firebase-analytics-ktx-22.5.0\AndroidManifest.xml:13:17-82
+103            <meta-data
+103-->[com.google.firebase:firebase-crashlytics-ktx:19.4.4] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\e6b19ccc9c60177e8123a074375e9ff8\transformed\firebase-crashlytics-ktx-19.4.4\AndroidManifest.xml:24:13-26:85
+104                android:name="com.google.firebase.components:com.google.firebase.crashlytics.ktx.FirebaseCrashlyticsKtxRegistrar"
+104-->[com.google.firebase:firebase-crashlytics-ktx:19.4.4] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\e6b19ccc9c60177e8123a074375e9ff8\transformed\firebase-crashlytics-ktx-19.4.4\AndroidManifest.xml:25:17-130
+105                android:value="com.google.firebase.components.ComponentRegistrar" />
+105-->[com.google.firebase:firebase-crashlytics-ktx:19.4.4] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\e6b19ccc9c60177e8123a074375e9ff8\transformed\firebase-crashlytics-ktx-19.4.4\AndroidManifest.xml:26:17-82
+106            <meta-data
+106-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\4ffd728f18cfb9ebf67401446d828443\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
+107                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+107-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\4ffd728f18cfb9ebf67401446d828443\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:13:17-116
+108                android:value="com.google.firebase.components.ComponentRegistrar" />
+108-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\4ffd728f18cfb9ebf67401446d828443\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:14:17-82
+109            <meta-data
+109-->[com.google.firebase:firebase-crashlytics:20.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\09c68fc4f6fd7bde4e3565f067b07d03\transformed\firebase-crashlytics-20.0.0\AndroidManifest.xml:15:13-17:85
+110                android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar"
+110-->[com.google.firebase:firebase-crashlytics:20.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\09c68fc4f6fd7bde4e3565f067b07d03\transformed\firebase-crashlytics-20.0.0\AndroidManifest.xml:16:17-126
+111                android:value="com.google.firebase.components.ComponentRegistrar" />
+111-->[com.google.firebase:firebase-crashlytics:20.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\09c68fc4f6fd7bde4e3565f067b07d03\transformed\firebase-crashlytics-20.0.0\AndroidManifest.xml:17:17-82
+112            <meta-data
+112-->[com.google.firebase:firebase-crashlytics:20.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\09c68fc4f6fd7bde4e3565f067b07d03\transformed\firebase-crashlytics-20.0.0\AndroidManifest.xml:18:13-20:85
+113                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+113-->[com.google.firebase:firebase-crashlytics:20.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\09c68fc4f6fd7bde4e3565f067b07d03\transformed\firebase-crashlytics-20.0.0\AndroidManifest.xml:19:17-115
+114                android:value="com.google.firebase.components.ComponentRegistrar" />
+114-->[com.google.firebase:firebase-crashlytics:20.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\09c68fc4f6fd7bde4e3565f067b07d03\transformed\firebase-crashlytics-20.0.0\AndroidManifest.xml:20:17-82
+115            <meta-data
+115-->[com.google.android.gms:play-services-measurement-api:23.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\9646dd0ecfe621f71ec3108cdbe5327c\transformed\play-services-measurement-api-23.0.0\AndroidManifest.xml:33:13-35:85
+116                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+116-->[com.google.android.gms:play-services-measurement-api:23.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\9646dd0ecfe621f71ec3108cdbe5327c\transformed\play-services-measurement-api-23.0.0\AndroidManifest.xml:34:17-139
+117                android:value="com.google.firebase.components.ComponentRegistrar" />
+117-->[com.google.android.gms:play-services-measurement-api:23.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\9646dd0ecfe621f71ec3108cdbe5327c\transformed\play-services-measurement-api-23.0.0\AndroidManifest.xml:35:17-82
+118            <meta-data
+118-->[com.google.firebase:firebase-sessions:3.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\e9c456d32fe4d54a980d036541aa7648\transformed\firebase-sessions-3.0.0\AndroidManifest.xml:25:13-27:85
+119                android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar"
+119-->[com.google.firebase:firebase-sessions:3.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\e9c456d32fe4d54a980d036541aa7648\transformed\firebase-sessions-3.0.0\AndroidManifest.xml:26:17-117
+120                android:value="com.google.firebase.components.ComponentRegistrar" />
+120-->[com.google.firebase:firebase-sessions:3.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\e9c456d32fe4d54a980d036541aa7648\transformed\firebase-sessions-3.0.0\AndroidManifest.xml:27:17-82
+121            <meta-data
+121-->[com.google.firebase:firebase-installations:19.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\1746bfe3123fa2e2bf3922ab98f98919\transformed\firebase-installations-19.0.0\AndroidManifest.xml:15:13-17:85
+122                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+122-->[com.google.firebase:firebase-installations:19.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\1746bfe3123fa2e2bf3922ab98f98919\transformed\firebase-installations-19.0.0\AndroidManifest.xml:16:17-130
+123                android:value="com.google.firebase.components.ComponentRegistrar" />
+123-->[com.google.firebase:firebase-installations:19.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\1746bfe3123fa2e2bf3922ab98f98919\transformed\firebase-installations-19.0.0\AndroidManifest.xml:17:17-82
+124            <meta-data
+124-->[com.google.firebase:firebase-installations:19.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\1746bfe3123fa2e2bf3922ab98f98919\transformed\firebase-installations-19.0.0\AndroidManifest.xml:18:13-20:85
+125                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+125-->[com.google.firebase:firebase-installations:19.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\1746bfe3123fa2e2bf3922ab98f98919\transformed\firebase-installations-19.0.0\AndroidManifest.xml:19:17-127
+126                android:value="com.google.firebase.components.ComponentRegistrar" />
+126-->[com.google.firebase:firebase-installations:19.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\1746bfe3123fa2e2bf3922ab98f98919\transformed\firebase-installations-19.0.0\AndroidManifest.xml:20:17-82
+127            <meta-data
+127-->[com.google.firebase:firebase-common:22.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\8a0218999e524b791c499166f4c39e95\transformed\firebase-common-22.0.0\AndroidManifest.xml:35:13-37:85
+128                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+128-->[com.google.firebase:firebase-common:22.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\8a0218999e524b791c499166f4c39e95\transformed\firebase-common-22.0.0\AndroidManifest.xml:36:17-109
+129                android:value="com.google.firebase.components.ComponentRegistrar" />
+129-->[com.google.firebase:firebase-common:22.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\8a0218999e524b791c499166f4c39e95\transformed\firebase-common-22.0.0\AndroidManifest.xml:37:17-82
+130            <meta-data
+130-->[com.google.firebase:firebase-datatransport:19.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\297319e2941f37203dc802c31141ab35\transformed\firebase-datatransport-19.0.0\AndroidManifest.xml:25:13-27:85
+131                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+131-->[com.google.firebase:firebase-datatransport:19.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\297319e2941f37203dc802c31141ab35\transformed\firebase-datatransport-19.0.0\AndroidManifest.xml:26:17-115
+132                android:value="com.google.firebase.components.ComponentRegistrar" />
+132-->[com.google.firebase:firebase-datatransport:19.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\297319e2941f37203dc802c31141ab35\transformed\firebase-datatransport-19.0.0\AndroidManifest.xml:27:17-82
+133        </service>
+134
+135        <provider
+135-->[com.google.firebase:firebase-common:22.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\8a0218999e524b791c499166f4c39e95\transformed\firebase-common-22.0.0\AndroidManifest.xml:23:9-28:39
+136            android:name="com.google.firebase.provider.FirebaseInitProvider"
+136-->[com.google.firebase:firebase-common:22.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\8a0218999e524b791c499166f4c39e95\transformed\firebase-common-22.0.0\AndroidManifest.xml:24:13-77
+137            android:authorities="dev.aurakai.auraframefx.firebaseinitprovider"
+137-->[com.google.firebase:firebase-common:22.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\8a0218999e524b791c499166f4c39e95\transformed\firebase-common-22.0.0\AndroidManifest.xml:25:13-72
+138            android:directBootAware="true"
+138-->[com.google.firebase:firebase-common:22.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\8a0218999e524b791c499166f4c39e95\transformed\firebase-common-22.0.0\AndroidManifest.xml:26:13-43
+139            android:exported="false"
+139-->[com.google.firebase:firebase-common:22.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\8a0218999e524b791c499166f4c39e95\transformed\firebase-common-22.0.0\AndroidManifest.xml:27:13-37
+140            android:initOrder="100" />
+140-->[com.google.firebase:firebase-common:22.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\8a0218999e524b791c499166f4c39e95\transformed\firebase-common-22.0.0\AndroidManifest.xml:28:13-36
+141
+142        <receiver
+142-->[com.google.android.gms:play-services-measurement:23.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\46703d5d57294b4b107e79d1075f96be\transformed\play-services-measurement-23.0.0\AndroidManifest.xml:29:9-33:20
+143            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+143-->[com.google.android.gms:play-services-measurement:23.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\46703d5d57294b4b107e79d1075f96be\transformed\play-services-measurement-23.0.0\AndroidManifest.xml:30:13-85
+144            android:enabled="true"
+144-->[com.google.android.gms:play-services-measurement:23.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\46703d5d57294b4b107e79d1075f96be\transformed\play-services-measurement-23.0.0\AndroidManifest.xml:31:13-35
+145            android:exported="false" >
+145-->[com.google.android.gms:play-services-measurement:23.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\46703d5d57294b4b107e79d1075f96be\transformed\play-services-measurement-23.0.0\AndroidManifest.xml:32:13-37
+146        </receiver>
+147
+148        <service
+148-->[com.google.android.gms:play-services-measurement:23.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\46703d5d57294b4b107e79d1075f96be\transformed\play-services-measurement-23.0.0\AndroidManifest.xml:35:9-38:40
+149            android:name="com.google.android.gms.measurement.AppMeasurementService"
+149-->[com.google.android.gms:play-services-measurement:23.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\46703d5d57294b4b107e79d1075f96be\transformed\play-services-measurement-23.0.0\AndroidManifest.xml:36:13-84
+150            android:enabled="true"
+150-->[com.google.android.gms:play-services-measurement:23.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\46703d5d57294b4b107e79d1075f96be\transformed\play-services-measurement-23.0.0\AndroidManifest.xml:37:13-35
+151            android:exported="false" />
+151-->[com.google.android.gms:play-services-measurement:23.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\46703d5d57294b4b107e79d1075f96be\transformed\play-services-measurement-23.0.0\AndroidManifest.xml:38:13-37
+152        <service
+152-->[com.google.android.gms:play-services-measurement:23.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\46703d5d57294b4b107e79d1075f96be\transformed\play-services-measurement-23.0.0\AndroidManifest.xml:39:9-43:72
+153            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+153-->[com.google.android.gms:play-services-measurement:23.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\46703d5d57294b4b107e79d1075f96be\transformed\play-services-measurement-23.0.0\AndroidManifest.xml:40:13-87
+154            android:enabled="true"
+154-->[com.google.android.gms:play-services-measurement:23.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\46703d5d57294b4b107e79d1075f96be\transformed\play-services-measurement-23.0.0\AndroidManifest.xml:41:13-35
+155            android:exported="false"
+155-->[com.google.android.gms:play-services-measurement:23.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\46703d5d57294b4b107e79d1075f96be\transformed\play-services-measurement-23.0.0\AndroidManifest.xml:42:13-37
+156            android:permission="android.permission.BIND_JOB_SERVICE" />
+156-->[com.google.android.gms:play-services-measurement:23.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\46703d5d57294b4b107e79d1075f96be\transformed\play-services-measurement-23.0.0\AndroidManifest.xml:43:13-69
+157        <service
+157-->[androidx.room:room-runtime-android:2.7.2] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\413113011dc3a5514216d41ffe7561b6\transformed\room-runtime-release\AndroidManifest.xml:24:9-28:63
+158            android:name="androidx.room.MultiInstanceInvalidationService"
+158-->[androidx.room:room-runtime-android:2.7.2] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\413113011dc3a5514216d41ffe7561b6\transformed\room-runtime-release\AndroidManifest.xml:25:13-74
+159            android:directBootAware="true"
+159-->[androidx.room:room-runtime-android:2.7.2] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\413113011dc3a5514216d41ffe7561b6\transformed\room-runtime-release\AndroidManifest.xml:26:13-43
+160            android:exported="false" />
+160-->[androidx.room:room-runtime-android:2.7.2] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\413113011dc3a5514216d41ffe7561b6\transformed\room-runtime-release\AndroidManifest.xml:27:13-37
+161
+162        <activity
+162-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\dccca201907341be8b01bb50b3c2ed34\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:9-173
+163            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+163-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\dccca201907341be8b01bb50b3c2ed34\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:19-85
+164            android:exported="false"
+164-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\dccca201907341be8b01bb50b3c2ed34\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:146-170
+165            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+165-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\dccca201907341be8b01bb50b3c2ed34\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:86-145
+166
+167        <uses-library
+167-->[androidx.window:window:1.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\fc4b94a0341fe4d94b9d37357968cfed\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+168            android:name="androidx.window.extensions"
+168-->[androidx.window:window:1.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\fc4b94a0341fe4d94b9d37357968cfed\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+169            android:required="false" />
+169-->[androidx.window:window:1.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\fc4b94a0341fe4d94b9d37357968cfed\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+170        <uses-library
+170-->[androidx.window:window:1.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\fc4b94a0341fe4d94b9d37357968cfed\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+171            android:name="androidx.window.sidecar"
+171-->[androidx.window:window:1.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\fc4b94a0341fe4d94b9d37357968cfed\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+172            android:required="false" />
+172-->[androidx.window:window:1.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\fc4b94a0341fe4d94b9d37357968cfed\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+173
+174        <provider
+174-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\7ebd157d13bb25095d7d3197db09c1be\transformed\emoji2-1.4.0\AndroidManifest.xml:24:9-32:20
+175            android:name="androidx.startup.InitializationProvider"
+175-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\7ebd157d13bb25095d7d3197db09c1be\transformed\emoji2-1.4.0\AndroidManifest.xml:25:13-67
+176            android:authorities="dev.aurakai.auraframefx.androidx-startup"
+176-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\7ebd157d13bb25095d7d3197db09c1be\transformed\emoji2-1.4.0\AndroidManifest.xml:26:13-68
+177            android:exported="false" >
+177-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\7ebd157d13bb25095d7d3197db09c1be\transformed\emoji2-1.4.0\AndroidManifest.xml:27:13-37
+178            <meta-data
+178-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\7ebd157d13bb25095d7d3197db09c1be\transformed\emoji2-1.4.0\AndroidManifest.xml:29:13-31:52
+179                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+179-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\7ebd157d13bb25095d7d3197db09c1be\transformed\emoji2-1.4.0\AndroidManifest.xml:30:17-75
+180                android:value="androidx.startup" />
+180-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\7ebd157d13bb25095d7d3197db09c1be\transformed\emoji2-1.4.0\AndroidManifest.xml:31:17-49
+181            <meta-data
+181-->[androidx.lifecycle:lifecycle-process:2.9.2] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\c792ccdd1003ac42810048d5998e29ba\transformed\lifecycle-process-2.9.2\AndroidManifest.xml:29:13-31:52
+182                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+182-->[androidx.lifecycle:lifecycle-process:2.9.2] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\c792ccdd1003ac42810048d5998e29ba\transformed\lifecycle-process-2.9.2\AndroidManifest.xml:30:17-78
+183                android:value="androidx.startup" />
+183-->[androidx.lifecycle:lifecycle-process:2.9.2] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\c792ccdd1003ac42810048d5998e29ba\transformed\lifecycle-process-2.9.2\AndroidManifest.xml:31:17-49
+184            <meta-data
+184-->[com.squareup.okhttp3:okhttp-android:5.1.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\aa656e5d5f58c78c33695bee14baaa8d\transformed\okhttp-release\AndroidManifest.xml:16:13-18:52
+185                android:name="okhttp3.internal.platform.PlatformInitializer"
+185-->[com.squareup.okhttp3:okhttp-android:5.1.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\aa656e5d5f58c78c33695bee14baaa8d\transformed\okhttp-release\AndroidManifest.xml:17:17-77
+186                android:value="androidx.startup" />
+186-->[com.squareup.okhttp3:okhttp-android:5.1.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\aa656e5d5f58c78c33695bee14baaa8d\transformed\okhttp-release\AndroidManifest.xml:18:17-49
+187            <meta-data
+187-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\411262a13af1db947b36e0b1575fbae9\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+188                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+188-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\411262a13af1db947b36e0b1575fbae9\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+189                android:value="androidx.startup" />
+189-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\411262a13af1db947b36e0b1575fbae9\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+190        </provider>
+191
+192        <uses-library
+192-->[androidx.privacysandbox.ads:ads-adservices:1.1.0-beta11] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\de4001bf118d8d85e2b27c1f95780edf\transformed\ads-adservices-1.1.0-beta11\AndroidManifest.xml:23:9-25:40
+193            android:name="android.ext.adservices"
+193-->[androidx.privacysandbox.ads:ads-adservices:1.1.0-beta11] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\de4001bf118d8d85e2b27c1f95780edf\transformed\ads-adservices-1.1.0-beta11\AndroidManifest.xml:24:13-50
+194            android:required="false" />
+194-->[androidx.privacysandbox.ads:ads-adservices:1.1.0-beta11] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\de4001bf118d8d85e2b27c1f95780edf\transformed\ads-adservices-1.1.0-beta11\AndroidManifest.xml:25:13-37
+195
+196        <meta-data
+196-->[com.google.android.gms:play-services-basement:18.5.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\ac27b8c587c70e553c756d17dab9e434\transformed\play-services-basement-18.5.0\AndroidManifest.xml:21:9-23:69
+197            android:name="com.google.android.gms.version"
+197-->[com.google.android.gms:play-services-basement:18.5.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\ac27b8c587c70e553c756d17dab9e434\transformed\play-services-basement-18.5.0\AndroidManifest.xml:22:13-58
+198            android:value="@integer/google_play_services_version" />
+198-->[com.google.android.gms:play-services-basement:18.5.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\ac27b8c587c70e553c756d17dab9e434\transformed\play-services-basement-18.5.0\AndroidManifest.xml:23:13-66
+199
+200        <receiver
+200-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\411262a13af1db947b36e0b1575fbae9\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+201            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+201-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\411262a13af1db947b36e0b1575fbae9\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+202            android:directBootAware="false"
+202-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\411262a13af1db947b36e0b1575fbae9\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+203            android:enabled="true"
+203-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\411262a13af1db947b36e0b1575fbae9\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+204            android:exported="true"
+204-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\411262a13af1db947b36e0b1575fbae9\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+205            android:permission="android.permission.DUMP" >
+205-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\411262a13af1db947b36e0b1575fbae9\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+206            <intent-filter>
+206-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\411262a13af1db947b36e0b1575fbae9\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+207                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+207-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\411262a13af1db947b36e0b1575fbae9\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+207-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\411262a13af1db947b36e0b1575fbae9\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+208            </intent-filter>
+209            <intent-filter>
+209-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\411262a13af1db947b36e0b1575fbae9\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+210                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+210-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\411262a13af1db947b36e0b1575fbae9\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+210-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\411262a13af1db947b36e0b1575fbae9\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+211            </intent-filter>
+212            <intent-filter>
+212-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\411262a13af1db947b36e0b1575fbae9\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+213                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+213-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\411262a13af1db947b36e0b1575fbae9\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+213-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\411262a13af1db947b36e0b1575fbae9\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+214            </intent-filter>
+215            <intent-filter>
+215-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\411262a13af1db947b36e0b1575fbae9\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+216                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+216-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\411262a13af1db947b36e0b1575fbae9\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+216-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\411262a13af1db947b36e0b1575fbae9\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+217            </intent-filter>
+218        </receiver>
+219
+220        <service
+220-->[com.google.android.datatransport:transport-backend-cct:3.3.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\451c3f4dd327771e9b55a4761204016c\transformed\transport-backend-cct-3.3.0\AndroidManifest.xml:26:9-32:19
+221            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+221-->[com.google.android.datatransport:transport-backend-cct:3.3.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\451c3f4dd327771e9b55a4761204016c\transformed\transport-backend-cct-3.3.0\AndroidManifest.xml:27:13-103
+222            android:exported="false" >
+222-->[com.google.android.datatransport:transport-backend-cct:3.3.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\451c3f4dd327771e9b55a4761204016c\transformed\transport-backend-cct-3.3.0\AndroidManifest.xml:28:13-37
+223            <meta-data
+223-->[com.google.android.datatransport:transport-backend-cct:3.3.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\451c3f4dd327771e9b55a4761204016c\transformed\transport-backend-cct-3.3.0\AndroidManifest.xml:29:13-31:39
+224                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+224-->[com.google.android.datatransport:transport-backend-cct:3.3.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\451c3f4dd327771e9b55a4761204016c\transformed\transport-backend-cct-3.3.0\AndroidManifest.xml:30:17-94
+225                android:value="cct" />
+225-->[com.google.android.datatransport:transport-backend-cct:3.3.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\451c3f4dd327771e9b55a4761204016c\transformed\transport-backend-cct-3.3.0\AndroidManifest.xml:31:17-36
+226        </service>
+227        <service
+227-->[com.google.android.datatransport:transport-runtime:3.3.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\49d65d8f883bb7805b36236ff4f93fe4\transformed\transport-runtime-3.3.0\AndroidManifest.xml:24:9-28:19
+228            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+228-->[com.google.android.datatransport:transport-runtime:3.3.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\49d65d8f883bb7805b36236ff4f93fe4\transformed\transport-runtime-3.3.0\AndroidManifest.xml:25:13-117
+229            android:exported="false"
+229-->[com.google.android.datatransport:transport-runtime:3.3.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\49d65d8f883bb7805b36236ff4f93fe4\transformed\transport-runtime-3.3.0\AndroidManifest.xml:26:13-37
+230            android:permission="android.permission.BIND_JOB_SERVICE" >
+230-->[com.google.android.datatransport:transport-runtime:3.3.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\49d65d8f883bb7805b36236ff4f93fe4\transformed\transport-runtime-3.3.0\AndroidManifest.xml:27:13-69
+231        </service>
+232
+233        <receiver
+233-->[com.google.android.datatransport:transport-runtime:3.3.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\49d65d8f883bb7805b36236ff4f93fe4\transformed\transport-runtime-3.3.0\AndroidManifest.xml:30:9-32:40
+234            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+234-->[com.google.android.datatransport:transport-runtime:3.3.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\49d65d8f883bb7805b36236ff4f93fe4\transformed\transport-runtime-3.3.0\AndroidManifest.xml:31:13-132
+235            android:exported="false" />
+235-->[com.google.android.datatransport:transport-runtime:3.3.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\49d65d8f883bb7805b36236ff4f93fe4\transformed\transport-runtime-3.3.0\AndroidManifest.xml:32:13-37
+236    </application>
+237
+238</manifest>

@@ -1,6 +1,6 @@
 @echo off
 "C:\\Users\\Wehtt\\Studio\\cmake\\3.22.1\\bin\\cmake.exe" ^
-  "-HC:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS-A-Conscience-Framework-\\app\\src\\main\\cpp" ^
+  "-HC:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS\\app\\src\\main\\cpp" ^
   "-DCMAKE_SYSTEM_NAME=Android" ^
   "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON" ^
   "-DCMAKE_SYSTEM_VERSION=33" ^
@@ -12,10 +12,10 @@
   "-DCMAKE_TOOLCHAIN_FILE=C:\\Users\\Wehtt\\Studio\\ndk\\29.0.13846066\\build\\cmake\\android.toolchain.cmake" ^
   "-DCMAKE_MAKE_PROGRAM=C:\\Users\\Wehtt\\Studio\\cmake\\3.22.1\\bin\\ninja.exe" ^
   "-DCMAKE_CXX_FLAGS=-std=c++20 -fPIC -O3" ^
-  "-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS-A-Conscience-Framework-\\app\\build\\intermediates\\cxx\\Debug\\p105r2c2\\obj\\x86_64" ^
-  "-DCMAKE_RUNTIME_OUTPUT_DIRECTORY=C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS-A-Conscience-Framework-\\app\\build\\intermediates\\cxx\\Debug\\p105r2c2\\obj\\x86_64" ^
+  "-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS\\app\\build\\intermediates\\cxx\\Debug\\p105r2c2\\obj\\x86_64" ^
+  "-DCMAKE_RUNTIME_OUTPUT_DIRECTORY=C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS\\app\\build\\intermediates\\cxx\\Debug\\p105r2c2\\obj\\x86_64" ^
   "-DCMAKE_BUILD_TYPE=Debug" ^
-  "-BC:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS-A-Conscience-Framework-\\app\\.cxx\\Debug\\p105r2c2\\x86_64" ^
+  "-BC:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS\\app\\.cxx\\Debug\\p105r2c2\\x86_64" ^
   -GNinja ^
   "-DANDROID_STL=c++_shared" ^
   "-DCMAKE_VERBOSE_MAKEFILE=ON" ^

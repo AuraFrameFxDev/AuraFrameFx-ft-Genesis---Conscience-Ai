@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "dev.aurakai.auraframefx.canvas.collab-canvas-release-54:/drawable-mdpi-v4/notification_bg_normal.9.png",
+        "source": "dev.aurakai.auraframefx.canvas.collab-canvas-core-1.16.0-33:/drawable-mdpi-v4/notification_bg_normal.9.png"
+    },
+    {
+        "merged": "dev.aurakai.auraframefx.canvas.collab-canvas-release-54:/drawable-mdpi-v4/notification_bg_normal_pressed.9.png",
+        "source": "dev.aurakai.auraframefx.canvas.collab-canvas-core-1.16.0-33:/drawable-mdpi-v4/notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "dev.aurakai.auraframefx.canvas.collab-canvas-release-54:/drawable-mdpi-v4/notify_panel_notification_icon_bg.png",
+        "source": "dev.aurakai.auraframefx.canvas.collab-canvas-core-1.16.0-33:/drawable-mdpi-v4/notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "dev.aurakai.auraframefx.canvas.collab-canvas-release-54:/drawable-mdpi-v4/notification_bg_low_pressed.9.png",
+        "source": "dev.aurakai.auraframefx.canvas.collab-canvas-core-1.16.0-33:/drawable-mdpi-v4/notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "dev.aurakai.auraframefx.canvas.collab-canvas-release-54:/drawable-mdpi-v4/notification_bg_low_normal.9.png",
+        "source": "dev.aurakai.auraframefx.canvas.collab-canvas-core-1.16.0-33:/drawable-mdpi-v4/notification_bg_low_normal.9.png"
+    }
+]

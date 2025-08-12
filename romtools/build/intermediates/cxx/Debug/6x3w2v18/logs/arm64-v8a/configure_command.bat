@@ -1,6 +1,6 @@
 @echo off
 "C:\\Users\\Wehtt\\Studio\\cmake\\3.22.1\\bin\\cmake.exe" ^
-  "-HC:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS-A-Conscience-Framework-\\romtools\\src\\main\\cpp" ^
+  "-HC:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS\\romtools\\src\\main\\cpp" ^
   "-DCMAKE_SYSTEM_NAME=Android" ^
   "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON" ^
   "-DCMAKE_SYSTEM_VERSION=33" ^
@@ -12,11 +12,11 @@
   "-DCMAKE_TOOLCHAIN_FILE=C:\\Users\\Wehtt\\Studio\\ndk\\27.0.12077973\\build\\cmake\\android.toolchain.cmake" ^
   "-DCMAKE_MAKE_PROGRAM=C:\\Users\\Wehtt\\Studio\\cmake\\3.22.1\\bin\\ninja.exe" ^
   "-DCMAKE_CXX_FLAGS=-std=c++20 -fPIC -O3 -g -DDEBUG -DROM_DEBUG_BUILD" ^
-  "-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS-A-Conscience-Framework-\\romtools\\build\\intermediates\\cxx\\Debug\\6x3w2v18\\obj\\arm64-v8a" ^
-  "-DCMAKE_RUNTIME_OUTPUT_DIRECTORY=C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS-A-Conscience-Framework-\\romtools\\build\\intermediates\\cxx\\Debug\\6x3w2v18\\obj\\arm64-v8a" ^
+  "-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS\\romtools\\build\\intermediates\\cxx\\Debug\\6x3w2v18\\obj\\arm64-v8a" ^
+  "-DCMAKE_RUNTIME_OUTPUT_DIRECTORY=C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS\\romtools\\build\\intermediates\\cxx\\Debug\\6x3w2v18\\obj\\arm64-v8a" ^
   "-DCMAKE_BUILD_TYPE=Debug" ^
-  "-DCMAKE_FIND_ROOT_PATH=C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS-A-Conscience-Framework-\\romtools\\.cxx\\Debug\\6x3w2v18\\prefab\\arm64-v8a\\prefab" ^
-  "-BC:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS-A-Conscience-Framework-\\romtools\\.cxx\\Debug\\6x3w2v18\\arm64-v8a" ^
+  "-DCMAKE_FIND_ROOT_PATH=C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS\\romtools\\.cxx\\Debug\\6x3w2v18\\prefab\\arm64-v8a\\prefab" ^
+  "-BC:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS\\romtools\\.cxx\\Debug\\6x3w2v18\\arm64-v8a" ^
   -GNinja ^
   "-DANDROID_STL=c++_shared" ^
   "-DCMAKE_VERBOSE_MAKEFILE=ON" ^

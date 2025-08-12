@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Wehtt/OneDrive/Documents/GitHub/GENESIS-A-Conscience-Framework-/app/src/main/cpp
+# Install script for directory: C:/Users/Wehtt/OneDrive/Documents/GitHub/GENESIS/app/src/main/cpp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Wehtt/OneDrive/Documents/GitHub/GENESIS-A-Conscience-Framework-/app/.cxx/Debug/p105r2c2/armeabi-v7a/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Wehtt/OneDrive/Documents/GitHub/GENESIS/app/.cxx/Debug/p105r2c2/armeabi-v7a/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

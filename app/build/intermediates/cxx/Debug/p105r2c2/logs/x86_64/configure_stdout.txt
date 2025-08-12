@@ -5,7 +5,7 @@
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
 -- Added language_id_l2c_jni.cpp
--- Added AI consciousness modules: C:/Users/Wehtt/OneDrive/Documents/GitHub/GENESIS-A-Conscience-Framework-/app/src/main/cpp/ai/cascade/src/CascadeAIService.cpp
+-- Added AI consciousness modules: C:/Users/Wehtt/OneDrive/Documents/GitHub/GENESIS/app/src/main/cpp/ai/cascade/src/CascadeAIService.cpp
 -- Configuring done
 -- Generating done
--- Build files have been written to: C:/Users/Wehtt/OneDrive/Documents/GitHub/GENESIS-A-Conscience-Framework-/app/.cxx/Debug/p105r2c2/x86_64
+-- Build files have been written to: C:/Users/Wehtt/OneDrive/Documents/GitHub/GENESIS/app/.cxx/Debug/p105r2c2/x86_64

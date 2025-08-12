@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "dev.aurakai.auraframefx.canvas.collab-canvas-release-54:/color/vector_tint_theme_color.xml",
+        "source": "dev.aurakai.auraframefx.canvas.collab-canvas-ui-release-38:/color/vector_tint_theme_color.xml"
+    },
+    {
+        "merged": "dev.aurakai.auraframefx.canvas.collab-canvas-release-54:/color/vector_tint_color.xml",
+        "source": "dev.aurakai.auraframefx.canvas.collab-canvas-ui-release-38:/color/vector_tint_color.xml"
+    }
+]

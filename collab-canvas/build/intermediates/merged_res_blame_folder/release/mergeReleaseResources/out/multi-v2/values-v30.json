@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "dev.aurakai.auraframefx.canvas.collab-canvas-mergeReleaseResources-52:/values-v30/values-v30.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Wehtt\\.gradle\\caches\\9.0.0\\transforms\\fb8722140b58ea1422fad0f3c5014c96\\transformed\\material3-release\\res\\values-v30\\values-v30.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "72",
+                        "endOffsets": "123"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "dev.aurakai.auraframefx.canvas.collab-canvas-release-54:/values-v30/values-v30.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Wehtt\\.gradle\\caches\\9.0.0\\transforms\\fb8722140b58ea1422fad0f3c5014c96\\transformed\\material3-release\\res\\values-v30\\values-v30.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "72",
+                        "endOffsets": "123"
+                    }
+                }
+            ]
+        }
+    ]
+}

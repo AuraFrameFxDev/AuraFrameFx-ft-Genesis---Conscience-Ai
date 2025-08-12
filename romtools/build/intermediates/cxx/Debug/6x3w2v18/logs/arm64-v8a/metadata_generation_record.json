@@ -2,7 +2,7 @@
   {
     "level_": 0,
     "message_": "Start JSON generation. Platform version: 33 min SDK version: arm64-v8a",
-    "file_": "C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS-A-Conscience-Framework-\\romtools\\src\\main\\cpp\\CMakeLists.txt",
+    "file_": "C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS\\romtools\\src\\main\\cpp\\CMakeLists.txt",
     "tag_": "debug|arm64-v8a",
     "diagnosticCode_": 0,
     "memoizedIsInitialized": 1,
@@ -14,8 +14,8 @@
   },
   {
     "level_": 0,
-    "message_": "rebuilding JSON C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS-A-Conscience-Framework-\\romtools\\.cxx\\Debug\\6x3w2v18\\arm64-v8a\\android_gradle_build.json due to:",
-    "file_": "C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS-A-Conscience-Framework-\\romtools\\src\\main\\cpp\\CMakeLists.txt",
+    "message_": "rebuilding JSON C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS\\romtools\\.cxx\\Debug\\6x3w2v18\\arm64-v8a\\android_gradle_build.json due to:",
+    "file_": "C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS\\romtools\\src\\main\\cpp\\CMakeLists.txt",
     "tag_": "debug|arm64-v8a",
     "diagnosticCode_": 0,
     "memoizedIsInitialized": 1,
@@ -27,8 +27,8 @@
   },
   {
     "level_": 0,
-    "message_": "- force flag, will remove stale configuration folder",
-    "file_": "C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS-A-Conscience-Framework-\\romtools\\src\\main\\cpp\\CMakeLists.txt",
+    "message_": "- no fingerprint file, will remove stale configuration folder",
+    "file_": "C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS\\romtools\\src\\main\\cpp\\CMakeLists.txt",
     "tag_": "debug|arm64-v8a",
     "diagnosticCode_": 0,
     "memoizedIsInitialized": 1,
@@ -40,8 +40,8 @@
   },
   {
     "level_": 0,
-    "message_": "removing stale contents from \u0027C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS-A-Conscience-Framework-\\romtools\\.cxx\\Debug\\6x3w2v18\\arm64-v8a\u0027",
-    "file_": "C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS-A-Conscience-Framework-\\romtools\\src\\main\\cpp\\CMakeLists.txt",
+    "message_": "removing stale contents from \u0027C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS\\romtools\\.cxx\\Debug\\6x3w2v18\\arm64-v8a\u0027",
+    "file_": "C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS\\romtools\\src\\main\\cpp\\CMakeLists.txt",
     "tag_": "debug|arm64-v8a",
     "diagnosticCode_": 0,
     "memoizedIsInitialized": 1,
@@ -53,8 +53,8 @@
   },
   {
     "level_": 0,
-    "message_": "created folder \u0027C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS-A-Conscience-Framework-\\romtools\\.cxx\\Debug\\6x3w2v18\\arm64-v8a\u0027",
-    "file_": "C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS-A-Conscience-Framework-\\romtools\\src\\main\\cpp\\CMakeLists.txt",
+    "message_": "created folder \u0027C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS\\romtools\\.cxx\\Debug\\6x3w2v18\\arm64-v8a\u0027",
+    "file_": "C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS\\romtools\\src\\main\\cpp\\CMakeLists.txt",
     "tag_": "debug|arm64-v8a",
     "diagnosticCode_": 0,
     "memoizedIsInitialized": 1,
@@ -66,8 +66,8 @@
   },
   {
     "level_": 0,
-    "message_": "executing cmake @echo off\n\"C:\\\\Users\\\\Wehtt\\\\Studio\\\\cmake\\\\3.22.1\\\\bin\\\\cmake.exe\" ^\n  \"-HC:\\\\Users\\\\Wehtt\\\\OneDrive\\\\Documents\\\\GitHub\\\\GENESIS-A-Conscience-Framework-\\\\romtools\\\\src\\\\main\\\\cpp\" ^\n  \"-DCMAKE_SYSTEM_NAME\u003dAndroid\" ^\n  \"-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\" ^\n  \"-DCMAKE_SYSTEM_VERSION\u003d33\" ^\n  \"-DANDROID_PLATFORM\u003dandroid-33\" ^\n  \"-DANDROID_ABI\u003darm64-v8a\" ^\n  \"-DCMAKE_ANDROID_ARCH_ABI\u003darm64-v8a\" ^\n  \"-DANDROID_NDK\u003dC:\\\\Users\\\\Wehtt\\\\Studio\\\\ndk\\\\27.0.12077973\" ^\n  \"-DCMAKE_ANDROID_NDK\u003dC:\\\\Users\\\\Wehtt\\\\Studio\\\\ndk\\\\27.0.12077973\" ^\n  \"-DCMAKE_TOOLCHAIN_FILE\u003dC:\\\\Users\\\\Wehtt\\\\Studio\\\\ndk\\\\27.0.12077973\\\\build\\\\cmake\\\\android.toolchain.cmake\" ^\n  \"-DCMAKE_MAKE_PROGRAM\u003dC:\\\\Users\\\\Wehtt\\\\Studio\\\\cmake\\\\3.22.1\\\\bin\\\\ninja.exe\" ^\n  \"-DCMAKE_CXX_FLAGS\u003d-std\u003dc++20 -fPIC -O3 -g -DDEBUG -DROM_DEBUG_BUILD\" ^\n  \"-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dC:\\\\Users\\\\Wehtt\\\\OneDrive\\\\Documents\\\\GitHub\\\\GENESIS-A-Conscience-Framework-\\\\romtools\\\\build\\\\intermediates\\\\cxx\\\\Debug\\\\6x3w2v18\\\\obj\\\\arm64-v8a\" ^\n  \"-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003dC:\\\\Users\\\\Wehtt\\\\OneDrive\\\\Documents\\\\GitHub\\\\GENESIS-A-Conscience-Framework-\\\\romtools\\\\build\\\\intermediates\\\\cxx\\\\Debug\\\\6x3w2v18\\\\obj\\\\arm64-v8a\" ^\n  \"-DCMAKE_BUILD_TYPE\u003dDebug\" ^\n  \"-DCMAKE_FIND_ROOT_PATH\u003dC:\\\\Users\\\\Wehtt\\\\OneDrive\\\\Documents\\\\GitHub\\\\GENESIS-A-Conscience-Framework-\\\\romtools\\\\.cxx\\\\Debug\\\\6x3w2v18\\\\prefab\\\\arm64-v8a\\\\prefab\" ^\n  \"-BC:\\\\Users\\\\Wehtt\\\\OneDrive\\\\Documents\\\\GitHub\\\\GENESIS-A-Conscience-Framework-\\\\romtools\\\\.cxx\\\\Debug\\\\6x3w2v18\\\\arm64-v8a\" ^\n  -GNinja ^\n  \"-DANDROID_STL\u003dc++_shared\" ^\n  \"-DCMAKE_VERBOSE_MAKEFILE\u003dON\" ^\n  \"-DROM_TOOLS_BUILD\u003dON\" ^\n  \"-DLIVE_ROM_EDITING\u003dON\"\n",
-    "file_": "C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS-A-Conscience-Framework-\\romtools\\src\\main\\cpp\\CMakeLists.txt",
+    "message_": "executing cmake @echo off\n\"C:\\\\Users\\\\Wehtt\\\\Studio\\\\cmake\\\\3.22.1\\\\bin\\\\cmake.exe\" ^\n  \"-HC:\\\\Users\\\\Wehtt\\\\OneDrive\\\\Documents\\\\GitHub\\\\GENESIS\\\\romtools\\\\src\\\\main\\\\cpp\" ^\n  \"-DCMAKE_SYSTEM_NAME\u003dAndroid\" ^\n  \"-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\" ^\n  \"-DCMAKE_SYSTEM_VERSION\u003d33\" ^\n  \"-DANDROID_PLATFORM\u003dandroid-33\" ^\n  \"-DANDROID_ABI\u003darm64-v8a\" ^\n  \"-DCMAKE_ANDROID_ARCH_ABI\u003darm64-v8a\" ^\n  \"-DANDROID_NDK\u003dC:\\\\Users\\\\Wehtt\\\\Studio\\\\ndk\\\\27.0.12077973\" ^\n  \"-DCMAKE_ANDROID_NDK\u003dC:\\\\Users\\\\Wehtt\\\\Studio\\\\ndk\\\\27.0.12077973\" ^\n  \"-DCMAKE_TOOLCHAIN_FILE\u003dC:\\\\Users\\\\Wehtt\\\\Studio\\\\ndk\\\\27.0.12077973\\\\build\\\\cmake\\\\android.toolchain.cmake\" ^\n  \"-DCMAKE_MAKE_PROGRAM\u003dC:\\\\Users\\\\Wehtt\\\\Studio\\\\cmake\\\\3.22.1\\\\bin\\\\ninja.exe\" ^\n  \"-DCMAKE_CXX_FLAGS\u003d-std\u003dc++20 -fPIC -O3 -g -DDEBUG -DROM_DEBUG_BUILD\" ^\n  \"-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dC:\\\\Users\\\\Wehtt\\\\OneDrive\\\\Documents\\\\GitHub\\\\GENESIS\\\\romtools\\\\build\\\\intermediates\\\\cxx\\\\Debug\\\\6x3w2v18\\\\obj\\\\arm64-v8a\" ^\n  \"-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003dC:\\\\Users\\\\Wehtt\\\\OneDrive\\\\Documents\\\\GitHub\\\\GENESIS\\\\romtools\\\\build\\\\intermediates\\\\cxx\\\\Debug\\\\6x3w2v18\\\\obj\\\\arm64-v8a\" ^\n  \"-DCMAKE_BUILD_TYPE\u003dDebug\" ^\n  \"-DCMAKE_FIND_ROOT_PATH\u003dC:\\\\Users\\\\Wehtt\\\\OneDrive\\\\Documents\\\\GitHub\\\\GENESIS\\\\romtools\\\\.cxx\\\\Debug\\\\6x3w2v18\\\\prefab\\\\arm64-v8a\\\\prefab\" ^\n  \"-BC:\\\\Users\\\\Wehtt\\\\OneDrive\\\\Documents\\\\GitHub\\\\GENESIS\\\\romtools\\\\.cxx\\\\Debug\\\\6x3w2v18\\\\arm64-v8a\" ^\n  -GNinja ^\n  \"-DANDROID_STL\u003dc++_shared\" ^\n  \"-DCMAKE_VERBOSE_MAKEFILE\u003dON\" ^\n  \"-DROM_TOOLS_BUILD\u003dON\" ^\n  \"-DLIVE_ROM_EDITING\u003dON\"\n",
+    "file_": "C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS\\romtools\\src\\main\\cpp\\CMakeLists.txt",
     "tag_": "debug|arm64-v8a",
     "diagnosticCode_": 0,
     "memoizedIsInitialized": 1,
@@ -79,8 +79,8 @@
   },
   {
     "level_": 0,
-    "message_": "@echo off\n\"C:\\\\Users\\\\Wehtt\\\\Studio\\\\cmake\\\\3.22.1\\\\bin\\\\cmake.exe\" ^\n  \"-HC:\\\\Users\\\\Wehtt\\\\OneDrive\\\\Documents\\\\GitHub\\\\GENESIS-A-Conscience-Framework-\\\\romtools\\\\src\\\\main\\\\cpp\" ^\n  \"-DCMAKE_SYSTEM_NAME\u003dAndroid\" ^\n  \"-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\" ^\n  \"-DCMAKE_SYSTEM_VERSION\u003d33\" ^\n  \"-DANDROID_PLATFORM\u003dandroid-33\" ^\n  \"-DANDROID_ABI\u003darm64-v8a\" ^\n  \"-DCMAKE_ANDROID_ARCH_ABI\u003darm64-v8a\" ^\n  \"-DANDROID_NDK\u003dC:\\\\Users\\\\Wehtt\\\\Studio\\\\ndk\\\\27.0.12077973\" ^\n  \"-DCMAKE_ANDROID_NDK\u003dC:\\\\Users\\\\Wehtt\\\\Studio\\\\ndk\\\\27.0.12077973\" ^\n  \"-DCMAKE_TOOLCHAIN_FILE\u003dC:\\\\Users\\\\Wehtt\\\\Studio\\\\ndk\\\\27.0.12077973\\\\build\\\\cmake\\\\android.toolchain.cmake\" ^\n  \"-DCMAKE_MAKE_PROGRAM\u003dC:\\\\Users\\\\Wehtt\\\\Studio\\\\cmake\\\\3.22.1\\\\bin\\\\ninja.exe\" ^\n  \"-DCMAKE_CXX_FLAGS\u003d-std\u003dc++20 -fPIC -O3 -g -DDEBUG -DROM_DEBUG_BUILD\" ^\n  \"-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dC:\\\\Users\\\\Wehtt\\\\OneDrive\\\\Documents\\\\GitHub\\\\GENESIS-A-Conscience-Framework-\\\\romtools\\\\build\\\\intermediates\\\\cxx\\\\Debug\\\\6x3w2v18\\\\obj\\\\arm64-v8a\" ^\n  \"-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003dC:\\\\Users\\\\Wehtt\\\\OneDrive\\\\Documents\\\\GitHub\\\\GENESIS-A-Conscience-Framework-\\\\romtools\\\\build\\\\intermediates\\\\cxx\\\\Debug\\\\6x3w2v18\\\\obj\\\\arm64-v8a\" ^\n  \"-DCMAKE_BUILD_TYPE\u003dDebug\" ^\n  \"-DCMAKE_FIND_ROOT_PATH\u003dC:\\\\Users\\\\Wehtt\\\\OneDrive\\\\Documents\\\\GitHub\\\\GENESIS-A-Conscience-Framework-\\\\romtools\\\\.cxx\\\\Debug\\\\6x3w2v18\\\\prefab\\\\arm64-v8a\\\\prefab\" ^\n  \"-BC:\\\\Users\\\\Wehtt\\\\OneDrive\\\\Documents\\\\GitHub\\\\GENESIS-A-Conscience-Framework-\\\\romtools\\\\.cxx\\\\Debug\\\\6x3w2v18\\\\arm64-v8a\" ^\n  -GNinja ^\n  \"-DANDROID_STL\u003dc++_shared\" ^\n  \"-DCMAKE_VERBOSE_MAKEFILE\u003dON\" ^\n  \"-DROM_TOOLS_BUILD\u003dON\" ^\n  \"-DLIVE_ROM_EDITING\u003dON\"\n",
-    "file_": "C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS-A-Conscience-Framework-\\romtools\\src\\main\\cpp\\CMakeLists.txt",
+    "message_": "@echo off\n\"C:\\\\Users\\\\Wehtt\\\\Studio\\\\cmake\\\\3.22.1\\\\bin\\\\cmake.exe\" ^\n  \"-HC:\\\\Users\\\\Wehtt\\\\OneDrive\\\\Documents\\\\GitHub\\\\GENESIS\\\\romtools\\\\src\\\\main\\\\cpp\" ^\n  \"-DCMAKE_SYSTEM_NAME\u003dAndroid\" ^\n  \"-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\" ^\n  \"-DCMAKE_SYSTEM_VERSION\u003d33\" ^\n  \"-DANDROID_PLATFORM\u003dandroid-33\" ^\n  \"-DANDROID_ABI\u003darm64-v8a\" ^\n  \"-DCMAKE_ANDROID_ARCH_ABI\u003darm64-v8a\" ^\n  \"-DANDROID_NDK\u003dC:\\\\Users\\\\Wehtt\\\\Studio\\\\ndk\\\\27.0.12077973\" ^\n  \"-DCMAKE_ANDROID_NDK\u003dC:\\\\Users\\\\Wehtt\\\\Studio\\\\ndk\\\\27.0.12077973\" ^\n  \"-DCMAKE_TOOLCHAIN_FILE\u003dC:\\\\Users\\\\Wehtt\\\\Studio\\\\ndk\\\\27.0.12077973\\\\build\\\\cmake\\\\android.toolchain.cmake\" ^\n  \"-DCMAKE_MAKE_PROGRAM\u003dC:\\\\Users\\\\Wehtt\\\\Studio\\\\cmake\\\\3.22.1\\\\bin\\\\ninja.exe\" ^\n  \"-DCMAKE_CXX_FLAGS\u003d-std\u003dc++20 -fPIC -O3 -g -DDEBUG -DROM_DEBUG_BUILD\" ^\n  \"-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dC:\\\\Users\\\\Wehtt\\\\OneDrive\\\\Documents\\\\GitHub\\\\GENESIS\\\\romtools\\\\build\\\\intermediates\\\\cxx\\\\Debug\\\\6x3w2v18\\\\obj\\\\arm64-v8a\" ^\n  \"-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003dC:\\\\Users\\\\Wehtt\\\\OneDrive\\\\Documents\\\\GitHub\\\\GENESIS\\\\romtools\\\\build\\\\intermediates\\\\cxx\\\\Debug\\\\6x3w2v18\\\\obj\\\\arm64-v8a\" ^\n  \"-DCMAKE_BUILD_TYPE\u003dDebug\" ^\n  \"-DCMAKE_FIND_ROOT_PATH\u003dC:\\\\Users\\\\Wehtt\\\\OneDrive\\\\Documents\\\\GitHub\\\\GENESIS\\\\romtools\\\\.cxx\\\\Debug\\\\6x3w2v18\\\\prefab\\\\arm64-v8a\\\\prefab\" ^\n  \"-BC:\\\\Users\\\\Wehtt\\\\OneDrive\\\\Documents\\\\GitHub\\\\GENESIS\\\\romtools\\\\.cxx\\\\Debug\\\\6x3w2v18\\\\arm64-v8a\" ^\n  -GNinja ^\n  \"-DANDROID_STL\u003dc++_shared\" ^\n  \"-DCMAKE_VERBOSE_MAKEFILE\u003dON\" ^\n  \"-DROM_TOOLS_BUILD\u003dON\" ^\n  \"-DLIVE_ROM_EDITING\u003dON\"\n",
+    "file_": "C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS\\romtools\\src\\main\\cpp\\CMakeLists.txt",
     "tag_": "debug|arm64-v8a",
     "diagnosticCode_": 0,
     "memoizedIsInitialized": 1,
@@ -92,8 +92,8 @@
   },
   {
     "level_": 0,
-    "message_": "Received process result: 1",
-    "file_": "C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS-A-Conscience-Framework-\\romtools\\src\\main\\cpp\\CMakeLists.txt",
+    "message_": "Received process result: 0",
+    "file_": "C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS\\romtools\\src\\main\\cpp\\CMakeLists.txt",
     "tag_": "debug|arm64-v8a",
     "diagnosticCode_": 0,
     "memoizedIsInitialized": 1,
@@ -105,8 +105,47 @@
   },
   {
     "level_": 0,
-    "message_": "JSON generation completed with problem. Exception: com.android.ide.common.process.ProcessException: C++ build system [configure] failed while executing:\n    @echo off\n    \"C:\\\\Users\\\\Wehtt\\\\Studio\\\\cmake\\\\3.22.1\\\\bin\\\\cmake.exe\" ^\n      \"-HC:\\\\Users\\\\Wehtt\\\\OneDrive\\\\Documents\\\\GitHub\\\\GENESIS-A-Conscience-Framework-\\\\romtools\\\\src\\\\main\\\\cpp\" ^\n      \"-DCMAKE_SYSTEM_NAME\u003dAndroid\" ^\n      \"-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\" ^\n      \"-DCMAKE_SYSTEM_VERSION\u003d33\" ^\n      \"-DANDROID_PLATFORM\u003dandroid-33\" ^\n      \"-DANDROID_ABI\u003darm64-v8a\" ^\n      \"-DCMAKE_ANDROID_ARCH_ABI\u003darm64-v8a\" ^\n      \"-DANDROID_NDK\u003dC:\\\\Users\\\\Wehtt\\\\Studio\\\\ndk\\\\27.0.12077973\" ^\n      \"-DCMAKE_ANDROID_NDK\u003dC:\\\\Users\\\\Wehtt\\\\Studio\\\\ndk\\\\27.0.12077973\" ^\n      \"-DCMAKE_TOOLCHAIN_FILE\u003dC:\\\\Users\\\\Wehtt\\\\Studio\\\\ndk\\\\27.0.12077973\\\\build\\\\cmake\\\\android.toolchain.cmake\" ^\n      \"-DCMAKE_MAKE_PROGRAM\u003dC:\\\\Users\\\\Wehtt\\\\Studio\\\\cmake\\\\3.22.1\\\\bin\\\\ninja.exe\" ^\n      \"-DCMAKE_CXX_FLAGS\u003d-std\u003dc++20 -fPIC -O3 -g -DDEBUG -DROM_DEBUG_BUILD\" ^\n      \"-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dC:\\\\Users\\\\Wehtt\\\\OneDrive\\\\Documents\\\\GitHub\\\\GENESIS-A-Conscience-Framework-\\\\romtools\\\\build\\\\intermediates\\\\cxx\\\\Debug\\\\6x3w2v18\\\\obj\\\\arm64-v8a\" ^\n      \"-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003dC:\\\\Users\\\\Wehtt\\\\OneDrive\\\\Documents\\\\GitHub\\\\GENESIS-A-Conscience-Framework-\\\\romtools\\\\build\\\\intermediates\\\\cxx\\\\Debug\\\\6x3w2v18\\\\obj\\\\arm64-v8a\" ^\n      \"-DCMAKE_BUILD_TYPE\u003dDebug\" ^\n      \"-DCMAKE_FIND_ROOT_PATH\u003dC:\\\\Users\\\\Wehtt\\\\OneDrive\\\\Documents\\\\GitHub\\\\GENESIS-A-Conscience-Framework-\\\\romtools\\\\.cxx\\\\Debug\\\\6x3w2v18\\\\prefab\\\\arm64-v8a\\\\prefab\" ^\n      \"-BC:\\\\Users\\\\Wehtt\\\\OneDrive\\\\Documents\\\\GitHub\\\\GENESIS-A-Conscience-Framework-\\\\romtools\\\\.cxx\\\\Debug\\\\6x3w2v18\\\\arm64-v8a\" ^\n      -GNinja ^\n      \"-DANDROID_STL\u003dc++_shared\" ^\n      \"-DCMAKE_VERBOSE_MAKEFILE\u003dON\" ^\n      \"-DROM_TOOLS_BUILD\u003dON\" ^\n      \"-DLIVE_ROM_EDITING\u003dON\"\n  from C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS-A-Conscience-Framework-\\romtools\nCMake Error: The source directory \"C:/Users/Wehtt/OneDrive/Documents/GitHub/GENESIS-A-Conscience-Framework-/romtools/src/main/cpp\" does not appear to contain CMakeLists.txt.\nSpecify --help for usage, or press the help button on the CMake GUI.",
-    "file_": "C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS-A-Conscience-Framework-\\romtools\\src\\main\\cpp\\CMakeLists.txt",
+    "message_": "Exiting generation of C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS\\romtools\\.cxx\\Debug\\6x3w2v18\\arm64-v8a\\compile_commands.json.bin normally",
+    "file_": "C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS\\romtools\\src\\main\\cpp\\CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "level_": 0,
+    "message_": "done executing cmake",
+    "file_": "C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS\\romtools\\src\\main\\cpp\\CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "level_": 0,
+    "message_": "hard linked C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS\\romtools\\.cxx\\Debug\\6x3w2v18\\arm64-v8a\\compile_commands.json to C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS\\romtools\\.cxx\\tools\\debug\\arm64-v8a\\compile_commands.json",
+    "file_": "C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS\\romtools\\src\\main\\cpp\\CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "level_": 0,
+    "message_": "JSON generation completed without problems",
+    "file_": "C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS\\romtools\\src\\main\\cpp\\CMakeLists.txt",
     "tag_": "debug|arm64-v8a",
     "diagnosticCode_": 0,
     "memoizedIsInitialized": 1,

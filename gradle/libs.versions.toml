@@ -34,7 +34,7 @@ spotless = "7.2.1"     # Stable Spotless
 
 # ===== COMPOSE & UI =====
 composeBom = "2025.07.00"  # Latest 2025 Compose BOM from Dependabot
-composeCompiler = "1.5.15"  # Latest Compose Compiler
+# composeCompiler version removed - K2 compiler includes it built-in
 activityCompose = "1.10.1"  # Latest from Dependabot
 navigationCompose = "2.9.3" # Latest Navigation Compose
 

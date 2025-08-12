@@ -4,25 +4,6 @@
             "outputFile": "dev.aurakai.auraframefx.app-mergeDebugResources-91:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS-A-Conscience-Framework-\\app\\src\\main\\res\\values-night\\themes.xml",
-                    "from": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "92",
-                        "endLines": "11",
-                        "endColumns": "12",
-                        "endOffsets": "576"
-                    },
-                    "to": {
-                        "startLines": "45",
-                        "startColumns": "4",
-                        "startOffsets": "2662",
-                        "endLines": "53",
-                        "endColumns": "12",
-                        "endOffsets": "3056"
-                    }
-                },
-                {
                     "source": "C:\\Users\\Wehtt\\.gradle\\caches\\9.0.0\\transforms\\162823fa2fcf0d6d23229b39d0c2e0f5\\transformed\\appcompat-1.7.1\\res\\values-night-v8\\values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
@@ -57,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS-A-Conscience-Framework-\\app\\src\\main\\res\\values-night\\colors.xml",
+                    "source": "C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS\\app\\src\\main\\res\\values-night\\colors.xml",
                     "from": {
                         "startLines": "35,23,18,20,24,19,21,4,6,9,11,27,29,14,16,31,32,3,5,8,10,26,28,13,15,39,36,40,42,44,38,46,41,43,37,45",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -71,6 +52,25 @@
                         "startOffsets": "55,115,165,210,265,318,366,424,474,534,586,648,698,756,807,868,915,970,1017,1074,1123,1182,1229,1284,1332,1390,1440,1506,1562,1622,1686,1746,1808,1862,1920,1974",
                         "endColumns": "59,49,44,54,52,47,57,49,59,51,61,49,57,50,60,46,54,46,56,48,58,46,54,47,57,49,65,55,59,63,59,61,53,57,53,55",
                         "endOffsets": "110,160,205,260,313,361,419,469,529,581,643,693,751,802,863,910,965,1012,1069,1118,1177,1224,1279,1327,1385,1435,1501,1557,1617,1681,1741,1803,1857,1915,1969,2025"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "92",
+                        "endLines": "11",
+                        "endColumns": "12",
+                        "endOffsets": "576"
+                    },
+                    "to": {
+                        "startLines": "45",
+                        "startColumns": "4",
+                        "startOffsets": "2662",
+                        "endLines": "53",
+                        "endColumns": "12",
+                        "endOffsets": "3056"
                     }
                 }
             ]
