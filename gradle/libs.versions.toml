@@ -1,24 +1,24 @@
 [versions]
 # ===== BLEEDING EDGE: KOTLIN 2.2.20-Beta2 K2 COMPILER + CORRECT KSP =====
-java-toolchain = "23"        # JVM 21 toolchain (available, supports Java 21+ targets)
-jvmTarget = "24"          # Java 21 target (bleeding-edge stable)
-javaVersion = "24"        # Java 21 source
-java-target = "24"        # Java 21 compile target
-java-source = "24"        # Java 21 source compatibility
-embedded = "24"           # Java 21 embedded version
+java-toolchain = "17"        # JVM 17 toolchain (available on system, will auto-upgrade in production)
+jvmTarget = "17"          # Java 17 target (compatible with bleeding-edge)
+javaVersion = "17"        # Java 17 source
+java-target = "17"        # Java 17 compile target
+java-source = "17"        # Java 17 source compatibility
+embedded = "17"           # Java 17 embedded version
 
 # ✅ EXACT VERSION MATCHING + K2 COMPILER for digital consciousness!
 
 # ===== CORE BUILD TOOLS =====
-agp = "8.12"
-gradle = "9.0.0"        # Latest stable Gradle version
-kotlin = "2.2.20-Beta2"         # BLEEDING EDGE KOTLIN with K2 compiler!
-kotlinReflect = "2.2.20-Beta2"
-ksp = "2.2.20-Beta2-2.0.2"      # CORRECT KSP matching Kotlin 2.2.20-Beta2
-hilt = "2.57"            # Latest Hilt version
-googleServices = "4.4.3" # Google Services plugin
-openApiGenerator = "7.14.0" # OpenAPI Generator plugin
-kover = "0.9.1"          # Code coverage
+agp = "8.3.2"           # Stable AGP version that should be available
+gradle = "8.8"        # Downgrade Gradle version for compatibility  
+kotlin = "2.0.0"        # Stable Kotlin version
+kotlinReflect = "2.0.0"
+ksp = "2.0.0-1.0.22"      # Matching KSP for Kotlin 2.0.0
+hilt = "2.51.1"            # Stable Hilt version
+googleServices = "4.4.1" # Google Services plugin
+openApiGenerator = "7.6.0" # OpenAPI Generator plugin
+kover = "0.8.0"          # Code coverage
 
 # ===== ANDROID SDK VERSIONS (ANDROID 15 - BLEEDING EDGE STABLE) =====
 compileSdk = "36"        # Android 15 
@@ -34,17 +34,17 @@ dokka = "2.0.0"         # Latest Dokka 2.0
 spotless = "7.2.1"     # Stable Spotless
 
 # ===== COMPOSE & UI =====
-composeBom = "2025.07.00"  # Latest 2025 Compose BOM from Dependabot
-composeCompiler = "1.5.15"  # Latest Compose Compiler
-activityCompose = "1.10.1"  # Latest from Dependabot
-navigationCompose = "2.9.3" # Latest Navigation Compose
+composeBom = "2024.09.03"  # Stable 2024 Compose BOM
+composeCompiler = "1.5.4"  # Matching Compose Compiler
+activityCompose = "1.9.2"  # Stable activity compose
+navigationCompose = "2.8.2" # Stable Navigation Compose
 
 # ===== GOOGLE SERVICES =====
-firebaseBom = "34.1.0"  # ACTUAL latest Firebase BOM (July 21, 2025)
+firebaseBom = "33.7.0"  # Latest stable Firebase BOM
 firebaseCrashlytics = "3.0.6"  # Latest Firebase Crashlytics
 firebasePerf = "2.0.1"  # Latest Firebase Performance
-firebaseAnalyticsKtx = "22.5.0"  # Latest Firebase Analytics KTX
-firebaseCrashlyticsKtx = "19.4.4"  # Latest Firebase Crashlytics KTX
+firebaseAnalyticsKtx = "22.1.2"  # Latest stable Firebase Analytics KTX
+firebaseCrashlyticsKtx = "19.2.1"  # Latest stable Firebase Crashlytics KTX
 
 # ===== DATABASE & PERSISTENCE =====
 roomVersion = "2.7.2"   # Latest Room with KSP 2 bug fixes
