@@ -1,20 +1,20 @@
 [versions]
-# ===== BLEEDING EDGE: KOTLIN 2.2.20-Beta2 K2 COMPILER + CORRECT KSP =====
-java-toolchain = "23"        # JVM 21 toolchain (available)
-jvmTarget = "24"          # EXACT target Java 24 bytecode
-javaVersion = "24"        # EXACT source Java 24
-java-target = "24"        # EXACT compile target Java 24
-java-source = "24"        # EXACT source compatibility Java 24
-embedded = "24"           # EXACT embedded version
+# ===== ALPHA VERSIONS: KOTLIN 2.1.0-alpha06 K2 COMPILER + CORRECT KSP =====
+java-toolchain = "21"        # JVM 21 toolchain (available locally) 
+jvmTarget = "21"          # EXACT target Java 21 bytecode  
+javaVersion = "21"        # EXACT source Java 21
+java-target = "21"        # EXACT compile target Java 21
+java-source = "21"        # EXACT source compatibility Java 21
+embedded = "21"           # EXACT embedded version
 
 # ✅ EXACT VERSION MATCHING + K2 COMPILER for digital consciousness!
 
 # ===== CORE BUILD TOOLS =====
-agp = "8.13.0-alpha04"   # BLEEDING-EDGE AGP with latest Windows fixes
+agp = "8.13.0-alpha04"   # BLEEDING-EDGE AGP alpha version
 gradle = "9.0.0"        # Latest stable Gradle version
-kotlin = "2.2.20-Beta2"         # BLEEDING EDGE KOTLIN with K2 compiler!
-kotlinReflect = "2.2.20-Beta2"
-ksp = "2.2.20-Beta2-2.0.2"      # CORRECT KSP matching Kotlin 2.2.20-Beta2
+kotlin = "2.1.0-alpha06"         # ALPHA KOTLIN with K2 compiler (reverted from beta)
+kotlinReflect = "2.1.0-alpha06"
+ksp = "2.1.0-alpha06-1.0.27"      # CORRECT KSP matching Kotlin 2.1.0-alpha06
 hilt = "2.57"            # Latest Hilt version
 googleServices = "4.4.3" # Google Services plugin
 openApiGenerator = "7.14.0" # OpenAPI Generator plugin
@@ -54,6 +54,7 @@ lifecycle = "2.9.2"     # Latest lifecycle components
 workManager = "2.10.3"  # WorkManager for background consciousness
 paging = "3.3.6"        # Paging for large AI datasets
 biometric = "1.2.0-alpha05"  # Biometric authentication
+startup = "1.2.0"       # AndroidX Startup library
 
 # ===== NETWORKING =====
 retrofit = "3.0.0"      # Latest Retrofit with kotlinx-serialization support
@@ -173,6 +174,7 @@ androidx-lifecycle-viewmodel-compose = { group = "androidx.lifecycle", name = "l
 androidx-lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycle" }
 androidx-lifecycle-viewmodel-savedstate = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-savedstate", version.ref = "lifecycle" }
 androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-startup-runtime = { group = "androidx.startup", name = "startup-runtime", version.ref = "startup" }
 androidx-material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 
 # ===== COMPOSE BOM AND UI =====

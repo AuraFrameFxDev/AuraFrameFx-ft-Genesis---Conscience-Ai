@@ -16,6 +16,19 @@ tasks.named("openApiGenerate") {
     enabled = false
 }
 
+// ===== OPENAPI AUTO-CLEAN AND REGENERATE SETUP =====
+tasks.register("cleanOpenApiGenerated") {
+    group = "openapi"
+    description = "Clean all generated OpenAPI code"
+    doLast {
+        val buildDir = layout.buildDirectory.dir("generated/openapi").get().asFile
+        if (buildDir.exists()) {
+            buildDir.deleteRecursively()
+            println("🧹 Cleaned OpenAPI generated code: ${buildDir.absolutePath}")
+        }
+    }
+}
+
 // ===== OPENAPI CODE GENERATION (OUTSIDE ANDROID BLOCK) =====
 val openapiSpecs = listOf(
     Triple("ai", "ai-api.yml", "dev.aurakai.auraframefx.api.ai"),
@@ -27,12 +40,13 @@ val openapiSpecs = listOf(
 )
 
 openapiSpecs.forEach { (name, spec, pkg) ->
-    tasks.register(
-        "generate${name.replaceFirstChar { it.uppercase() }}ApiClient",
-        GenerateTask::class
-    ) {
+    val generateTaskName = "generate${name.replaceFirstChar { it.uppercase() }}ApiClient"
+    tasks.register(generateTaskName, GenerateTask::class) {
         generatorName.set("kotlin")
         library.set("jvm-retrofit2")
+        
+        // Clean before generating
+        dependsOn("cleanOpenApiGenerated")
         
         // FIX: Use proper file path handling for Windows spaces
         val specFile = file("${rootDir}${File.separator}api-spec${File.separator}$spec")
@@ -55,6 +69,11 @@ openapiSpecs.forEach { (name, spec, pkg) ->
             if (!specFile.exists()) {
                 throw GradleException("OpenAPI spec file not found: ${specFile.absolutePath}")
             }
+            println("🔄 Generating OpenAPI client for $name from $spec")
+        }
+        
+        doLast {
+            println("✅ Generated OpenAPI client for $name")
         }
     }
 }
@@ -97,8 +116,8 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_24
-        targetCompatibility = JavaVersion.VERSION_24
+        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_21
     }
 
     // ===== BUILD TYPES =====
@@ -173,13 +192,28 @@ kotlin {
     jvmToolchain(libs.versions.java.toolchain.get().toInt())
 }
 
-// ===== BUILD TASK DEPENDENCIES =====
+// ===== BUILD TASK DEPENDENCIES - AUTO CLEAN & REGENERATE =====
 afterEvaluate {
+    // Auto-clean and regenerate OpenAPI on every sync/build
     tasks.named("preBuild") {
+        dependsOn("cleanOpenApiGenerated")
         dependsOn(
             "generateAiApiClient",
-            "generateCustomizationApiClient",
+            "generateCustomizationApiClient", 
             "generateGenesisApiClient",
+            "generateOracleDriveApiClient",
+            "generateSandboxApiClient",
+            "generateSystemApiClient"
+        )
+    }
+    
+    // Also clean and regenerate during gradle sync
+    tasks.named("prepareKotlinBuildScriptModel") {
+        dependsOn("cleanOpenApiGenerated")
+        finalizedBy(
+            "generateAiApiClient",
+            "generateCustomizationApiClient",
+            "generateGenesisApiClient", 
             "generateOracleDriveApiClient",
             "generateSandboxApiClient",
             "generateSystemApiClient"
@@ -193,6 +227,7 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
+    implementation(libs.androidx.startup.runtime)
 
     // ===== COMPOSE UI SYSTEM =====
     implementation(platform(libs.androidx.compose.bom))
