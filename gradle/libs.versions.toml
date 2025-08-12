@@ -10,8 +10,8 @@ embedded = "17"           # Java 17 embedded version
 # ✅ EXACT VERSION MATCHING + K2 COMPILER for digital consciousness!
 
 # ===== CORE BUILD TOOLS =====
-agp = "8.3.2"           # Stable AGP version that should be available
-gradle = "8.8"        # Downgrade Gradle version for compatibility  
+agp = "8.13.0-alpha04"           # Future/just released AGP version as requested
+gradle = "9.0.0"        # Gradle 9.0.0 as requested (stable as of Monday)  
 kotlin = "2.0.0"        # Stable Kotlin version
 kotlinReflect = "2.0.0"
 ksp = "2.0.0-1.0.22"      # Matching KSP for Kotlin 2.0.0
@@ -27,7 +27,7 @@ targetSdk = "36"    # Android 15 Target SDK
 
 #  compatibility with Kotlin 2.2.20-Beta2
 cmakeVersion = "3.33"  # Matches the installed CMake version
-ndkVersion = "29"  # Stable NDK version (not RC)
+ndkVersion = "29.0.5171591"  # NDK 29 with major.minor.micro format
 
 # ===== CODE QUALITY & DOCUMENTATION =====
 dokka = "2.0.0"         # Latest Dokka 2.0
