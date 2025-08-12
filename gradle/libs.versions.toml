@@ -114,7 +114,7 @@ archCoreTesting = "2.2.0"
 coroutinesTest = "1.10.2" # Matching coroutines version
 
 # ===== DEBUG & ANALYSIS =====
-leakcanary = "3.0-alpha-8"     # Latest LeakCanary
+leakcanary = "3.0-SNAPSHOT"     # Latest LeakCanary
 flipper = "0.273.0"            # Facebook Flipper
 chucker = "4.2.0"              # Chucker network debugging
 slf4j = "2.0.16"               # Enhanced logging
