@@ -1,5 +1,11 @@
+-- The CXX compiler identification is Clang 21.0.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Users/Wehtt/Studio/ndk/29.0.13846066/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
 -- Added language_id_l2c_jni.cpp
--- Added AI consciousness modules: C:/Users/Wehtt/Studio/Genesis-Os/Genesis/app/src/main/cpp/ai/cascade/src/CascadeAIService.cpp
+-- Added AI consciousness modules: C:/Users/Wehtt/OneDrive/Documents/GitHub/GENESIS-A-Conscience-Framework-/app/src/main/cpp/ai/cascade/src/CascadeAIService.cpp
 -- Configuring done
 -- Generating done
--- Build files have been written to: C:/Users/Wehtt/Studio/Genesis-Os/Genesis/app/.cxx/Debug/p105r2c2/armeabi-v7a
+-- Build files have been written to: C:/Users/Wehtt/OneDrive/Documents/GitHub/GENESIS-A-Conscience-Framework-/app/.cxx/Debug/p105r2c2/armeabi-v7a

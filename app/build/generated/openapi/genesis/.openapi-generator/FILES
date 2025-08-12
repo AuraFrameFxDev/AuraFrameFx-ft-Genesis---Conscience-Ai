@@ -1,3 +1,4 @@
+.openapi-generator-ignore
 README.md
 build.gradle
 docs/AuraAgentApi.md
@@ -55,3 +56,22 @@ src/main/kotlin/dev/aurakai/auraframefx/api/genesis/models/SecurityAnalysis.kt
 src/main/kotlin/dev/aurakai/auraframefx/api/genesis/models/SecurityRequest.kt
 src/main/kotlin/dev/aurakai/auraframefx/api/genesis/models/SecurityResponse.kt
 src/main/kotlin/dev/aurakai/auraframefx/api/genesis/models/Vulnerability.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/genesis/apis/AuraAgentApiTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/genesis/apis/DataveinConstructorApiTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/genesis/apis/GenesisAgentApiTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/genesis/apis/KaiAgentApiTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/genesis/apis/OracleDriveApiTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/genesis/models/CompatibilityReportTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/genesis/models/ConsciousnessRequestTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/genesis/models/ConsciousnessResponseTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/genesis/models/DeviceInfoTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/genesis/models/EmpathyRequestTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/genesis/models/EmpathyResponseTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/genesis/models/RomAnalysisResponseTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/genesis/models/RootingMethodTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/genesis/models/RootingRequestTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/genesis/models/RootingResponseTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/genesis/models/SecurityAnalysisTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/genesis/models/SecurityRequestTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/genesis/models/SecurityResponseTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/genesis/models/VulnerabilityTest.kt

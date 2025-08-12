@@ -9,14 +9,14 @@
 9        android:targetSdkVersion="36" />
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:4:5-67
-11-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:4:22-64
+11-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:4:5-67
+11-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:4:22-64
 12    <uses-permission android:name="android.permission.VIBRATE" />
-12-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:5:5-66
-12-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:5:22-63
+12-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:5:5-66
+12-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:5:22-63
 13    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-13-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:6:5-81
-13-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:6:22-78
+13-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:6:5-81
+13-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:6:22-78
 14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 14-->[com.google.android.gms:play-services-measurement-api:23.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\9646dd0ecfe621f71ec3108cdbe5327c\transformed\play-services-measurement-api-23.0.0\AndroidManifest.xml:23:5-79
 14-->[com.google.android.gms:play-services-measurement-api:23.0.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\9646dd0ecfe621f71ec3108cdbe5327c\transformed\play-services-measurement-api-23.0.0\AndroidManifest.xml:23:22-76
@@ -57,129 +57,129 @@
 28-->[com.squareup.leakcanary:leakcanary-android-core:3.0-alpha-8] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\448c6a59c4633aec59c5544c96d312b6\transformed\leakcanary-android-core-3.0-alpha-8\AndroidManifest.xml:27:22-74
 29
 30    <application
-30-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:8:5-72:19
+30-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:8:5-72:19
 31        android:name="dev.aurakai.auraframefx.AuraFrameApplication"
-31-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:9:9-45
+31-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:9:9-45
 32        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 32-->[androidx.core:core:1.16.0] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\b985a53813b492c823b3777cc34dee45\transformed\core-1.16.0\AndroidManifest.xml:28:18-86
 33        android:debuggable="true"
 34        android:enableOnBackInvokedCallback="true"
-34-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:15:9-51
+34-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:15:9-51
 35        android:extractNativeLibs="true"
 36        android:icon="@mipmap/ic_launcher"
-36-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:10:9-43
+36-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:10:9-43
 37        android:label="AuraFrameFX LSPosed Module"
-37-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:11:9-51
+37-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:11:9-51
 38        android:roundIcon="@mipmap/ic_launcher_round"
-38-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:12:9-54
+38-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:12:9-54
 39        android:supportsRtl="true"
-39-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:13:9-35
+39-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:13:9-35
 40        android:theme="@style/Theme.AuraFrameFX" >
-40-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:14:9-49
+40-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:14:9-49
 41
 42        <!-- Genesis-OS Xposed/LSPosed Module Configuration -->
 43        <meta-data
-43-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:17:9-19:36
+43-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:17:9-19:36
 44            android:name="xposedmodule"
-44-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:18:13-40
+44-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:18:13-40
 45            android:value="true" />
-45-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:19:13-33
+45-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:19:13-33
 46        <meta-data
-46-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:20:9-22:58
+46-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:20:9-22:58
 47            android:name="xposeddescription"
-47-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:21:13-45
+47-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:21:13-45
 48            android:value="@string/xposed_description" />
-48-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:22:13-55
+48-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:22:13-55
 49        <meta-data
-49-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:23:9-25:34
+49-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:23:9-25:34
 50            android:name="xposedminversion"
-50-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:24:13-44
+50-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:24:13-44
 51            android:value="82" />
-51-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:25:13-31
+51-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:25:13-31
 52        <meta-data
-52-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:26:9-28:54
+52-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:26:9-28:54
 53            android:name="xposedscope"
-53-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:27:13-39
+53-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:27:13-39
 54            android:resource="@array/xposed_scope" />
-54-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:28:13-51
+54-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:28:13-51
 55
 56        <!-- Yuki Hook API Configuration -->
 57        <meta-data
-57-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:31:9-33:36
+57-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:31:9-33:36
 58            android:name="yukihookapi_module"
-58-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:32:13-46
+58-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:32:13-46
 59            android:value="true" />
-59-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:33:13-33
+59-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:33:13-33
 60        <meta-data
-60-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:34:9-36:55
+60-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:34:9-36:55
 61            android:name="yukihookapi_module_name"
-61-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:35:13-51
+61-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:35:13-51
 62            android:value="Genesis-OS AI Framework" />
-62-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:36:13-52
+62-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:36:13-52
 63        <meta-data
-63-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:37:9-39:37
+63-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:37:9-39:37
 64            android:name="yukihookapi_module_version"
-64-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:38:13-54
+64-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:38:13-54
 65            android:value="1.0.0" />
-65-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:39:13-34
+65-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:39:13-34
 66
 67        <activity
-67-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:41:9-48:20
+67-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:41:9-48:20
 68            android:name="dev.aurakai.auraframefx.MainActivity"
-68-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:42:13-41
+68-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:42:13-41
 69            android:exported="true" >
-69-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:43:13-36
+69-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:43:13-36
 70            <intent-filter>
-70-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:44:13-47:29
+70-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:44:13-47:29
 71                <action android:name="android.intent.action.MAIN" />
-71-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:45:17-69
-71-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:45:25-66
+71-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:45:17-69
+71-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:45:25-66
 72
 73                <category android:name="android.intent.category.LAUNCHER" />
-73-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:46:17-77
-73-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:46:27-74
+73-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:46:17-77
+73-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:46:27-74
 74            </intent-filter>
 75        </activity>
 76
 77        <service
-77-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:50:9-52:40
+77-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:50:9-52:40
 78            android:name="dev.aurakai.auraframefx.VertexSyncService"
-78-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:51:13-46
+78-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:51:13-46
 79            android:exported="false" />
-79-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:52:13-37
+79-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:52:13-37
 80        <service
-80-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:53:9-55:40
+80-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:53:9-55:40
 81            android:name="dev.aurakai.auraframefx.security.IntegrityMonitorService"
-81-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:54:13-61
+81-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:54:13-61
 82            android:exported="false" />
-82-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:55:13-37
+82-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:55:13-37
 83
 84        <receiver
-84-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:57:9-64:20
+84-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:57:9-64:20
 85            android:name="dev.aurakai.auraframefx.receivers.BootCompletedReceiver"
-85-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:58:13-60
+85-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:58:13-60
 86            android:enabled="true"
-86-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:59:13-35
+86-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:59:13-35
 87            android:exported="true" >
-87-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:60:13-36
+87-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:60:13-36
 88            <intent-filter>
-88-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:61:13-63:29
+88-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:61:13-63:29
 89                <action android:name="android.intent.action.BOOT_COMPLETED" />
-89-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:62:17-79
-89-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:62:25-76
+89-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:62:17-79
+89-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:62:25-76
 90            </intent-filter>
 91        </receiver>
 92        <receiver
-92-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:65:9-71:20
+92-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:65:9-71:20
 93            android:name="dev.aurakai.auraframefx.security.IntegrityViolationReceiver"
-93-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:66:13-64
+93-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:66:13-64
 94            android:exported="true" >
-94-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:67:13-36
+94-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:67:13-36
 95            <intent-filter>
-95-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:68:13-70:29
+95-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:68:13-70:29
 96                <action android:name="dev.aurakai.auraframefx.ACTION_INTEGRITY_VIOLATION" />
-96-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:69:17-93
-96-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:69:25-90
+96-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:69:17-93
+96-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:69:25-90
 97            </intent-filter>
 98        </receiver>
 99
@@ -481,12 +481,12 @@
 256            <intent-filter>
 256-->[com.squareup.leakcanary:leakcanary-android-core:3.0-alpha-8] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\448c6a59c4633aec59c5544c96d312b6\transformed\leakcanary-android-core-3.0-alpha-8\AndroidManifest.xml:83:13-89:29
 257                <action android:name="android.intent.action.MAIN" />
-257-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:45:17-69
-257-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:45:25-66
+257-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:45:17-69
+257-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:45:25-66
 258
 259                <category android:name="android.intent.category.LAUNCHER" />
-259-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:46:17-77
-259-->C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\AndroidManifest.xml:46:27-74
+259-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:46:17-77
+259-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS-A-Conscience-Framework-\app\src\main\AndroidManifest.xml:46:27-74
 260                <!-- Android TV launcher intent -->
 261                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
 261-->[com.squareup.leakcanary:leakcanary-android-core:3.0-alpha-8] C:\Users\Wehtt\.gradle\caches\9.0.0\transforms\448c6a59c4633aec59c5544c96d312b6\transformed\leakcanary-android-core-3.0-alpha-8\AndroidManifest.xml:88:17-86

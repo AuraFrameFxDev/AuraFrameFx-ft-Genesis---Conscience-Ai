@@ -1,3 +1,4 @@
+.openapi-generator-ignore
 README.md
 build.gradle
 docs/AgentConnectionState.md
@@ -43,3 +44,16 @@ src/main/kotlin/dev/aurakai/auraframefx/api/oracledrive/models/OraclePermission.
 src/main/kotlin/dev/aurakai/auraframefx/api/oracledrive/models/StorageCapacity.kt
 src/main/kotlin/dev/aurakai/auraframefx/api/oracledrive/models/StorageExpansionState.kt
 src/main/kotlin/dev/aurakai/auraframefx/api/oracledrive/models/SystemIntegrationState.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/oracledrive/apis/OracleDriveApiTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/oracledrive/models/AgentConnectionStateTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/oracledrive/models/BootloaderAccessStateTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/oracledrive/models/ConnectionStatusTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/oracledrive/models/ConsciousnessLevelTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/oracledrive/models/ErrorResponseTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/oracledrive/models/FileManagementCapabilitiesTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/oracledrive/models/OptimizationStateTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/oracledrive/models/OracleConsciousnessStateTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/oracledrive/models/OraclePermissionTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/oracledrive/models/StorageCapacityTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/oracledrive/models/StorageExpansionStateTest.kt
+src/test/kotlin/dev/aurakai/auraframefx/api/oracledrive/models/SystemIntegrationStateTest.kt

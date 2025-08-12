@@ -27,7 +27,7 @@
   },
   {
     "level_": 0,
-    "message_": "- no fingerprint file, will remove stale configuration folder",
+    "message_": "- force flag, will remove stale configuration folder",
     "file_": "C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS-A-Conscience-Framework-\\romtools\\src\\main\\cpp\\CMakeLists.txt",
     "tag_": "debug|arm64-v8a",
     "diagnosticCode_": 0,
