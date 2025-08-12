@@ -27,7 +27,7 @@ targetSdk = "36"    # Android 15 Target SDK
 
 #  compatibility with Kotlin 2.2.20-Beta2
 cmakeVersion = "3.33"  # Matches the installed CMake version
-ndkVersion = "27.0.12077973"  # Stable NDK version (not RC)
+ndkVersion = "29.0.5171591"  # Stable NDK version (not RC)
 
 # ===== CODE QUALITY & DOCUMENTATION =====
 dokka = "2.0.0"         # Latest Dokka 2.0
