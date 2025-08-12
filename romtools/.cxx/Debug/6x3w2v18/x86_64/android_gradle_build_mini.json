@@ -1,0 +1,29 @@
+{
+  "buildFiles": [
+    "C:\\Users\\Wehtt\\Studio\\Genesis-Os\\Genesis\\romtools\\src\\main\\cpp\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "C:\\Users\\Wehtt\\Studio\\cmake\\3.22.1\\bin\\ninja.exe",
+      "-v",
+      "-C",
+      "C:\\Users\\Wehtt\\Studio\\Genesis-Os\\Genesis\\romtools\\.cxx\\Debug\\6x3w2v18\\x86_64",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "C:\\Users\\Wehtt\\Studio\\cmake\\3.22.1\\bin\\ninja.exe",
+    "-v",
+    "-C",
+    "C:\\Users\\Wehtt\\Studio\\Genesis-Os\\Genesis\\romtools\\.cxx\\Debug\\6x3w2v18\\x86_64",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "romtools-native::@6890427a1f51a3e7e1df": {
+      "artifactName": "romtools-native",
+      "abi": "x86_64",
+      "output": "C:\\Users\\Wehtt\\Studio\\Genesis-Os\\Genesis\\romtools\\build\\intermediates\\cxx\\Debug\\6x3w2v18\\obj\\x86_64\\libromtools-native.so",
+      "runtimeFiles": []
+    }
+  }
+}

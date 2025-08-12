@@ -1,0 +1,1 @@
+C:\Users\Wehtt\Studio\Genesis-Os\Genesis\app\src\main\cpp\CMakeLists.txt
