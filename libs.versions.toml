@@ -342,4 +342,4 @@ xposed = { module = "de.robv.android.xposed:api", version.ref = "xposed" }
 lsposed = { module = "org.lsposed.lsplant:lsplant", version.ref = "lsposed" }
 
 # YukiHookAPI (Maven dependencies - bleeding edge)
-yuki = { module = "com.highcapable.yuk
+ yuki = { module = "com.highcapable.yuk
