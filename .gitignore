@@ -1,0 +1,58 @@
+# Gradle
+.gradle/
+build/
+gradle-app.setting
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+.gradletasknamecache
+
+# Android
+*.apk
+*.aab
+*.ap_
+*.dex
+local.properties
+proguard/
+lint-results*
+capture/
+
+# IntelliJ
+.idea/
+*.iml
+*.iws
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Generated files
+bin/
+gen/
+out/
+release/
+
+# Keystore files
+*.jks
+*.keystore
+
+# External native build
+.externalNativeBuild/
+.cxx/
+
+# NDK
+obj/
+
+# Signing files
+.signing/
+
+# Node modules (if any)
+node_modules/
+
+# Cache directories
+.cache/
+tmp/
