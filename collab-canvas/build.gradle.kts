@@ -52,8 +52,8 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_24
-        targetCompatibility = JavaVersion.VERSION_24
+        sourceCompatibility = JavaVersion.toVersion(libs.versions.java.target.get())
+        targetCompatibility = JavaVersion.toVersion(libs.versions.java.target.get())
         isCoreLibraryDesugaringEnabled = true
     }
 
@@ -84,7 +84,7 @@ android {
 
 // Kotlin Toolchain - Java 24
 kotlin {
-    jvmToolchain(24)
+    jvmToolchain(libs.versions.java.toolchain.get().toInt())
 }
 
 dependencies {

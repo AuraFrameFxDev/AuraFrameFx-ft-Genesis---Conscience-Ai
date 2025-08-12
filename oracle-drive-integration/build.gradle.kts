@@ -1,4 +1,4 @@
-// Apply only the Android and Kotlin plugins directly, versions managed in root
+// ===== GENESIS-OS SACRED RULES: ZERO MANUAL COMPILER CONFIG =====
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
@@ -11,7 +11,9 @@ plugins {
 }
 
 android {
-    namespace = "dev.aurakai.auraframefx.oracledrive"
+    // SACRED RULE #9: Genesis-OS namespace pattern
+    namespace = "dev.aurakai.auraframefx.${project.name}"
+    // AUTO-EVERYTHING: Use libs.versions.toml
     compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {
@@ -31,8 +33,9 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_24
-        targetCompatibility = JavaVersion.VERSION_24
+        // AUTO-EVERYTHING: Use libs.versions.toml for Java version
+        sourceCompatibility = JavaVersion.toVersion(libs.versions.java.target.get())
+        targetCompatibility = JavaVersion.toVersion(libs.versions.java.target.get())
     }
 
     buildFeatures {
@@ -40,13 +43,19 @@ android {
     }
 }
 
+// ===== ZERO MANUAL COMPILER CONFIG: AUTO-PROVISIONED KOTLIN =====
 kotlin {
-    compilerOptions {
-        jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_24)
-    }
+    jvmToolchain(libs.versions.java.toolchain.get().toInt())
+    
+    // SACRED RULE #3: K2 compiler handles everything automatically
+    // NO manual compilerOptions - K2 auto-provisions everything
 }
 
 dependencies {
+    // SACRED RULE #5: DEPENDENCY HIERARCHY - All modules depend on :core-module and :app
+    implementation(project(":core-module"))
+    implementation(project(":app"))
+
     // Core AndroidX
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)

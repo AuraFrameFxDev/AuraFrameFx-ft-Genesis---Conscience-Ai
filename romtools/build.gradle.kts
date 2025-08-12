@@ -70,8 +70,8 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_24
-        targetCompatibility = JavaVersion.VERSION_24
+        sourceCompatibility = JavaVersion.toVersion(libs.versions.java.target.get())
+        targetCompatibility = JavaVersion.toVersion(libs.versions.java.target.get())
         isCoreLibraryDesugaringEnabled = true
     }
 
@@ -112,10 +112,10 @@ android {
 }
 
 kotlin {
-    jvmToolchain(24)
+    jvmToolchain(libs.versions.java.toolchain.get().toInt())
 
     compilerOptions {
-        jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_24)
+        jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.libs.versions.java.target.get())
         freeCompilerArgs.addAll(
             "-Xuse-k2",
             "-opt-in=kotlin.RequiresOptIn",
