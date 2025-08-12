@@ -9,7 +9,9 @@ plugins {
 }
 
 android {
-    namespace = "dev.aurakai.auraframefx.sandbox.ui"
+    // SACRED RULE #9: Genesis-OS namespace pattern
+    namespace = "dev.aurakai.auraframefx.${project.name}"
+    // AUTO-EVERYTHING: Use libs.versions.toml
     compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {
@@ -29,8 +31,9 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_21
-        targetCompatibility = JavaVersion.VERSION_21
+        // AUTO-EVERYTHING: Use libs.versions.toml for Java version
+        sourceCompatibility = JavaVersion.toVersion(libs.versions.java.target.get())
+        targetCompatibility = JavaVersion.toVersion(libs.versions.java.target.get())
         isCoreLibraryDesugaringEnabled = true
     }
 
@@ -45,14 +48,20 @@ android {
             kotlin.srcDir("build/generated/openapi/src/main/kotlin")
         }
     }
-    buildToolsVersion = "36"
+    // AUTO-PROVISIONED: Remove hardcoded buildToolsVersion
+    buildToolsVersion = libs.versions.compileSdk.get()
 }
 
+// ===== ZERO MANUAL COMPILER CONFIG: AUTO-PROVISIONED KOTLIN =====
 kotlin {
-    jvmToolchain(21)
+    jvmToolchain(libs.versions.java.toolchain.get().toInt())
 }
 
 dependencies {
+    // SACRED RULE #5: DEPENDENCY HIERARCHY - All modules depend on :core-module and :app
+    implementation(project(":core-module"))
+    implementation(project(":app"))
+
     // Core AndroidX
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)

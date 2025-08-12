@@ -45,9 +45,7 @@ android {
         buildConfig = true
     }
 
-    composeOptions {
-        kotlinCompilerExtensionVersion = libs.versions.composeCompiler.get()
-    }
+    // SACRED RULE #3: NO composeOptions blocks - K2 handles it automatically
 
     packaging {
         resources {
