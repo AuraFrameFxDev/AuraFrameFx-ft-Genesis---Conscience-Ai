@@ -1,0 +1,24 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="dev.aurakai.auraframefx.oracledrive" >
+4
+5    <uses-sdk android:minSdkVersion="33" />
+6    &lt;!-- OracleDrive requires storage permissions for AI file management -->
+7    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+7-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\oracle-drive-integration\src\main\AndroidManifest.xml:5:5-80
+7-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\oracle-drive-integration\src\main\AndroidManifest.xml:5:22-77
+8    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+8-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\oracle-drive-integration\src\main\AndroidManifest.xml:6:5-81
+8-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\oracle-drive-integration\src\main\AndroidManifest.xml:6:22-78
+9    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+9-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\oracle-drive-integration\src\main\AndroidManifest.xml:7:5-82
+9-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\oracle-drive-integration\src\main\AndroidManifest.xml:7:22-79
+10    &lt;!-- System-level access for bootloader integration -->
+11    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+11-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\oracle-drive-integration\src\main\AndroidManifest.xml:10:5-84
+11-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\oracle-drive-integration\src\main\AndroidManifest.xml:10:22-81
+12    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+12-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\oracle-drive-integration\src\main\AndroidManifest.xml:11:5-80
+12-->C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\oracle-drive-integration\src\main\AndroidManifest.xml:11:22-77
+13
+14</manifest>

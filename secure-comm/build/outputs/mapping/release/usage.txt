@@ -1,0 +1,14 @@
+dev.aurakai.auraframefx.securecomm.crypto.CryptoManager
+dev.aurakai.auraframefx.securecomm.crypto.CryptoManager_Factory
+dev.aurakai.auraframefx.securecomm.di.SecureCommModule
+dev.aurakai.auraframefx.securecomm.di.SecureCommModule_ProvideCryptoManagerFactory
+dev.aurakai.auraframefx.securecomm.di.SecureCommModule_ProvideSecureChannelFactory
+dev.aurakai.auraframefx.securecomm.di.SecureCommModule_ProvideSecureKeyStoreFactory
+dev.aurakai.auraframefx.securecomm.keystore.SecureKeyStore$Companion
+dev.aurakai.auraframefx.securecomm.keystore.SecureKeyStore
+dev.aurakai.auraframefx.securecomm.keystore.SecureKeyStore_Factory
+dev.aurakai.auraframefx.securecomm.protocol.MessagePacket$Companion
+dev.aurakai.auraframefx.securecomm.protocol.MessagePacket
+dev.aurakai.auraframefx.securecomm.protocol.SecureChannel
+dev.aurakai.auraframefx.securecomm.protocol.SecureChannel_Factory
+hilt_aggregated_deps._dev_aurakai_auraframefx_securecomm_di_SecureCommModule

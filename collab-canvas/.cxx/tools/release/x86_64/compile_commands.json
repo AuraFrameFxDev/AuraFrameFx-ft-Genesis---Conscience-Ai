@@ -1,0 +1,7 @@
+[
+{
+  "directory": "C:/Users/Wehtt/OneDrive/Documents/GitHub/GENESIS/collab-canvas/.cxx/RelWithDebInfo/z32m133b/x86_64",
+  "command": "C:\\Users\\Wehtt\\Studio\\ndk\\27.0.12077973\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=x86_64-none-linux-android33 --sysroot=C:/Users/Wehtt/Studio/ndk/27.0.12077973/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DCOLLAB_CANVAS_BUILD=1 -Dcollabcanvas_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -std=c++20 -fPIC -O3 -std=c++20 -fPIC -O3 -DNDEBUG -O2 -g -DNDEBUG -fPIC -std=c++20 -o CMakeFiles\\collabcanvas.dir\\collab_canvas_native.cpp.o -c C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS\\collab-canvas\\src\\main\\cpp\\collab_canvas_native.cpp",
+  "file": "C:\\Users\\Wehtt\\OneDrive\\Documents\\GitHub\\GENESIS\\collab-canvas\\src\\main\\cpp\\collab_canvas_native.cpp"
+}
+]

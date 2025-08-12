@@ -1,19 +1,31 @@
 package dev.aurakai.auraframefx.securecomm.protocol
 
+import android.content.Context
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
+import dagger.hilt.android.testing.HiltAndroidRule
+import dagger.hilt.android.testing.HiltAndroidTest
 import dev.aurakai.auraframefx.securecomm.crypto.CryptoManager
 import org.junit.After
 import org.junit.Assert.*
 import org.junit.Before
+import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
+import javax.inject.Inject
 
 /**
  * Tests for the SecureChannel class in the NeuralSync recovery system.
  */
+@HiltAndroidTest
 @RunWith(AndroidJUnit4::class)
 class SecureChannelTest {
+    @get:Rule
+    val hiltRule = HiltAndroidRule(this)
+    
+    @Inject
+    lateinit var context: Context
+    
     private lateinit var cryptoManager: CryptoManager
     private lateinit var secureChannel1: SecureChannel
     private lateinit var secureChannel2: SecureChannel
@@ -21,7 +33,7 @@ class SecureChannelTest {
     
     @Before
     fun setUp() {
-        val context = ApplicationProvider.getApplicationContext<android.content.Context>()
+        hiltRule.inject()
         cryptoManager = CryptoManager(context)
         secureChannel1 = SecureChannel(cryptoManager)
         secureChannel2 = SecureChannel(cryptoManager)

@@ -45,10 +45,6 @@ android {
         buildConfig = true
     }
 
-    composeOptions {
-        kotlinCompilerExtensionVersion = libs.versions.composeCompiler.get()
-    }
-
     packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
@@ -57,15 +53,19 @@ android {
     buildToolsVersion = "36"
 }
 
-// Kotlin Toolchain - Java 24 (consistent with compileOptions)
+// Kotlin Toolchain - Auto-provisioned Java 24
 kotlin {
-    jvmToolchain(24)
+    jvmToolchain(libs.versions.java.toolchain.get().toInt())
 }
 
 group = "dev.aurakai"
 version = "1.0.0"
 
 dependencies {
+    // Project module dependencies
+    implementation(project(":core-module"))
+    implementation(project(":app"))  // For agents
+    
     // Core AndroidX
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
@@ -113,7 +113,6 @@ tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach 
         languageVersion.set(org.jetbrains.kotlin.gradle.dsl.KotlinVersion.KOTLIN_2_2)
 
         freeCompilerArgs.addAll(
-            "-Xuse-k2",
             "-Xskip-prerelease-check",
             "-opt-in=kotlin.RequiresOptIn",
             "-opt-in=kotlin.ExperimentalStdlibApi",

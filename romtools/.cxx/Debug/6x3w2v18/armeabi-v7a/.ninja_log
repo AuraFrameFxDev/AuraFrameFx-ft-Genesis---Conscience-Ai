@@ -1,4 +1,3 @@
 # ninja log v5
-0	84	7765975326127644	CMakeFiles/romtools-native.dir/romtools_native.cpp.o	aba331add13e43a2
-87	205	7765975327295553	C:/Users/Wehtt/Studio/Genesis-Os/Genesis/romtools/build/intermediates/cxx/Debug/6x3w2v18/obj/armeabi-v7a/libromtools-native.so	7d1dcb9886754939
-1	15	0	clean	ca252f5c3449f1cb
+1	68	7766873222724585	CMakeFiles/romtools.dir/romtools_native.cpp.o	e8e24100f46ba4e9
+71	153	7766873223534175	C:/Users/Wehtt/OneDrive/Documents/GitHub/GENESIS/romtools/build/intermediates/cxx/Debug/6x3w2v18/obj/armeabi-v7a/libromtools_native.so	e155ed25d295d7e8

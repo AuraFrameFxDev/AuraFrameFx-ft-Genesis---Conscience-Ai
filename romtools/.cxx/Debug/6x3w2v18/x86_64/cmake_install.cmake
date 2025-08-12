@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/Wehtt/Studio/Genesis-Os/Genesis/romtools/src/main/cpp
+# Install script for directory: C:/Users/Wehtt/OneDrive/Documents/GitHub/GENESIS/romtools/src/main/cpp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/romtools-native")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/romtools")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Wehtt/Studio/Genesis-Os/Genesis/romtools/.cxx/Debug/6x3w2v18/x86_64/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Wehtt/OneDrive/Documents/GitHub/GENESIS/romtools/.cxx/Debug/6x3w2v18/x86_64/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

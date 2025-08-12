@@ -1,0 +1,5 @@
+C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\romtools\src\main\kotlin\dev\aurakai\auraframefx\romtools\di\RomToolsModule.kt
+C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\romtools\src\main\kotlin\dev\aurakai\auraframefx\romtools\RomToolsManager.kt
+C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\romtools\src\main\kotlin\dev\aurakai\auraframefx\romtools\bootloader\BootloaderManager.kt
+C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\romtools\src\main\kotlin\dev\aurakai\auraframefx\romtools\StubImplementations.kt
+C:\Users\Wehtt\OneDrive\Documents\GitHub\GENESIS\romtools\src\main\kotlin\dev\aurakai\auraframefx\romtools\ui\RomToolsScreen.kt

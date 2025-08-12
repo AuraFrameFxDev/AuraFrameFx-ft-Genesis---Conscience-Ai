@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "dev.aurakai.auraframefx.core.core-module-release-65:/layout-watch-v20/abc_alert_dialog_button_bar_material.xml",
+        "source": "dev.aurakai.auraframefx.core.core-module-appcompat-1.7.1-5:/layout-watch-v20/abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "dev.aurakai.auraframefx.core.core-module-release-65:/layout-watch-v20/abc_alert_dialog_title_material.xml",
+        "source": "dev.aurakai.auraframefx.core.core-module-appcompat-1.7.1-5:/layout-watch-v20/abc_alert_dialog_title_material.xml"
+    }
+]

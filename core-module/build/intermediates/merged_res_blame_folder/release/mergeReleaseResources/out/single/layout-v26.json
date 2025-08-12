@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "dev.aurakai.auraframefx.core.core-module-release-65:/layout-v26/abc_screen_toolbar.xml",
+        "source": "dev.aurakai.auraframefx.core.core-module-appcompat-1.7.1-5:/layout-v26/abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "dev.aurakai.auraframefx.core.core-module-release-65:/layout-v26/mtrl_calendar_month.xml",
+        "source": "dev.aurakai.auraframefx.core.core-module-material-1.12.0-51:/layout-v26/mtrl_calendar_month.xml"
+    }
+]

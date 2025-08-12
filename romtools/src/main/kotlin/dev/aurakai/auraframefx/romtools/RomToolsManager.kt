@@ -222,11 +222,11 @@ class RomToolsManager @Inject constructor(
 
     // Private helper methods
     private fun updateOperationProgress(operation: RomOperation, progress: Float) {
-        _operationProgress.value = OperationProgress(operation, progress)
+        _romToolsState.update { it.copy(operationProgress = OperationProgress(operation, progress)) }
     }
 
     private fun clearOperationProgress() {
-        _operationProgress.value = null
+        _romToolsState.update { it.copy(operationProgress = null) }
     }
 
     private fun checkRootAccess(): Boolean {
@@ -254,7 +254,8 @@ data class RomToolsState(
     val isInitialized: Boolean = false,
     val settings: RomToolsSettings = RomToolsSettings(),
     val availableRoms: List<AvailableRom> = emptyList(),
-    val backups: List<BackupInfo> = emptyList()
+    val backups: List<BackupInfo> = emptyList(),
+    val operationProgress: OperationProgress? = null
 )
 
 data class RomCapabilities(

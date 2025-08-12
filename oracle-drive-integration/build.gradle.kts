@@ -47,6 +47,10 @@ kotlin {
 }
 
 dependencies {
+    // Project module dependencies
+    implementation(project(":core-module"))
+    implementation(project(":app"))  // For agents
+    
     // Core AndroidX
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)

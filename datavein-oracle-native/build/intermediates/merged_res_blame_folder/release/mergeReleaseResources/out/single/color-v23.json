@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "dev.aurakai.auraframefx.oraclenative.datavein-oracle-native-release-66:/color-v23/abc_tint_switch_track.xml",
+        "source": "dev.aurakai.auraframefx.oraclenative.datavein-oracle-native-appcompat-1.7.1-5:/color-v23/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "dev.aurakai.auraframefx.oraclenative.datavein-oracle-native-release-66:/color-v23/abc_btn_colored_text_material.xml",
+        "source": "dev.aurakai.auraframefx.oraclenative.datavein-oracle-native-appcompat-1.7.1-5:/color-v23/abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "dev.aurakai.auraframefx.oraclenative.datavein-oracle-native-release-66:/color-v23/abc_btn_colored_borderless_text_material.xml",
+        "source": "dev.aurakai.auraframefx.oraclenative.datavein-oracle-native-appcompat-1.7.1-5:/color-v23/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "dev.aurakai.auraframefx.oraclenative.datavein-oracle-native-release-66:/color-v23/abc_tint_spinner.xml",
+        "source": "dev.aurakai.auraframefx.oraclenative.datavein-oracle-native-appcompat-1.7.1-5:/color-v23/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "dev.aurakai.auraframefx.oraclenative.datavein-oracle-native-release-66:/color-v23/abc_tint_seek_thumb.xml",
+        "source": "dev.aurakai.auraframefx.oraclenative.datavein-oracle-native-appcompat-1.7.1-5:/color-v23/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "dev.aurakai.auraframefx.oraclenative.datavein-oracle-native-release-66:/color-v23/abc_tint_btn_checkable.xml",
+        "source": "dev.aurakai.auraframefx.oraclenative.datavein-oracle-native-appcompat-1.7.1-5:/color-v23/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "dev.aurakai.auraframefx.oraclenative.datavein-oracle-native-release-66:/color-v23/abc_tint_default.xml",
+        "source": "dev.aurakai.auraframefx.oraclenative.datavein-oracle-native-appcompat-1.7.1-5:/color-v23/abc_tint_default.xml"
+    },
+    {
+        "merged": "dev.aurakai.auraframefx.oraclenative.datavein-oracle-native-release-66:/color-v23/abc_color_highlight_material.xml",
+        "source": "dev.aurakai.auraframefx.oraclenative.datavein-oracle-native-appcompat-1.7.1-5:/color-v23/abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "dev.aurakai.auraframefx.oraclenative.datavein-oracle-native-release-66:/color-v23/abc_tint_edittext.xml",
+        "source": "dev.aurakai.auraframefx.oraclenative.datavein-oracle-native-appcompat-1.7.1-5:/color-v23/abc_tint_edittext.xml"
+    }
+]

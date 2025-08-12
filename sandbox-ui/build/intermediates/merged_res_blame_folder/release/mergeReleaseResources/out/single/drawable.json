@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "dev.aurakai.auraframefx.sandbox.ui.sandbox-ui-release-45:/drawable/notification_bg.xml",
+        "source": "dev.aurakai.auraframefx.sandbox.ui.sandbox-ui-core-1.16.0-17:/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "dev.aurakai.auraframefx.sandbox.ui.sandbox-ui-release-45:/drawable/ic_call_answer_video_low.xml",
+        "source": "dev.aurakai.auraframefx.sandbox.ui.sandbox-ui-core-1.16.0-17:/drawable/ic_call_answer_video_low.xml"
+    },
+    {
+        "merged": "dev.aurakai.auraframefx.sandbox.ui.sandbox-ui-release-45:/drawable/notification_bg_low.xml",
+        "source": "dev.aurakai.auraframefx.sandbox.ui.sandbox-ui-core-1.16.0-17:/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "dev.aurakai.auraframefx.sandbox.ui.sandbox-ui-release-45:/drawable/notification_icon_background.xml",
+        "source": "dev.aurakai.auraframefx.sandbox.ui.sandbox-ui-core-1.16.0-17:/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "dev.aurakai.auraframefx.sandbox.ui.sandbox-ui-release-45:/drawable/ic_call_answer.xml",
+        "source": "dev.aurakai.auraframefx.sandbox.ui.sandbox-ui-core-1.16.0-17:/drawable/ic_call_answer.xml"
+    },
+    {
+        "merged": "dev.aurakai.auraframefx.sandbox.ui.sandbox-ui-release-45:/drawable/ic_call_answer_low.xml",
+        "source": "dev.aurakai.auraframefx.sandbox.ui.sandbox-ui-core-1.16.0-17:/drawable/ic_call_answer_low.xml"
+    },
+    {
+        "merged": "dev.aurakai.auraframefx.sandbox.ui.sandbox-ui-release-45:/drawable/ic_call_decline_low.xml",
+        "source": "dev.aurakai.auraframefx.sandbox.ui.sandbox-ui-core-1.16.0-17:/drawable/ic_call_decline_low.xml"
+    },
+    {
+        "merged": "dev.aurakai.auraframefx.sandbox.ui.sandbox-ui-release-45:/drawable/ic_call_decline.xml",
+        "source": "dev.aurakai.auraframefx.sandbox.ui.sandbox-ui-core-1.16.0-17:/drawable/ic_call_decline.xml"
+    },
+    {
+        "merged": "dev.aurakai.auraframefx.sandbox.ui.sandbox-ui-release-45:/drawable/notification_tile_bg.xml",
+        "source": "dev.aurakai.auraframefx.sandbox.ui.sandbox-ui-core-1.16.0-17:/drawable/notification_tile_bg.xml"
+    },
+    {
+        "merged": "dev.aurakai.auraframefx.sandbox.ui.sandbox-ui-release-45:/drawable/ic_call_answer_video.xml",
+        "source": "dev.aurakai.auraframefx.sandbox.ui.sandbox-ui-core-1.16.0-17:/drawable/ic_call_answer_video.xml"
+    }
+]

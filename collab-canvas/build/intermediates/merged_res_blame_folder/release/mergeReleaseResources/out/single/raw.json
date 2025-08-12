@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "dev.aurakai.auraframefx.canvas.collab-canvas-release-85:/raw/firebase_common_keep.xml",
+        "source": "dev.aurakai.auraframefx.canvas.collab-canvas-jetified-firebase-common-22.0.0-71:/raw/firebase_common_keep.xml"
+    },
+    {
+        "merged": "dev.aurakai.auraframefx.canvas.collab-canvas-release-85:/raw/firebase_crashlytics_keep.xml",
+        "source": "dev.aurakai.auraframefx.canvas.collab-canvas-jetified-firebase-crashlytics-20.0.0-56:/raw/firebase_crashlytics_keep.xml"
+    }
+]

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "dev.aurakai.auraframefx.canvas.collab-canvas-release-85:/layout-sw600dp-v13/mtrl_layout_snackbar.xml",
+        "source": "dev.aurakai.auraframefx.canvas.collab-canvas-material-1.12.0-67:/layout-sw600dp-v13/mtrl_layout_snackbar.xml"
+    },
+    {
+        "merged": "dev.aurakai.auraframefx.canvas.collab-canvas-release-85:/layout-sw600dp-v13/design_layout_snackbar.xml",
+        "source": "dev.aurakai.auraframefx.canvas.collab-canvas-material-1.12.0-67:/layout-sw600dp-v13/design_layout_snackbar.xml"
+    }
+]

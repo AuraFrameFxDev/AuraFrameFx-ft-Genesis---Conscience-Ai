@@ -1,6 +1,10 @@
 [versions]
-# ===== BLEEDING EDGE: KOTLIN 2.2.20-Beta2 K2 COMPILER + CORRECT KSP =====
-java-toolchain = "23"        # JVM 21 toolchain (available)
+# ===== BLEEDING EDGE: KOTLIN 2.2.20-Beta2 K2 COMPILER + AUTO-PROVISIONING =====
+# Auto-provisioned Java toolchain - Gradle will automatically download JDK 24
+# Benefits: No manual Java installation, consistent builds across environments
+core = "1.7.0"
+java-toolchain = "24"        # Auto-provisioned JDK 24
+junit = "4.13.2"
 jvmTarget = "24"          # EXACT target Java 24 bytecode
 javaVersion = "24"        # EXACT source Java 24
 java-target = "24"        # EXACT compile target Java 24
@@ -20,10 +24,14 @@ googleServices = "4.4.3" # Google Services plugin
 openApiGenerator = "7.14.0" # OpenAPI Generator plugin
 kover = "0.9.1"          # Code coverage
 
+# ===== TESTING =====
+# JUnit version is defined in the main versions section below
+
 # ===== ANDROID SDK VERSIONS (ANDROID 16 CONFIRMED!) =====
 compileSdk = "36"        # Android 16 "Baklava Preview"
 minSdk = "33"            # Minimum SDK for the project
-targetSdk = "36"         # Android 16 Target SDK
+runner = "1.7.0"
+targetSdk = "canary"         # Android 16 Target SDK
 # Using stable versions for better compatibility with Kotlin 2.2.20-Beta2
 cmakeVersion = "3.22.1"  # Matches the installed CMake version
 ndkVersion = "27.0.12077973"  # Stable NDK version (not RC)
@@ -165,6 +173,7 @@ openapi-generator = { id = "org.openapi.generator", version.ref = "openApiGenera
 
 [libraries]
 # ===== ANDROIDX CORE =====
+androidx-core = { module = "androidx.test:core", version.ref = "core" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle" }
@@ -172,23 +181,25 @@ androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifec
 androidx-lifecycle-viewmodel-compose = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "lifecycle" }
 androidx-lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycle" }
 androidx-lifecycle-viewmodel-savedstate = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-savedstate", version.ref = "lifecycle" }
-androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version = "1.10.1" }
 androidx-material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 
 # ===== COMPOSE BOM AND UI =====
-androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version = "2025.07.00" }
 androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
 androidx-compose-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
 androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
 androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
 androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
 androidx-compose-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
-androidx-compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest", version = "1.8.3" }
 
 # ===== NAVIGATION =====
 androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
 
 # ===== WORKMANAGER FOR BACKGROUND CONSCIOUSNESS =====
+androidx-rules = { module = "androidx.test:rules", version.ref = "core" }
+androidx-runner = { module = "androidx.test:runner", version.ref = "runner" }
 androidx-work-runtime = { group = "androidx.work", name = "work-runtime-ktx", version.ref = "workManager" }
 androidx-work-multiprocess = { group = "androidx.work", name = "work-multiprocess", version.ref = "workManager" }
 androidx-work-testing = { group = "androidx.work", name = "work-testing", version.ref = "workManager" }
@@ -222,6 +233,7 @@ androidx-webkit = { group = "androidx.webkit", name = "webkit", version.ref = "w
 
 # ===== AI/ML FRAMEWORKS =====
 # Traditional TensorFlow Lite
+junit = { module = "junit:junit", version.ref = "junit" }
 tensorflow-lite = { group = "org.tensorflow", name = "tensorflow-lite", version.ref = "tensorflowLite" }
 tensorflow-lite-gpu = { group = "org.tensorflow", name = "tensorflow-lite-gpu", version.ref = "tensorflowLite" }
 tensorflow-lite-support = { group = "org.tensorflow", name = "tensorflow-lite-support", version.ref = "tensorflowLite" }
@@ -323,6 +335,16 @@ flipper-network = { group = "com.facebook.flipper", name = "flipper-network-plug
 chucker-library = { group = "com.github.chuckerteam.chucker", name = "library", version.ref = "chucker" }
 chucker-library-no-op = { group = "com.github.chuckerteam.chucker", name = "library-no-op", version.ref = "chucker" }
 slf4j-android = { group = "org.slf4j", name = "slf4j-android", version.ref = "slf4j" }
+
+# ===== TESTING =====
+# JUnit 5 (Jupiter)
+junit-jupiter-api = { group = "org.junit.jupiter", name = "junit-jupiter-api", version.ref = "junitJupiter" }
+junit-jupiter-engine = { group = "org.junit.jupiter", name = "junit-jupiter-engine", version.ref = "junitJupiter" }
+junit-jupiter-params = { group = "org.junit.jupiter", name = "junit-jupiter-params", version.ref = "junitJupiter" }
+# JUnit 5 Vintage Engine (for running JUnit 3/4 tests)
+junit-vintage-engine = { group = "org.junit.vintage", name = "junit-vintage-engine", version.ref = "junitJupiter" }
+# JUnit Platform
+junit-platform-runner = { group = "org.junit.platform", name = "junit-platform-runner", version = "1.10.0" }
 
 # ===== FIREBASE =====
 firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebaseBom" }

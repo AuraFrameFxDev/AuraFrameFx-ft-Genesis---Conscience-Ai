@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
@@ -18,89 +20,114 @@ android {
     }
 
     testOptions {
-        targetSdk = libs.versions.targetSdk.get().toInt()
+        unitTests {
+            isIncludeAndroidResources = true
+        }
     }
-
-    lint {
-        targetSdk = libs.versions.targetSdk.get().toInt()
+    // Required for Hilt testing
+    hilt {
+        enableAggregatingTask = true
     }
 
     buildTypes {
         release {
             isMinifyEnabled = true
             proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
+                getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
             )
         }
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_24
+        targetCompatibility = JavaVersion.VERSION_24
         isCoreLibraryDesugaringEnabled = true
     }
 
     packaging {
         resources.excludes += setOf(
-            "/META-INF/{AL2.0,LGPL2.1}",
-            "/META-INF/AL2.0",
-            "/META-INF/LGPL2.1"
+            "/META-INF/{AL2.0,LGPL2.1}", "/META-INF/AL2.0", "/META-INF/LGPL2.1"
         )
     }
 
     sourceSets {
         getByName("main") {
             kotlin.srcDir("build/generated/openapi/src/main/kotlin")
+            kotlin.srcDir("build/generated/ksp/main/kotlin")
         }
     }
-    buildToolsVersion = "36"
-}
 
-kotlin {
-    jvmToolchain(8)
+    compileSdk = 36
 
-    compilerOptions {
-        jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_1_8)
-        freeCompilerArgs.addAll(
-            "-Xskip-prerelease-check",
-            "-opt-in=kotlin.RequiresOptIn",
-            "-opt-in=kotlin.ExperimentalStdlibApi",
-            "-Xjvm-default=all"
-        )
+    kotlin {
+        jvmToolchain(23)
+        compilerOptions {
+            jvmTarget = JvmTarget.JVM_23
+            freeCompilerArgs.addAll(
+                "-Xskip-prerelease-check",
+                "-opt-in=kotlin.RequiresOptIn",
+                "-opt-in=kotlin.ExperimentalStdlibApi",
+                "-Xjvm-default=all"
+            )
+        }
     }
-}
+    dependencies {
+        // Project modules
+        implementation(project(":core-module"))
 
-dependencies {
-    // Project modules
-    implementation(project(":core-module"))
+        // Kotlin
+        implementation(libs.kotlin.reflect)
 
-    // Kotlin
-    implementation(libs.kotlin.reflect)
+        // AndroidX
+        implementation(libs.androidx.core.ktx)
 
-    // AndroidX
-    implementation(libs.androidx.core.ktx)
+        // Security
+        implementation(libs.androidxSecurity)
+        implementation(libs.tink)
 
-    // Security
-    implementation(libs.androidxSecurity)
-    implementation(libs.tink)
+        // Hilt
+        implementation(libs.hilt.android)
+        ksp(libs.hilt.compiler)
 
-    // Hilt
-    implementation(libs.hilt.android)
-    ksp(libs.hilt.compiler)
+        // Core library desugaring
+        coreLibraryDesugaring(libs.coreLibraryDesugaring)
 
-    // Core library desugaring
-    coreLibraryDesugaring(libs.coreLibraryDesugaring)
+        // JUnit 4 for Android tests
+        testImplementation(libs.junit)
 
-    // Testing
-    testImplementation(libs.junit.jupiter)
-    androidTestImplementation(libs.androidx.test.ext.junit)
-    androidTestImplementation(libs.espresso.core)
+        // Kotlin Coroutines Test
+        testImplementation(libs.kotlinx.coroutines.test)
 
-    // Bouncy Castle for cryptographic operations
-    implementation(libs.bouncycastle)
+        // MockK
+        testImplementation(libs.mockk)
 
-    // System interaction and documentation (using local JAR files)
-    implementation(files("${project.rootDir}/Libs/api-82.jar"))
-    implementation(files("${project.rootDir}/Libs/api-82-sources.jar"))
+        // Turbine for Flow testing
+        testImplementation(libs.turbine)
+
+        // AndroidX Test - Core
+        androidTestImplementation(libs.androidx.core)
+
+        // AndroidX JUnit
+        androidTestImplementation(libs.androidx.test.ext.junit)
+
+        // Espresso
+        androidTestImplementation(libs.espresso.core)
+
+        // Hilt Testing
+        androidTestImplementation(libs.hilt.android.testing)
+        kspAndroidTest(libs.hilt.compiler)
+
+        // Architecture Components Testing
+        androidTestImplementation(libs.androidx.core.testing)
+
+        // WorkManager Testing
+        androidTestImplementation(libs.androidx.work.testing)
+
+        // Bouncy Castle for cryptographic operations
+        implementation(libs.bouncycastle)
+
+        // System interaction and documentation (using local JAR files)
+        implementation(files("${project.rootDir}/Libs/api-82.jar"))
+        implementation(files("${project.rootDir}/Libs/api-82-sources.jar"))
+    }
 }

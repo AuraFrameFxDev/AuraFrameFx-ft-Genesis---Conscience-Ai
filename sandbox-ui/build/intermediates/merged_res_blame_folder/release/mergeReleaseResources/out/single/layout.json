@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "dev.aurakai.auraframefx.sandbox.ui.sandbox-ui-release-45:/layout/custom_dialog.xml",
+        "source": "dev.aurakai.auraframefx.sandbox.ui.sandbox-ui-core-1.16.0-17:/layout/custom_dialog.xml"
+    },
+    {
+        "merged": "dev.aurakai.auraframefx.sandbox.ui.sandbox-ui-release-45:/layout/notification_template_part_time.xml",
+        "source": "dev.aurakai.auraframefx.sandbox.ui.sandbox-ui-core-1.16.0-17:/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "dev.aurakai.auraframefx.sandbox.ui.sandbox-ui-release-45:/layout/ime_secondary_split_test_activity.xml",
+        "source": "dev.aurakai.auraframefx.sandbox.ui.sandbox-ui-core-1.16.0-17:/layout/ime_secondary_split_test_activity.xml"
+    },
+    {
+        "merged": "dev.aurakai.auraframefx.sandbox.ui.sandbox-ui-release-45:/layout/ime_base_split_test_activity.xml",
+        "source": "dev.aurakai.auraframefx.sandbox.ui.sandbox-ui-core-1.16.0-17:/layout/ime_base_split_test_activity.xml"
+    },
+    {
+        "merged": "dev.aurakai.auraframefx.sandbox.ui.sandbox-ui-release-45:/layout/notification_template_part_chronometer.xml",
+        "source": "dev.aurakai.auraframefx.sandbox.ui.sandbox-ui-core-1.16.0-17:/layout/notification_template_part_chronometer.xml"
+    }
+]

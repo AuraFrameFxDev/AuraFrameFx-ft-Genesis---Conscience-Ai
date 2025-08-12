@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "dev.aurakai.auraframefx.sandbox.ui.sandbox-ui-release-45:/color/vector_tint_color.xml",
+        "source": "dev.aurakai.auraframefx.sandbox.ui.sandbox-ui-jetified-ui-release-6:/color/vector_tint_color.xml"
+    },
+    {
+        "merged": "dev.aurakai.auraframefx.sandbox.ui.sandbox-ui-release-45:/color/vector_tint_theme_color.xml",
+        "source": "dev.aurakai.auraframefx.sandbox.ui.sandbox-ui-jetified-ui-release-6:/color/vector_tint_theme_color.xml"
+    }
+]

@@ -4,24 +4,7 @@
             "outputFile": "dev.aurakai.auraframefx.app-mergeReleaseResources-83:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Wehtt\\.gradle\\caches\\9.0.0\\transforms\\162823fa2fcf0d6d23229b39d0c2e0f5\\transformed\\appcompat-1.7.1\\res\\values-night-v8\\values-night-v8.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,125,209,293,389,491,593,687",
-                        "endColumns": "69,83,83,95,101,101,93,88",
-                        "endOffsets": "120,204,288,384,486,588,682,771"
-                    },
-                    "to": {
-                        "startLines": "38,39,40,41,42,43,44,79",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "2030,2100,2184,2268,2364,2466,2568,5822",
-                        "endColumns": "69,83,83,95,101,101,93,88",
-                        "endOffsets": "2095,2179,2263,2359,2461,2563,2657,5906"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Wehtt\\.gradle\\caches\\9.0.0\\transforms\\a166c349169fa3a3a5ab3af0d057cb00\\transformed\\material-1.11.0\\res\\values-night-v8\\values-night-v8.xml",
+                    "source": "C:\\Users\\Wehtt\\.gradle\\jdks\\eclipse_adoptium-23-amd64-windows.2\\caches\\9.0.0\\transforms\\1c348634900119a2dacc800868361cee\\transformed\\material-1.11.0\\res\\values-night-v8\\values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -35,6 +18,23 @@
                         "startOffsets": "3061,3136,3247,3336,3437,3544,3651,3750,3857,3960,4048,4172,4274,4376,4492,4594,4708,4836,4952,5074,5210,5330,5464,5584,5696,5911,6028,6152,6282,6404,6542,6676,6792",
                         "endColumns": "74,110,88,100,106,106,98,106,102,87,123,101,101,115,101,113,127,115,121,135,119,133,119,111,125,116,123,129,121,137,133,115,119",
                         "endOffsets": "3131,3242,3331,3432,3539,3646,3745,3852,3955,4043,4167,4269,4371,4487,4589,4703,4831,4947,5069,5205,5325,5459,5579,5691,5817,6023,6147,6277,6399,6537,6671,6787,6907"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Wehtt\\.gradle\\jdks\\eclipse_adoptium-23-amd64-windows.2\\caches\\9.0.0\\transforms\\1405dcca934d5377f05700f9377ed31d\\transformed\\appcompat-1.7.1\\res\\values-night-v8\\values-night-v8.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,125,209,293,389,491,593,687",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "120,204,288,384,486,588,682,771"
+                    },
+                    "to": {
+                        "startLines": "38,39,40,41,42,43,44,79",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "2030,2100,2184,2268,2364,2466,2568,5822",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "2095,2179,2263,2359,2461,2563,2657,5906"
                     }
                 },
                 {

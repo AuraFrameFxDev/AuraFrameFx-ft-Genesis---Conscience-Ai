@@ -3,6 +3,10 @@ package dev.aurakai.auraframefx.romtools.ui
 
 import androidx.compose.animation.*
 import androidx.compose.foundation.background
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.*
+import androidx.compose.material.icons.outlined.*
+import androidx.compose.material.icons.rounded.*
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -10,6 +14,10 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
 import androidx.compose.material3.*
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.setValue
+import androidx.compose.runtime.remember
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -34,7 +42,8 @@ fun RomToolsScreen(
     romToolsManager: RomToolsManager = hiltViewModel()
 ) {
     val romToolsState by romToolsManager.romToolsState.collectAsStateWithLifecycle()
-    val operationProgress by romToolsManager.operationProgress.collectAsStateWithLifecycle()
+    val currentOperation by romToolsManager.operationProgress.collectAsStateWithLifecycle()
+    var showCancelDialog by remember { mutableStateOf(false) }
 
     Column(
         modifier = modifier
@@ -99,9 +108,12 @@ fun RomToolsScreen(
                 }
 
                 // Active Operation Progress
-                operationProgress?.let { operation ->
+                currentOperation?.let { operation ->
                     item {
-                        OperationProgressCard(operation = operation)
+                        OperationProgressCard(
+                            operation = operation,
+                            onCancel = { showCancelDialog = true }
+                        )
                     }
                 }
 
@@ -186,6 +198,32 @@ fun RomToolsScreen(
                     }
                 }
             }
+        }
+        
+        // Cancel Confirmation Dialog
+        if (showCancelDialog) {
+            AlertDialog(
+                onDismissRequest = { showCancelDialog = false },
+                title = { Text("Cancel Operation") },
+                text = { Text("Are you sure you want to cancel the current operation?") },
+                confirmButton = {
+                    TextButton(
+                        onClick = {
+                            romToolsManager.clearOperationProgress()
+                            showCancelDialog = false
+                        }
+                    ) {
+                        Text("Yes, Cancel")
+                    }
+                },
+                dismissButton = {
+                    TextButton(
+                        onClick = { showCancelDialog = false }
+                    ) {
+                        Text("No, Continue")
+                    }
+                }
+            )
         }
     }
 }
@@ -279,7 +317,8 @@ private fun InfoRow(label: String, value: String) {
 @Composable
 private fun OperationProgressCard(
     operation: dev.aurakai.auraframefx.romtools.OperationProgress,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    onCancel: () -> Unit = {}
 ) {
     Card(
         modifier = modifier.fillMaxWidth(),
@@ -306,12 +345,25 @@ private fun OperationProgressCard(
                 trackColor = Color(0xFF444444)
             )
 
-            Text(
-                text = "${operation.progress.toInt()}%",
-                color = Color.White,
-                fontSize = 14.sp,
-                modifier = Modifier.align(Alignment.End)
-            )
+            Row(
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically,
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                Text(
+                    text = "${operation.progress.toInt()}%",
+                    color = Color.White,
+                    fontSize = 14.sp
+                )
+                
+                Button(
+                    onClick = onCancel,
+                    colors = ButtonDefaults.buttonColors(containerColor = Color.Red),
+                    modifier = Modifier.height(32.dp)
+                ) {
+                    Text("Cancel")
+                }
+            }
         }
     }
 }
@@ -323,10 +375,18 @@ private fun RomToolActionCard(
     onClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
+    val icon = when (action.type) {
+        RomActionType.FLASH_ROM -> Icons.Default.FlashOn
+        RomActionType.CREATE_BACKUP -> Icons.Default.Backup
+        RomActionType.RESTORE_BACKUP -> Icons.Default.Restore
+        RomActionType.UNLOCK_BOOTLOADER -> Icons.Default.LockOpen
+        RomActionType.INSTALL_RECOVERY -> Icons.Default.Healing
+        RomActionType.OPTIMIZE_SYSTEM -> Icons.Default.Psychology
+    }
+
     Card(
         modifier = modifier.fillMaxWidth(),
-        onClick = if (isEnabled) onClick else {
-        },
+        onClick = if (isEnabled) onClick else null,
         colors = CardDefaults.cardColors(
             containerColor = if (isEnabled) Color(0xFF1E1E1E) else Color(0xFF111111)
         ),

@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "dev.aurakai.auraframefx.colorblendr-release-85:/anim-v21/mtrl_bottom_sheet_slide_in.xml",
+        "source": "dev.aurakai.auraframefx.colorblendr-material-1.12.0-67:/anim-v21/mtrl_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "dev.aurakai.auraframefx.colorblendr-release-85:/anim-v21/m3_bottom_sheet_slide_in.xml",
+        "source": "dev.aurakai.auraframefx.colorblendr-material-1.12.0-67:/anim-v21/m3_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "dev.aurakai.auraframefx.colorblendr-release-85:/anim-v21/m3_side_sheet_exit_to_left.xml",
+        "source": "dev.aurakai.auraframefx.colorblendr-material-1.12.0-67:/anim-v21/m3_side_sheet_exit_to_left.xml"
+    },
+    {
+        "merged": "dev.aurakai.auraframefx.colorblendr-release-85:/anim-v21/mtrl_bottom_sheet_slide_out.xml",
+        "source": "dev.aurakai.auraframefx.colorblendr-material-1.12.0-67:/anim-v21/mtrl_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "dev.aurakai.auraframefx.colorblendr-release-85:/anim-v21/m3_side_sheet_enter_from_right.xml",
+        "source": "dev.aurakai.auraframefx.colorblendr-material-1.12.0-67:/anim-v21/m3_side_sheet_enter_from_right.xml"
+    },
+    {
+        "merged": "dev.aurakai.auraframefx.colorblendr-release-85:/anim-v21/design_bottom_sheet_slide_out.xml",
+        "source": "dev.aurakai.auraframefx.colorblendr-material-1.12.0-67:/anim-v21/design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "dev.aurakai.auraframefx.colorblendr-release-85:/anim-v21/design_bottom_sheet_slide_in.xml",
+        "source": "dev.aurakai.auraframefx.colorblendr-material-1.12.0-67:/anim-v21/design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "dev.aurakai.auraframefx.colorblendr-release-85:/anim-v21/m3_side_sheet_enter_from_left.xml",
+        "source": "dev.aurakai.auraframefx.colorblendr-material-1.12.0-67:/anim-v21/m3_side_sheet_enter_from_left.xml"
+    },
+    {
+        "merged": "dev.aurakai.auraframefx.colorblendr-release-85:/anim-v21/fragment_fast_out_extra_slow_in.xml",
+        "source": "dev.aurakai.auraframefx.colorblendr-fragment-1.8.5-51:/anim-v21/fragment_fast_out_extra_slow_in.xml"
+    },
+    {
+        "merged": "dev.aurakai.auraframefx.colorblendr-release-85:/anim-v21/m3_side_sheet_exit_to_right.xml",
+        "source": "dev.aurakai.auraframefx.colorblendr-material-1.12.0-67:/anim-v21/m3_side_sheet_exit_to_right.xml"
+    },
+    {
+        "merged": "dev.aurakai.auraframefx.colorblendr-release-85:/anim-v21/m3_bottom_sheet_slide_out.xml",
+        "source": "dev.aurakai.auraframefx.colorblendr-material-1.12.0-67:/anim-v21/m3_bottom_sheet_slide_out.xml"
+    }
+]

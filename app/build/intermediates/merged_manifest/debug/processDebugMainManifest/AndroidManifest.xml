@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="33"
-        android:targetSdkVersion="36" />
+        android:targetSdkVersion="CANARY" />
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.VIBRATE" />
@@ -37,6 +37,7 @@
         android:label="AuraFrameFX LSPosed Module"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/Theme.AuraFrameFX" >
 
         <!-- Genesis-OS Xposed/LSPosed Module Configuration -->
@@ -100,10 +101,6 @@
         <activity
             android:name="androidx.compose.ui.tooling.PreviewActivity"
             android:exported="true" />
-        <activity
-            android:name="androidx.activity.ComponentActivity"
-            android:exported="true"
-            android:theme="@android:style/Theme.Material.Light.NoActionBar" />
 
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"
@@ -290,6 +287,11 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="androidx.activity.ComponentActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.Material.Light.NoActionBar" />
 
         <receiver
             android:name="androidx.profileinstaller.ProfileInstallReceiver"

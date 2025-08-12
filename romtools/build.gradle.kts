@@ -82,9 +82,8 @@ android {
         resValues = false
     }
 
-    composeOptions {
-        kotlinCompilerExtensionVersion = libs.versions.composeCompiler.get()
-    }
+    // ✅ NO composeOptions needed with Kotlin 2.2.20-Beta2 K2 compiler!
+    // The Compose compiler is now built into the K2 compiler
 
     externalNativeBuild {
         cmake {
@@ -112,12 +111,11 @@ android {
 }
 
 kotlin {
-    jvmToolchain(24)
+    jvmToolchain(libs.versions.java.toolchain.get().toInt())  // Auto-provisioned Java 24
 
     compilerOptions {
         jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_24)
         freeCompilerArgs.addAll(
-            "-Xuse-k2",
             "-opt-in=kotlin.RequiresOptIn",
             "-opt-in=kotlin.ExperimentalStdlibApi",
             "-Xjvm-default=all"
@@ -158,8 +156,8 @@ dependencies {
     ksp(libs.room.compiler)
 
     // Security for ROM verification and signing
-    implementation("androidx.security:security-crypto:1.1.0")
-    implementation("com.google.crypto.tink:tink-android:1.18.0")
+    implementation(libs.androidxSecurity)
+    implementation(libs.tink)
 
     // WorkManager for background ROM operations
 

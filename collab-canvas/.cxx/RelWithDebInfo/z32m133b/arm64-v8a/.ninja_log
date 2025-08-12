@@ -1,0 +1,7 @@
+# ninja log v5
+1	68	7766845492327800	CMakeFiles/collabcanvas.dir/collab_canvas_native.cpp.o	2516abbf3464d4ea
+71	153	7766845493151770	C:/Users/Wehtt/OneDrive/Documents/GitHub/GENESIS/collab-canvas/build/intermediates/cxx/RelWithDebInfo/z32m133b/obj/arm64-v8a/libcollab_canvas_native.so	85d648bf0a53b3ad
+0	8	0	clean	ca252f5c3449f1cb
+0	9	0	clean	ca252f5c3449f1cb
+2	85	7766876800508201	CMakeFiles/collabcanvas.dir/collab_canvas_native.cpp.o	2516abbf3464d4ea
+87	184	7766876801461265	C:/Users/Wehtt/OneDrive/Documents/GitHub/GENESIS/collab-canvas/build/intermediates/cxx/RelWithDebInfo/z32m133b/obj/arm64-v8a/libcollab_canvas_native.so	85d648bf0a53b3ad

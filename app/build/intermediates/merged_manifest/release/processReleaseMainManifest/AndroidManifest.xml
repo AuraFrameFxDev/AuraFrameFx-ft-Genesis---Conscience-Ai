@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="33"
-        android:targetSdkVersion="36" />
+        android:targetSdkVersion="CANARY" />
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.VIBRATE" />
@@ -33,6 +33,7 @@
         android:label="AuraFrameFX LSPosed Module"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/Theme.AuraFrameFX" >
 
         <!-- Genesis-OS Xposed/LSPosed Module Configuration -->

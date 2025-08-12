@@ -70,9 +70,9 @@ openapiSpecs.forEach { (name, spec, pkg) ->
         generatorName.set("kotlin")
         library.set("jvm-retrofit2")
         
-        // Use proper file path handling
+        // Use proper file path handling with URI conversion for Windows compatibility
         val specFile = file("$rootDir/api-spec/$spec")
-        inputSpec.set(specFile.absolutePath)
+        inputSpec.set(specFile.toURI().toString())  // Convert to URI string for Windows compatibility
         
         val outputDirFile = layout.buildDirectory.dir("generated/openapi/$name").get().asFile
         outputDir.set(outputDirFile.absolutePath)
@@ -115,23 +115,18 @@ tasks.register("generateAllApiClients") {
         "generate${name.replaceFirstChar { it.uppercase() }}ApiClient" 
     })
     
-    // Ensure clean runs before all generations
-    openapiSpecs.forEach { (name, _, _) ->
-        tasks.named("generate${name.replaceFirstChar { it.uppercase() }}ApiClient") {
-            mustRunAfter("cleanOpenApiGenerated")
-        }
-    }
+    // Task ordering is configured in afterEvaluate block
 }
 
 android {
     namespace = "dev.aurakai.auraframefx"
     compileSdk = 36
-    buildToolsVersion = "36"
+    buildToolsVersion = "36.0.0"
 
     defaultConfig {
         applicationId = "dev.aurakai.auraframefx"
         minSdk = 33
-        targetSdk = 36
+        targetSdkPreview = "CANARY"
         versionCode = 1
         versionName = "1.0.0"
 
@@ -228,11 +223,12 @@ android {
             )
         }
     }
-    
-    ndkVersion = "29.0.13846066 rc3"
+    ndkVersion = libs.versions.ndkVersion.get()
+
+    // Auto-provisioned NDK
 }
 
-// ===== KOTLIN TOOLCHAIN - JVM 22 FOR JAVA 24 TARGET =====
+// ===== KOTLIN TOOLCHAIN - AUTO-PROVISIONED JAVA 24 =====
 kotlin {
     jvmToolchain(libs.versions.java.toolchain.get().toInt())
 }
@@ -263,6 +259,13 @@ afterEvaluate {
     // Ensure clean runs before any compile tasks
     tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
         dependsOn("generateAllApiClients")
+    }
+    
+    // Configure task ordering AFTER all tasks are created
+    openapiSpecs.forEach { (name, _, _) ->
+        tasks.named("generate${name.replaceFirstChar { it.uppercase() }}ApiClient") {
+            mustRunAfter("cleanOpenApiGenerated")
+        }
     }
 }
 

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "dev.aurakai.auraframefx.oracledrive.oracle-drive-integration-release-86:/layout-sw600dp-v13/design_layout_snackbar.xml",
+        "source": "dev.aurakai.auraframefx.oracledrive.oracle-drive-integration-material-1.12.0-67:/layout-sw600dp-v13/design_layout_snackbar.xml"
+    },
+    {
+        "merged": "dev.aurakai.auraframefx.oracledrive.oracle-drive-integration-release-86:/layout-sw600dp-v13/mtrl_layout_snackbar.xml",
+        "source": "dev.aurakai.auraframefx.oracledrive.oracle-drive-integration-material-1.12.0-67:/layout-sw600dp-v13/mtrl_layout_snackbar.xml"
+    }
+]

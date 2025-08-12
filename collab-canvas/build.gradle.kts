@@ -63,9 +63,8 @@ android {
         buildConfig = true
     }
 
-    composeOptions {
-        kotlinCompilerExtensionVersion = libs.versions.composeCompiler.get()
-    }
+    // ✅ NO composeOptions needed with Kotlin 2.2.20-Beta2 K2 compiler!
+    // The Compose compiler is now built into the K2 compiler
 
     externalNativeBuild {
         cmake {
@@ -82,12 +81,16 @@ android {
     buildToolsVersion = "36"
 }
 
-// Kotlin Toolchain - Java 24
+// Kotlin Toolchain - Auto-provisioned Java 24
 kotlin {
-    jvmToolchain(24)
+    jvmToolchain(libs.versions.java.toolchain.get().toInt())
 }
 
 dependencies {
+    // Project module dependencies
+    implementation(project(":core-module"))
+    implementation(project(":app"))  // For agents
+    
     // Core AndroidX
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)

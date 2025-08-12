@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "dev.aurakai.auraframefx.romtools-release-71:/layout-sw600dp-v13/mtrl_layout_snackbar.xml",
+        "source": "dev.aurakai.auraframefx.romtools-material-1.12.0-57:/layout-sw600dp-v13/mtrl_layout_snackbar.xml"
+    },
+    {
+        "merged": "dev.aurakai.auraframefx.romtools-release-71:/layout-sw600dp-v13/design_layout_snackbar.xml",
+        "source": "dev.aurakai.auraframefx.romtools-material-1.12.0-57:/layout-sw600dp-v13/design_layout_snackbar.xml"
+    }
+]
