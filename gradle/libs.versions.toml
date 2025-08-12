@@ -23,7 +23,7 @@ kover = "0.9.1"          # Code coverage
 # ===== ANDROID SDK VERSIONS (ANDROID 15 - BLEEDING EDGE STABLE) =====
 compileSdk = "36"        # Android 15 
 minSdk = "33"            # Minimum SDK for the project
-targetSdk = "36"         # Android 15 Target SDK
+targetSdk = "canary"         # Android 15 Target SDK
 # Using stable versions for better compatibility with Kotlin 2.2.20-Beta2
 cmakeVersion = "3.33"  # Matches the installed CMake version
 ndkVersion = "29"  # Stable NDK version (not RC)
