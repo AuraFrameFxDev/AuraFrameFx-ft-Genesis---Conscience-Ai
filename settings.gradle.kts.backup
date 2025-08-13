@@ -1,0 +1,51 @@
+@file:Suppress("UnstableApiUsage")
+
+// Genesis Protocol - Enable Gradle Features
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+enableFeaturePreview("STABLE_CONFIGURATION_CACHE")
+
+pluginManagement {
+    repositories {
+        mavenCentral()
+        gradlePluginPortal()
+        maven("https://maven.pkg.jetbrains.space/public/p/compose/dev") {
+            name = "Jetbrains Compose Dev"
+        }
+        maven("https://jitpack.io") {
+            name = "JitPack"
+        }
+        maven("https://oss.sonatype.org/content/repositories/snapshots/") {
+            name = "Sonatype Snapshots"
+        }
+    }
+}
+
+plugins {
+    // Java Toolchain Auto-detect
+    id("org.gradle.toolchains.foojay-resolver-convention") version "1.0.0"
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_PROJECT)
+    repositories {
+        mavenCentral()
+        maven("https://maven.pkg.jetbrains.space/public/p/compose/dev") {
+            name = "JetBrains Compose Dev"
+        }
+        maven("https://jitpack.io") {
+            name = "JitPack"
+        }
+        maven("https://oss.sonatype.org/content/repositories/snapshots/") {
+            name = "Sonatype Snapshots"
+        }
+        maven("https://repo1.maven.org/maven2/") {
+            name = "Maven Central Mirror"
+        }
+    }
+}
+
+// Genesis Protocol - Project Configuration
+rootProject.name = "Genesis-Os-Test"
+
+// Only include non-Android modules for testing
+include(":jvm-test")
