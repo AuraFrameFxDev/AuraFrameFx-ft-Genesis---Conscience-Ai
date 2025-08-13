@@ -61,7 +61,7 @@ datastore = "1.1.7"     # DataStore for AI preferences
 lifecycle = "2.9.2"     # Latest lifecycle components
 workManager = "2.10.3"  # WorkManager for background consciousness
 paging = "3.3.6"        # Paging for large AI datasets
-biometric = "1.2.0-alpha05"  # Biometric authentication
+biometric = "1.4.0-alpha02"  # Biometric authentication
 
 # ===== NETWORKING =====
 retrofit = "3.0.0"      # Latest Retrofit with kotlinx-serialization support
