@@ -366,6 +366,119 @@ yuki = { module = "com.highcapable.yukihookapi:api", version.ref = "yuki" }
 yuki-ksp-xposed = { module = "com.highcapable.yukihookapi:ksp-xposed", version.ref = "yuki" }
 
 [bundles]
+# ===== GENESIS-OS AUTOMATION BUNDLES FOR ZERO-CONFIG CI/CD =====
+# Complete automation stack for universal builds without manual setup
+genesis-automation-core = [
+    "androidx-core-ktx",
+    "androidx-appcompat", 
+    "androidx-lifecycle-runtime-ktx",
+    "androidx-activity-compose",
+    "kotlinx-coroutines-core",
+    "kotlinx-coroutines-android"
+]
+
+# Auto-provisioned toolchain stack
+genesis-toolchain = [
+    "kotlin-reflect",
+    "hilt-android",
+    "hilt-navigation-compose",
+    "kotlinx-serialization-json"
+]
+
+# CI/CD ready testing stack
+genesis-testing-automation = [
+    "junit-jupiter",
+    "junit-jupiter-api", 
+    "junit-jupiter-engine",
+    "mockk",
+    "turbine",
+    "androidx-core-testing",
+    "kotlinx-coroutines-test",
+    "androidx-test-ext-junit",
+    "espresso-core"
+]
+
+# Complete networking automation
+genesis-networking = [
+    "retrofit",
+    "retrofit-converter-kotlinx-serialization",
+    "okhttp3-logging-interceptor",
+    "kotlinx-serialization-json",
+    "kotlinx-coroutines-core",
+    "kotlinx-coroutines-android"
+]
+
+# AI & Machine Learning automation stack
+genesis-ai-automation = [
+    "tensorflow-lite",
+    "litert-core", 
+    "opencv",
+    "mlkit-text-recognition",
+    "mlkit-face-detection",
+    "mlkit-barcode-scanning",
+    "mlkit-image-labeling",
+    "androidx-work-runtime",
+    "androidx-datastore-preferences"
+]
+
+# Complete UI automation with Compose
+genesis-ui-automation = [
+    "androidx-compose-ui",
+    "androidx-compose-ui-graphics", 
+    "androidx-compose-ui-tooling-preview",
+    "androidx-compose-material3",
+    "androidx-navigation-compose",
+    "androidx-lifecycle-viewmodel-compose",
+    "lottie-compose",
+    "coil3-compose"
+]
+
+# CI/CD database automation
+genesis-database-automation = [
+    "room-runtime",
+    "room-ktx",
+    "androidx-datastore-preferences",
+    "androidx-datastore-core"
+]
+
+# Background processing automation
+genesis-background-automation = [
+    "androidx-work-runtime",
+    "androidx-work-multiprocess", 
+    "androidx-hilt-work",
+    "androidx-lifecycle-runtime-ktx"
+]
+
+# Security & crypto automation 
+genesis-security-automation = [
+    "androidx-biometric",
+    "androidxSecurity",
+    "bouncycastle", 
+    "tink"
+]
+
+# Debug automation for CI/CD
+genesis-debug-automation = [
+    "timber",
+    "chucker-library",
+    "leakcanary-android",
+    "slf4j-android"
+]
+
+# Firebase automation stack
+genesis-firebase-automation = [
+    "firebase-analytics",
+    "firebase-crashlytics"
+]
+
+# Camera & vision automation
+genesis-camera-automation = [
+    "camerax-core",
+    "camerax-camera2", 
+    "camerax-lifecycle",
+    "camerax-view"
+]
+
 # ===== COMPOSE UI =====
 compose = [
     "androidx-compose-ui",
