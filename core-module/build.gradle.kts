@@ -33,12 +33,7 @@ android {
         }
     }
 
-    compileOptions {
-        // AUTO-EVERYTHING: Use libs.versions.toml for Java version
-        sourceCompatibility = JavaVersion.toVersion(libs.versions.java.target.get())
-        targetCompatibility = JavaVersion.toVersion(libs.versions.java.target.get())
-        isCoreLibraryDesugaringEnabled = true
-    }
+    // AUTO-PROVISIONED: Compile options handled by root build.gradle.kts
 
     buildFeatures {
         compose = true
@@ -55,21 +50,14 @@ android {
     // AUTO-PROVISIONED: buildToolsVersion removed - let Gradle auto-provision per Sacred Rules
 }
 
-// ===== ZERO MANUAL COMPILER CONFIG: AUTO-PROVISIONED KOTLIN =====
-kotlin {
-    jvmToolchain(libs.versions.java.toolchain.get().toInt())
-    
-    // SACRED RULE #3: K2 compiler handles everything automatically
-    // NO manual compilerOptions - K2 auto-provisions everything
-}
+// ===== AUTO-PROVISIONED: Kotlin toolchain handled by root build.gradle.kts =====
 
 dependencies {
-    // Core AndroidX
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.lifecycle.runtime.ktx)
+    // Core AndroidX bundle  
+    implementation(libs.bundles.androidx.core)
     implementation(libs.androidx.activity.compose)
 
-    // Compose
+    // Compose bundle
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.bundles.compose)
     implementation(libs.androidx.navigation.compose)
@@ -77,21 +65,17 @@ dependencies {
     // Hilt
     implementation(libs.hilt.android)
     implementation(libs.animated.vector.drawable)
-    implementation(libs.androidx.appcompat)
     implementation(libs.androidx.material)
     ksp(libs.hilt.compiler)
     implementation(libs.hilt.navigation.compose)
 
-    // Networking (for shared API models)
-    implementation(libs.retrofit)
-    implementation(libs.retrofit.converter.kotlinx.serialization)
-    implementation(libs.okhttp3.logging.interceptor)
-    implementation(libs.kotlinx.serialization.json)
+    // Networking bundle (for shared API models)
+    implementation(libs.bundles.networking)
 
     // Core library desugaring
     coreLibraryDesugaring(libs.coreLibraryDesugaring)
 
-    // Testing
+    // Testing bundle
     testImplementation(libs.bundles.testing)
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)
