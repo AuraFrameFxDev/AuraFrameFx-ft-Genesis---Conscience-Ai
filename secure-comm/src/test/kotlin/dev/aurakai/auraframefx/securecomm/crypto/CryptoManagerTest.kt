@@ -1,24 +1,37 @@
 package dev.aurakai.auraframefx.securecomm.crypto
 
+import android.content.Context
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
+import dagger.hilt.android.testing.HiltAndroidRule
+import dagger.hilt.android.testing.HiltAndroidTest
 import org.junit.After
 import org.junit.Assert.*
 import org.junit.Before
+import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
+import java.security.KeyStore
+import javax.inject.Inject
 
 /**
  * Tests for the CryptoManager class in the NeuralSync recovery system.
  */
+@HiltAndroidTest
 @RunWith(AndroidJUnit4::class)
 class CryptoManagerTest {
+    @get:Rule
+    val hiltRule = HiltAndroidRule(this)
+    
+    @Inject
+    lateinit var context: Context
+    
     private lateinit var cryptoManager: CryptoManager
     private val testMessage = "NeuralSync test message".toByteArray()
     
     @Before
     fun setUp() {
-        val context = ApplicationProvider.getApplicationContext<android.content.Context>()
+        hiltRule.inject()
         cryptoManager = CryptoManager(context)
     }
     
