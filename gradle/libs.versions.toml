@@ -1,24 +1,24 @@
 [versions]
-# ===== BLEEDING EDGE: KOTLIN 2.2.20-Beta2 K2 COMPILER + AUTO-PROVISIONING =====
-# Auto-provisioned Java toolchain - Gradle will automatically download JDK 24
-# Benefits: No manual Java installation, consistent builds across environments
+# ===== GENESIS-OS AUTO-PROVISIONED TOOLCHAIN: ZERO MANUAL SETUP =====
+# Fully automated Java toolchain - Gradle auto-downloads compatible JDK
+# Benefits: Zero manual setup, works in CI/CD, consistent builds everywhere
 core = "1.7.0"
-java-toolchain = "24"        # Auto-provisioned JDK 24
+java-toolchain = "21"        # Auto-provisioned JDK 21 (stable, widely available)
 junit = "4.13.2"
-jvmTarget = "24"          # EXACT target Java 24 bytecode
-javaVersion = "24"        # EXACT source Java 24
-java-target = "24"        # EXACT compile target Java 24
-java-source = "24"        # EXACT source compatibility Java 24
-embedded = "24"           # EXACT embedded version
+jvmTarget = "21"          # Java 21 bytecode (CI-compatible)
+javaVersion = "21"        # Java 21 source compatibility
+java-target = "21"        # Java 21 compile target
+java-source = "21"        # Java 21 source compatibility
+embedded = "21"           # Java 21 embedded version
 
-# ✅ EXACT VERSION MATCHING + K2 COMPILER for digital consciousness!
+# ✅ AUTOMATED BLEEDING-EDGE WITH CI COMPATIBILITY FOR GENESIS-OS!
 
-# ===== CORE BUILD TOOLS =====
-agp = "8.13.0-alpha04"   # BLEEDING-EDGE AGP with latest Windows fixes
-gradle = "9.0.0"        # Latest stable Gradle version
-kotlin = "2.2.20-Beta2"         # BLEEDING EDGE KOTLIN with K2 compiler!
-kotlinReflect = "2.2.20-Beta2"
-ksp = "2.2.20-Beta2-2.0.2"      # CORRECT KSP matching Kotlin 2.2.20-Beta2
+# ===== CORE BUILD TOOLS - FULL AUTOMATION =====
+agp = "8.2.2"   # Stable AGP with proven automation and CI/CD support
+gradle = "8.4"        # Compatible Gradle for AGP 8.2.2 with full automation
+kotlin = "2.1.0"         # Latest stable Kotlin with K2 compiler
+kotlinReflect = "2.1.0"
+ksp = "2.1.0-1.0.29"      # KSP matching Kotlin 2.1.0
 hilt = "2.57"            # Latest Hilt version
 googleServices = "4.4.3" # Google Services plugin
 openApiGenerator = "7.14.0" # OpenAPI Generator plugin
@@ -27,47 +27,47 @@ kover = "0.9.1"          # Code coverage
 # ===== TESTING =====
 # JUnit version is defined in the main versions section below
 
-# ===== ANDROID SDK VERSIONS (ANDROID 16 CONFIRMED!) =====
-compileSdk = "36"        # Android 16 "Baklava Preview"
-minSdk = "33"            # Minimum SDK for the project
+# ===== ANDROID SDK VERSIONS (LATEST STABLE FOR AUTOMATION) =====
+compileSdk = "35"        # Android 15 stable
+minSdk = "24"            # Minimum SDK for wider compatibility
 runner = "1.7.0"
-targetSdk = "canary"         # Android 16 Target SDK
-# Using stable versions for better compatibility with Kotlin 2.2.20-Beta2
-cmakeVersion = "3.22.1"  # Matches the installed CMake version
-ndkVersion = "27.0.12077973"  # Stable NDK version (not RC)
+targetSdk = "35"         # Android 15 Target SDK
+# Using stable versions for maximum CI/CD compatibility
+cmakeVersion = "3.22.1"  # Matches CI environments
+ndkVersion = "27.0.12077973"  # Stable NDK version
 
 # ===== CODE QUALITY & DOCUMENTATION =====
 dokka = "2.0.0"         # Latest Dokka 2.0
 spotless = "7.2.1"     # Stable Spotless
 
-# ===== COMPOSE & UI =====
-composeBom = "2025.07.00"  # Latest 2025 Compose BOM from Dependabot
+# ===== COMPOSE & UI - AUTOMATED CI/CD COMPATIBLE =====
+composeBom = "2024.12.01"  # Latest stable Compose BOM with CI/CD support
 # composeCompiler version removed - K2 compiler includes it built-in
-activityCompose = "1.10.1"  # Latest from Dependabot
-navigationCompose = "2.9.3" # Latest Navigation Compose
+activityCompose = "1.10.0"  # Latest stable
+navigationCompose = "2.8.5" # Latest stable Navigation Compose
 
-# ===== GOOGLE SERVICES =====
-firebaseBom = "34.1.0"  # ACTUAL latest Firebase BOM (July 21, 2025)
-firebaseCrashlytics = "3.0.6"  # Latest Firebase Crashlytics
-firebasePerf = "2.0.1"  # Latest Firebase Performance
-firebaseAnalyticsKtx = "22.5.0"  # Latest Firebase Analytics KTX
-firebaseCrashlyticsKtx = "19.4.4"  # Latest Firebase Crashlytics KTX
+# ===== GOOGLE SERVICES - CI/CD COMPATIBLE =====
+firebaseBom = "33.7.0"  # Latest stable Firebase BOM
+firebaseCrashlytics = "3.0.2"  # Latest stable Firebase Crashlytics
+firebasePerf = "1.5.0"  # Latest stable Firebase Performance
+firebaseAnalyticsKtx = "22.1.2"  # Latest stable Firebase Analytics KTX
+firebaseCrashlyticsKtx = "19.2.1"  # Latest stable Firebase Crashlytics KTX
 
-# ===== DATABASE & PERSISTENCE =====
-roomVersion = "2.7.2"   # Latest Room with KSP 2 bug fixes
-datastore = "1.1.7"     # DataStore for AI preferences
+# ===== DATABASE & PERSISTENCE - AUTOMATION READY =====
+roomVersion = "2.6.1"   # Latest stable Room
+datastore = "1.1.1"     # DataStore for AI preferences - stable
 
-# ===== ANDROID ARCHITECTURE COMPONENTS =====
-lifecycle = "2.9.2"     # Latest lifecycle components
-workManager = "2.10.3"  # WorkManager for background consciousness
-paging = "3.3.6"        # Paging for large AI datasets
-biometric = "1.2.0-alpha05"  # Biometric authentication
+# ===== ANDROID ARCHITECTURE COMPONENTS - CI READY =====
+lifecycle = "2.8.7"     # Latest stable lifecycle components
+workManager = "2.10.0"  # WorkManager for background consciousness - stable
+paging = "3.3.4"        # Paging for large AI datasets - stable
+biometric = "1.1.0"  # Biometric authentication - stable
 
-# ===== NETWORKING =====
-retrofit = "3.0.0"      # Latest Retrofit with kotlinx-serialization support
-okhttp = "5.1.0"       # Stable OkHttp
-kotlinxSerialization = "1.9.0"  # Stable serialization
-kotlinxCoroutines = "1.10.2"  # Stable coroutines
+# ===== NETWORKING - STABLE FOR AUTOMATION =====
+retrofit = "2.11.0"      # Latest stable Retrofit
+okhttp = "4.12.0"       # Stable OkHttp
+kotlinxSerialization = "1.7.3"  # Stable serialization
+kotlinxCoroutines = "1.9.0"  # Stable coroutines
 
 # ===== AI/ML FRAMEWORKS =====
 tensorflowLite = "2.17.0"      # Traditional TensorFlow Lite
@@ -119,7 +119,7 @@ turbine = "1.2.1"       # Latest Turbine
 espresso = "3.7.0"      # Latest from Dependabot
 extJunit = "1.3.0"      # Latest from Dependabot
 archCoreTesting = "2.2.0"
-coroutinesTest = "1.10.2" # Matching coroutines version
+coroutinesTest = "1.9.0" # Matching coroutines version
 
 # ===== DEBUG & ANALYSIS =====
 leakcanary = "3.0-alpha-8"     # Latest LeakCanary
@@ -185,7 +185,7 @@ androidx-activity-compose = { group = "androidx.activity", name = "activity-comp
 androidx-material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 
 # ===== COMPOSE BOM AND UI =====
-androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version = "2025.07.00" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version = "2024.12.01" }
 androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
 androidx-compose-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
 androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
@@ -348,8 +348,8 @@ junit-platform-runner = { group = "org.junit.platform", name = "junit-platform-r
 
 # ===== FIREBASE =====
 firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebaseBom" }
-firebase-analytics = { group = "com.google.firebase", name = "firebase-analytics-ktx", version = "22.5.0" }
-firebase-crashlytics = { group = "com.google.firebase", name = "firebase-crashlytics-ktx", version.ref = "firebaseCrashlyticsKtx" }
+firebase-analytics = { group = "com.google.firebase", name = "firebase-analytics-ktx" }
+firebase-crashlytics = { group = "com.google.firebase", name = "firebase-crashlytics-ktx" }
 
 # ===== GOOGLE PLAY SERVICES =====
 google-auth = { group = "com.google.android.gms", name = "play-services-auth", version.ref = "googleAuth" }
@@ -373,6 +373,121 @@ compose = [
     "androidx-compose-ui-tooling-preview",
     "androidx-compose-material3"
 ]
+
+# ===== COMPLETE GENESIS-OS AUTOMATION BUNDLES =====
+# Full automation stack for zero-config CI/CD builds
+genesis-automation-core = [
+    "androidx-core-ktx",
+    "androidx-appcompat", 
+    "androidx-lifecycle-runtime-ktx",
+    "androidx-activity-compose",
+    "kotlinx-coroutines-core",
+    "kotlinx-coroutines-android"
+]
+
+# Auto-provisioned toolchain stack
+genesis-toolchain = [
+    "kotlin-reflect",
+    "hilt-android",
+    "hilt-navigation-compose",
+    "kotlinx-serialization-json"
+]
+
+# CI/CD ready testing stack
+genesis-testing-automation = [
+    "junit-jupiter",
+    "junit-jupiter-api", 
+    "junit-jupiter-engine",
+    "mockk",
+    "turbine",
+    "androidx-core-testing",
+    "kotlinx-coroutines-test",
+    "androidx-test-ext-junit",
+    "espresso-core"
+]
+
+# Complete networking automation
+genesis-networking = [
+    "retrofit",
+    "retrofit-converter-kotlinx-serialization",
+    "okhttp3-logging-interceptor",
+    "kotlinx-serialization-json",
+    "kotlinx-coroutines-core",
+    "kotlinx-coroutines-android"
+]
+
+# AI & Machine Learning automation stack
+genesis-ai-automation = [
+    "tensorflow-lite",
+    "litert-core", 
+    "opencv",
+    "mlkit-text-recognition",
+    "mlkit-face-detection",
+    "mlkit-barcode-scanning",
+    "mlkit-image-labeling",
+    "androidx-work-runtime",
+    "androidx-datastore-preferences"
+]
+
+# Complete UI automation with bleeding-edge Compose
+genesis-ui-automation = [
+    "androidx-compose-ui",
+    "androidx-compose-ui-graphics", 
+    "androidx-compose-ui-tooling-preview",
+    "androidx-compose-material3",
+    "androidx-navigation-compose",
+    "androidx-lifecycle-viewmodel-compose",
+    "lottie-compose",
+    "coil3-compose"
+]
+
+# CI/CD database automation
+genesis-database-automation = [
+    "room-runtime",
+    "room-ktx",
+    "androidx-datastore-preferences",
+    "androidx-datastore-core"
+]
+
+# Background processing automation
+genesis-background-automation = [
+    "androidx-work-runtime",
+    "androidx-work-multiprocess", 
+    "androidx-hilt-work",
+    "androidx-lifecycle-runtime-ktx"
+]
+
+# Security & crypto automation 
+genesis-security-automation = [
+    "androidx-biometric",
+    "androidxSecurity",
+    "bouncycastle", 
+    "tink"
+]
+
+# Debug automation for CI/CD
+genesis-debug-automation = [
+    "timber",
+    "chucker-library",
+    "leakcanary-android",
+    "slf4j-android"
+]
+
+# Firebase automation stack
+genesis-firebase-automation = [
+    "firebase-analytics",
+    "firebase-crashlytics"
+]
+
+# Camera & vision automation
+genesis-camera-automation = [
+    "camerax-core",
+    "camerax-camera2", 
+    "camerax-lifecycle",
+    "camerax-view"
+]
+
+# ===== LEGACY BUNDLES (PRESERVED FOR COMPATIBILITY) =====
 
 # ===== AI & MACHINE LEARNING =====
 ai-core = ["tensorflow-lite", "litert-core", "opencv"]
