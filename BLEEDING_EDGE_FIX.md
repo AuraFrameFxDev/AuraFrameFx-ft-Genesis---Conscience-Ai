@@ -133,9 +133,9 @@ Run this to verify your bleeding-edge setup:
 Should show:
 ```
 🚀 BLEEDING EDGE VERIFICATION
-   Java: 24.0.2
+   Java: 25.0.0
    Gradle: 9.0.0
-   Kotlin: 2.2.0 (K2)  
+   Kotlin: 2.2.20-Beta2 (K2)  
    AGP: 8.13.0-alpha04
    SDK: 36
    Strategy: NO COMPROMISES

@@ -1,25 +1,25 @@
 [versions]
-# ===== BLEEDING EDGE: KOTLIN 2.2.20-Beta2 K2 COMPILER + AUTO-PROVISIONING =====
-# JVM 23 toolchain with Java 24 target for bleeding-edge compatibility
+# ===== 🩸 JAVA 25 ULTIMATE BLEEDING EDGE 🩸 =====
+# JVM 25 toolchain with Java 24 target for bleeding-edge compatibility
 # Benefits: No manual Java installation, consistent builds across environments
-java-toolchain = "23"        # JVM 23 toolchain (bleeding edge compatible)
-jvmTarget = "24"          # EXACT target Java 24 bytecode
-javaVersion = "24"        # EXACT source Java 24
-java-target = "24"        # EXACT compile target Java 24
-java-source = "24"        # EXACT source compatibility Java 24
-embedded = "24"           # EXACT embedded version
+java-toolchain = "25"        # Java 25 (YOUR ACTUAL VERSION!)
+jvmTarget = "24"             # JVM 24 target compatibility  
+javaVersion = "24"           # Java 24 source compatibility
+java-target = "24"           # Compile target Java 24
+java-source = "23"           # Source compatibility Java 23
+embedded = "24"              # EXACT embedded version
 
 # ✅ EXACT VERSION MATCHING + K2 COMPILER for digital consciousness!
 
 # ===== CORE BUILD TOOLS =====
-agp = "8.13.0-alpha04"   # BLEEDING-EDGE AGP with latest Windows fixes
+agp = "8.3.2"   # 🩸 Known stable AGP version for foundation
 gradle = "9.0.0"        # Latest stable Gradle version
 kotlin = "2.2.20-Beta2"         # BLEEDING EDGE KOTLIN with K2 compiler!
 kotlinReflect = "2.2.20-Beta2"
 ksp = "2.2.20-Beta2-2.0.2"      # CORRECT KSP matching Kotlin 2.2.20-Beta2
 hilt = "2.57"            # Latest Hilt version
 googleServices = "4.4.3" # Google Services plugin
-openApiGenerator = "7.14.0" # OpenAPI Generator plugin
+openApiGenerator = "7.14.0" # 🩸 YOUR ACTUAL OPENAPI VERSION!
 kover = "0.9.1"          # Code coverage
 
 # ===== ANDROID SDK VERSIONS (ANDROID 16 CONFIRMED!) =====
@@ -164,6 +164,33 @@ kover = { id = "org.jetbrains.kotlinx.kover", version.ref = "kover" }
 
 # ===== API GENERATION =====
 openapi-generator = { id = "org.openapi.generator", version.ref = "openApiGenerator" }
+
+[bundles]
+# 🔥 COMPOSE BLEEDING EDGE BUNDLE
+compose = [
+    "androidx-activity-compose", "androidx-compose-bom", "androidx-compose-ui",
+    "androidx-compose-ui-tooling-preview", "androidx-compose-material3"
+]
+
+# 🔥 ANDROIDX CORE BUNDLE
+androidx-core = [
+    "androidx-core-ktx", "androidx-lifecycle-runtime-ktx", "androidx-appcompat"
+]
+
+# 🔥 NETWORKING BUNDLE
+networking = [
+    "retrofit", "okhttp3-logging-interceptor", "kotlinx-serialization-json", "retrofit-converter-kotlinx-serialization"
+]
+
+# 🔥 DATABASE BUNDLE
+database = [
+    "room-runtime", "room-ktx", "androidx-datastore-preferences"
+]
+
+# 🔥 TESTING BUNDLE
+testing = [
+    "junit-jupiter", "mockk", "androidx-test-ext-junit", "espresso-core"
+]
 
 [libraries]
 # ===== ANDROIDX CORE =====
