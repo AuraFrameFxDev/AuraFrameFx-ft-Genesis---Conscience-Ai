@@ -32,24 +32,14 @@ android {
         }
     }
 
-    compileOptions {
-        // AUTO-EVERYTHING: Use libs.versions.toml for Java version
-        sourceCompatibility = JavaVersion.toVersion(libs.versions.java.target.get())
-        targetCompatibility = JavaVersion.toVersion(libs.versions.java.target.get())
-    }
+    // AUTO-PROVISIONED: Compile options handled by root build.gradle.kts
 
     buildFeatures {
         compose = true
     }
 }
 
-// ===== ZERO MANUAL COMPILER CONFIG: AUTO-PROVISIONED KOTLIN =====
-kotlin {
-    jvmToolchain(libs.versions.java.toolchain.get().toInt())
-    
-    // SACRED RULE #3: K2 compiler handles everything automatically
-    // NO manual compilerOptions - K2 auto-provisions everything
-}
+// AUTO-PROVISIONED: Kotlin configuration handled by root build.gradle.kts
 
 dependencies {
     // SACRED RULE #5: DEPENDENCY HIERARCHY - All modules depend on :core-module and :app

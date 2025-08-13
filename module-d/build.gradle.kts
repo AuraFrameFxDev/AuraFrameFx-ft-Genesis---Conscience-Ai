@@ -33,9 +33,8 @@ android {
         }
     }
 
+    // AUTO-PROVISIONED: Compile options handled by root build.gradle.kts
     compileOptions {
-        sourceCompatibility = JavaVersion.toVersion(libs.versions.java.target.get())
-        targetCompatibility = JavaVersion.toVersion(libs.versions.java.target.get())
         isCoreLibraryDesugaringEnabled = true
     }
 

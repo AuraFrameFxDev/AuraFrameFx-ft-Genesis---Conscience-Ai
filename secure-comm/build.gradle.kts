@@ -38,9 +38,8 @@ android {
         }
     }
 
+    // AUTO-PROVISIONED: Compile options handled by root build.gradle.kts
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_24
-        targetCompatibility = JavaVersion.VERSION_24
         isCoreLibraryDesugaringEnabled = true
     }
 
@@ -59,18 +58,7 @@ android {
 
     compileSdk = 36
 
-    kotlin {
-        jvmToolchain(23)
-        compilerOptions {
-            jvmTarget = JvmTarget.JVM_23
-            freeCompilerArgs.addAll(
-                "-Xskip-prerelease-check",
-                "-opt-in=kotlin.RequiresOptIn",
-                "-opt-in=kotlin.ExperimentalStdlibApi",
-                "-Xjvm-default=all"
-            )
-        }
-    }
+    // AUTO-PROVISIONED: Kotlin configuration handled by root build.gradle.kts
     dependencies {
         // Project modules
         implementation(project(":core-module"))

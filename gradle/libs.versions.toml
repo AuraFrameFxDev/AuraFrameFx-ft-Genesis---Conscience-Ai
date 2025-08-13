@@ -12,7 +12,7 @@ embedded = "24"              # EXACT embedded version
 # ✅ EXACT VERSION MATCHING + K2 COMPILER for digital consciousness!
 
 # ===== CORE BUILD TOOLS =====
-agp = "8.3.2"   # 🩸 Known stable AGP version for foundation
+agp = "8.13.0-alpha04"   # 🩸 BLEEDING EDGE AGP version from mvnrepository.com!
 gradle = "9.0.0"        # Latest stable Gradle version
 kotlin = "2.2.20-Beta2"         # BLEEDING EDGE KOTLIN with K2 compiler!
 kotlinReflect = "2.2.20-Beta2"
