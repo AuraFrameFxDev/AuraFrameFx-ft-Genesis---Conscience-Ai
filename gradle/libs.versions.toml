@@ -1,68 +1,73 @@
 [versions]
-# ===== GENESIS-OS UNIVERSAL AUTOMATION: ZERO MANUAL SETUP =====
-# Works in ANY CI environment - no external dependencies, no network restrictions
-# Auto-provisioned toolchain compatible with ALL hosting environments
+# ===== BLEEDING EDGE: KOTLIN 2.2.20-Beta2 K2 COMPILER + AUTO-PROVISIONING =====
+# Auto-provisioned Java toolchain - Gradle will automatically download JDK 24
+# Benefits: No manual Java installation, consistent builds across environments
 core = "1.7.0"
-java-toolchain = "17"        # Auto-provisioned JDK 17 (universal compatibility)
+java-toolchain = "24"        # Auto-provisioned JDK 24
 junit = "4.13.2"
-jvmTarget = "17"          # Java 17 bytecode (maximum compatibility)
-javaVersion = "17"        # Java 17 source (works everywhere)
-java-target = "17"        # Java 17 compile target
-java-source = "17"        # Java 17 source compatibility
-embedded = "17"           # Java 17 embedded version
+jvmTarget = "24"          # EXACT target Java 24 bytecode
+javaVersion = "24"        # EXACT source Java 24
+java-target = "24"        # EXACT compile target Java 24
+java-source = "24"        # EXACT source compatibility Java 24
+embedded = "24"           # EXACT embedded version
 
-# ✅ UNIVERSAL AUTOMATION + MAXIMUM CI/CD COMPATIBILITY FOR GENESIS-OS!
+# ✅ EXACT VERSION MATCHING + K2 COMPILER for digital consciousness!
 
-# ===== CORE BUILD TOOLS - UNIVERSAL AUTOMATION =====
-# These versions work in ALL environments, including restricted networks
-gradle = "8.4"        # Proven Gradle with universal compatibility
-kotlin = "1.9.24"         # Latest stable Kotlin with universal support
-kotlinReflect = "1.9.24"
-ksp = "1.9.24-1.0.20"      # KSP matching Kotlin 1.9.24 (maven central)
-hilt = "2.51"            # Latest stable Hilt version (maven central)
-googleServices = "4.4.2" # Google Services plugin (if available)
-openApiGenerator = "7.8.0" # OpenAPI Generator plugin (maven central)
-kover = "0.8.3"          # Code coverage (maven central)
-dokka = "1.9.20"         # Latest stable Dokka (maven central)
-spotless = "6.25.0"     # Stable Spotless (maven central)
+# ===== CORE BUILD TOOLS =====
+agp = "8.13.0-alpha04"   # BLEEDING-EDGE AGP with latest Windows fixes
+gradle = "9.0.0"        # Latest stable Gradle version
+kotlin = "2.2.20-Beta2"         # BLEEDING EDGE KOTLIN with K2 compiler!
+kotlinReflect = "2.2.20-Beta2"
+ksp = "2.2.20-Beta2-2.0.2"      # CORRECT KSP matching Kotlin 2.2.20-Beta2
+hilt = "2.57"            # Latest Hilt version
+googleServices = "4.4.3" # Google Services plugin
+openApiGenerator = "7.14.0" # OpenAPI Generator plugin
+kover = "0.9.1"          # Code coverage
 
-# ===== UNIVERSAL ANDROID COMPATIBILITY (OPTIONAL) =====
-# These work when Google repositories are available, graceful fallback otherwise
-compileSdk = "34"        # Android 14 stable (universal compatibility)
-minSdk = "21"            # Minimum SDK for maximum compatibility 
+# ===== TESTING =====
+# JUnit version is defined in the main versions section below
+
+# ===== ANDROID SDK VERSIONS (ANDROID 16 CONFIRMED!) =====
+compileSdk = "36"        # Android 16 "Baklava Preview"
+minSdk = "33"            # Minimum SDK for the project
 runner = "1.7.0"
-targetSdk = "34"         # Android 14 Target SDK (stable)
-cmakeVersion = "3.22.1"  # Standard CMake version
-ndkVersion = "25.2.9519653"  # Stable NDK version (widely available)
+targetSdk = "canary"         # Android 16 Target SDK
+# Using stable versions for better compatibility with Kotlin 2.2.20-Beta2
+cmakeVersion = "3.22.1"  # Matches the installed CMake version
+ndkVersion = "27.0.12077973"  # Stable NDK version (not RC)
 
-# ===== COMPOSE & UI - UNIVERSAL COMPATIBILITY =====
-composeBom = "2024.06.00"  # Stable Compose BOM from Maven Central
-activityCompose = "1.9.1"  # Latest stable from Maven Central
-navigationCompose = "2.7.7" # Latest stable Navigation Compose
+# ===== CODE QUALITY & DOCUMENTATION =====
+dokka = "2.0.0"         # Latest Dokka 2.0
+spotless = "7.2.1"     # Stable Spotless
 
-# ===== FIREBASE & GOOGLE SERVICES - OPTIONAL AUTOMATION =====
-# These are configured for graceful fallback when Google repos unavailable
-firebaseBom = "33.1.2"  # Latest stable Firebase BOM (when available)
-firebaseCrashlytics = "3.0.2"  # Latest stable
-firebasePerf = "1.5.0"  # Latest stable
-firebaseAnalyticsKtx = "22.0.2"  # Stable version
-firebaseCrashlyticsKtx = "19.0.3"  # Stable version
+# ===== COMPOSE & UI =====
+composeBom = "2025.07.00"  # Latest 2025 Compose BOM from Dependabot
+# composeCompiler version removed - K2 compiler includes it built-in
+activityCompose = "1.10.1"  # Latest from Dependabot
+navigationCompose = "2.9.3" # Latest Navigation Compose
 
-# ===== DATABASE & PERSISTENCE - UNIVERSAL AUTOMATION =====
-roomVersion = "2.6.1"   # Latest stable Room (Maven Central)
-datastore = "1.1.1"     # DataStore stable (when Google repos available)
+# ===== GOOGLE SERVICES =====
+firebaseBom = "34.1.0"  # ACTUAL latest Firebase BOM (July 21, 2025)
+firebaseCrashlytics = "3.0.6"  # Latest Firebase Crashlytics
+firebasePerf = "2.0.1"  # Latest Firebase Performance
+firebaseAnalyticsKtx = "22.5.0"  # Latest Firebase Analytics KTX
+firebaseCrashlyticsKtx = "19.4.4"  # Latest Firebase Crashlytics KTX
 
-# ===== ANDROID ARCHITECTURE COMPONENTS - UNIVERSAL =====
-lifecycle = "2.8.4"     # Latest stable lifecycle components
-workManager = "2.9.1"  # WorkManager stable
-paging = "3.3.2"        # Paging stable
-biometric = "1.1.0"  # Biometric authentication stable
+# ===== DATABASE & PERSISTENCE =====
+roomVersion = "2.7.2"   # Latest Room with KSP 2 bug fixes
+datastore = "1.1.7"     # DataStore for AI preferences
 
-# ===== NETWORKING - UNIVERSAL MAVEN CENTRAL =====
-retrofit = "2.11.0"      # Latest stable Retrofit (Maven Central)
-okhttp = "4.12.0"       # Stable OkHttp (Maven Central)
-kotlinxSerialization = "1.7.1"  # Stable serialization (Maven Central)
-kotlinxCoroutines = "1.8.1"  # Stable coroutines (Maven Central)
+# ===== ANDROID ARCHITECTURE COMPONENTS =====
+lifecycle = "2.9.2"     # Latest lifecycle components
+workManager = "2.10.3"  # WorkManager for background consciousness
+paging = "3.3.6"        # Paging for large AI datasets
+biometric = "1.2.0-alpha05"  # Biometric authentication
+
+# ===== NETWORKING =====
+retrofit = "3.0.0"      # Latest Retrofit with kotlinx-serialization support
+okhttp = "5.1.0"       # Stable OkHttp
+kotlinxSerialization = "1.9.0"  # Stable serialization
+kotlinxCoroutines = "1.10.2"  # Stable coroutines
 
 # ===== AI/ML FRAMEWORKS =====
 tensorflowLite = "2.17.0"      # Traditional TensorFlow Lite
@@ -114,7 +119,7 @@ turbine = "1.2.1"       # Latest Turbine
 espresso = "3.7.0"      # Latest from Dependabot
 extJunit = "1.3.0"      # Latest from Dependabot
 archCoreTesting = "2.2.0"
-coroutinesTest = "1.8.1" # Matching coroutines version
+coroutinesTest = "1.10.2" # Matching coroutines version
 
 # ===== DEBUG & ANALYSIS =====
 leakcanary = "3.0-alpha-8"     # Latest LeakCanary
@@ -139,34 +144,32 @@ animatedVectorDrawable = "1.2.0"  # Stable
 material = "1.12.0"      # Latest stable Material Design
 
 [plugins]
-# ===== UNIVERSAL KOTLIN PLUGINS (MAVEN CENTRAL) =====
+# ===== ANDROID PLUGINS =====
+android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+
+# ===== KOTLIN PLUGINS =====
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 
-# ===== UNIVERSAL ANNOTATION PROCESSING =====
+# ===== ANNOTATION PROCESSING =====
 hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 
-# ===== UNIVERSAL CODE QUALITY =====
+# ===== GOOGLE SERVICES =====
+google-services = { id = "com.google.gms.google-services", version.ref = "googleServices" }
+firebase-crashlytics = { id = "com.google.firebase.crashlytics", version.ref = "firebaseCrashlytics" }
+firebase-perf = { id = "com.google.firebase.firebase-perf", version.ref = "firebasePerf" }
+
+# ===== CODE QUALITY =====
 dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }
 spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
 kover = { id = "org.jetbrains.kotlinx.kover", version.ref = "kover" }
 
 # ===== API GENERATION =====
 openapi-generator = { id = "org.openapi.generator", version.ref = "openApiGenerator" }
-
-# ===== CONDITIONAL ANDROID PLUGINS (REQUIRE GOOGLE REPOS) =====
-# These plugins are included but will only work when Google repositories are accessible
-# Graceful fallback: Projects can still build without these if Google repos unavailable
-android-application = { id = "com.android.application", version = "8.1.4" }
-android-library = { id = "com.android.library", version = "8.1.4" }
-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
-
-# ===== OPTIONAL GOOGLE SERVICES (WHEN AVAILABLE) =====
-google-services = { id = "com.google.gms.google-services", version.ref = "googleServices" }
-firebase-crashlytics = { id = "com.google.firebase.crashlytics", version.ref = "firebaseCrashlytics" }
-firebase-perf = { id = "com.google.firebase.firebase-perf", version.ref = "firebasePerf" }
 
 [libraries]
 # ===== ANDROIDX CORE =====
@@ -182,7 +185,7 @@ androidx-activity-compose = { group = "androidx.activity", name = "activity-comp
 androidx-material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 
 # ===== COMPOSE BOM AND UI =====
-androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version = "2024.06.00" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version = "2025.07.00" }
 androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
 androidx-compose-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
 androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
@@ -345,8 +348,8 @@ junit-platform-runner = { group = "org.junit.platform", name = "junit-platform-r
 
 # ===== FIREBASE =====
 firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebaseBom" }
-firebase-analytics = { group = "com.google.firebase", name = "firebase-analytics-ktx" }
-firebase-crashlytics = { group = "com.google.firebase", name = "firebase-crashlytics-ktx" }
+firebase-analytics = { group = "com.google.firebase", name = "firebase-analytics-ktx", version = "22.5.0" }
+firebase-crashlytics = { group = "com.google.firebase", name = "firebase-crashlytics-ktx", version.ref = "firebaseCrashlyticsKtx" }
 
 # ===== GOOGLE PLAY SERVICES =====
 google-auth = { group = "com.google.android.gms", name = "play-services-auth", version.ref = "googleAuth" }
@@ -363,16 +366,8 @@ yuki = { module = "com.highcapable.yukihookapi:api", version.ref = "yuki" }
 yuki-ksp-xposed = { module = "com.highcapable.yukihookapi:ksp-xposed", version.ref = "yuki" }
 
 [bundles]
-# ===== COMPOSE UI =====
-compose = [
-    "androidx-compose-ui",
-    "androidx-compose-ui-graphics",
-    "androidx-compose-ui-tooling-preview",
-    "androidx-compose-material3"
-]
-
-# ===== COMPLETE GENESIS-OS AUTOMATION BUNDLES =====
-# Full automation stack for zero-config CI/CD builds
+# ===== GENESIS-OS AUTOMATION BUNDLES FOR ZERO-CONFIG CI/CD =====
+# Complete automation stack for universal builds without manual setup
 genesis-automation-core = [
     "androidx-core-ktx",
     "androidx-appcompat", 
@@ -426,7 +421,7 @@ genesis-ai-automation = [
     "androidx-datastore-preferences"
 ]
 
-# Complete UI automation with bleeding-edge Compose
+# Complete UI automation with Compose
 genesis-ui-automation = [
     "androidx-compose-ui",
     "androidx-compose-ui-graphics", 
@@ -484,7 +479,13 @@ genesis-camera-automation = [
     "camerax-view"
 ]
 
-# ===== LEGACY BUNDLES (PRESERVED FOR COMPATIBILITY) =====
+# ===== COMPOSE UI =====
+compose = [
+    "androidx-compose-ui",
+    "androidx-compose-ui-graphics",
+    "androidx-compose-ui-tooling-preview",
+    "androidx-compose-material3"
+]
 
 # ===== AI & MACHINE LEARNING =====
 ai-core = ["tensorflow-lite", "litert-core", "opencv"]
