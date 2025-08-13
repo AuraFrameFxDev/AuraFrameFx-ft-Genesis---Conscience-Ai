@@ -6,18 +6,12 @@ enableFeaturePreview("STABLE_CONFIGURATION_CACHE")
 
 pluginManagement {
     repositories {
-        // 🩸 BLEEDING-EDGE: Alpha/Beta repositories for cutting-edge versions
-        google {
-            content {
-                includeGroupByRegex("com\\.android.*")
-                includeGroupByRegex("com\\.google.*")
-                includeGroupByRegex("androidx.*")
-            }
-        }
+        // 🩸 BLEEDING-EDGE: Simplified repository access for AGP
+        google()
         gradlePluginPortal()
         mavenCentral()
 
-        // 🩸 BLEEDING-EDGE: Alpha/Preview repositories
+        // 🩸 BLEEDING-EDGE: Additional repositories for bleeding edge versions
         maven("https://androidx.dev/storage/compose-compiler/repository/") {
             name = "AndroidX Compose Compiler Preview"
         }
@@ -46,14 +40,8 @@ plugins {
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.PREFER_PROJECT)
     repositories {
-        // 🩸 BLEEDING-EDGE: Primary repositories with alpha/beta access
-        google {
-            content {
-                includeGroupByRegex("com\\.android.*")
-                includeGroupByRegex("com\\.google.*")
-                includeGroupByRegex("androidx.*")
-            }
-        }
+        // 🩸 BLEEDING-EDGE: Simplified repository access
+        google()
         mavenCentral()
 
         // 🩸 BLEEDING-EDGE: Compose and Kotlin bleeding-edge

@@ -98,11 +98,7 @@ android {
         }
     }
 
-    compileOptions {
-        // AUTO-EVERYTHING: Use libs.versions.toml for Java version
-        sourceCompatibility = JavaVersion.toVersion(libs.versions.java.target.get())
-        targetCompatibility = JavaVersion.toVersion(libs.versions.java.target.get())
-    }
+    // AUTO-PROVISIONED: Compile options handled by root build.gradle.kts
 
     // ===== BUILD TYPES =====
     buildTypes {
@@ -172,10 +168,7 @@ android {
     ndkVersion = libs.versions.ndkVersion.get()
 }
 
-// ===== ZERO MANUAL COMPILER CONFIG: AUTO-PROVISIONED KOTLIN =====
-kotlin {
-    jvmToolchain(libs.versions.java.toolchain.get().toInt())
-}
+// ===== AUTO-PROVISIONED: Kotlin toolchain handled by root build.gradle.kts =====
 
 // ===== BUILD TASK DEPENDENCIES =====
 afterEvaluate {

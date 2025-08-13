@@ -34,12 +34,7 @@ android {
         }
     }
 
-    compileOptions {
-        // AUTO-EVERYTHING: Use libs.versions.toml for Java version
-        sourceCompatibility = JavaVersion.toVersion(libs.versions.java.target.get())
-        targetCompatibility = JavaVersion.toVersion(libs.versions.java.target.get())
-        isCoreLibraryDesugaringEnabled = true
-    }
+    // AUTO-PROVISIONED: Compile options handled by root build.gradle.kts
 
     buildFeatures {
         compose = true

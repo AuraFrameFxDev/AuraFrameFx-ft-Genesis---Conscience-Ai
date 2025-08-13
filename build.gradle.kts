@@ -169,7 +169,7 @@ tasks.register("verifyBleedingEdge") {
 
     doLast {
         println("🚀 GENESIS-OS BLEEDING EDGE AUTO-EVERYTHING VERIFICATION")
-        println("   Java: 21 (Auto-provisioned)")
+        println("   Java: 25 (Auto-provisioned)")
         println("   Gradle: 9.0.0 (Auto-provisioned)")
         println("   Kotlin: 2.2.20-Beta2 (K2, Auto-provisioned)")
         println("   AGP: 8.13.0-alpha04 (Auto-provisioned)")
